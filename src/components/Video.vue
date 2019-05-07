@@ -1,5 +1,6 @@
 <template lang="html">
-  <section class="video">
+  <section class="video vh-100">
+    <div class="cloud position-absolute"><img src="../assets/img/cloud.svg"></div>
       <div class="overlay"></div>
       <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="../assets/media/Cards-video.mp4" type="video/mp4">
@@ -101,6 +102,11 @@ export default {
     background-color: black;
     opacity: 0.5;
     z-index: 1;
+  }
+
+  .cloud {
+    z-index: 10;
+    bottom: 0;
   }
 
   @media (pointer: coarse) and (hover: none) {
