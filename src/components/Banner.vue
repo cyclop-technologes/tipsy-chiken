@@ -6,14 +6,14 @@
         <div data-aos="zoom-out-right" class="col-6 align-self-center">
           <img class="w-100" src="../assets/img/box.png" alt="">
         </div>
-        <div data-aos="zoom-out-left" class="col-6 align-self-center text-center">
+        <div data-aos="zoom-out-left" class="col-6 align-self-center text-center position-relative">
             <div class="mt-5">
               <img src="../assets/img/logo-inline.svg" alt="">
             </div>
             <div class="mt-5">
               <b-button class="px-5 py-4" variant="warning">BUY ON AMAZON</b-button>
             </div>
-            <div class="chiken-block font-weight-bold text-white my-5">
+            <div class="chiken-block position-absolute font-weight-bold text-white my-5">
               <p class="my-4 ">The ultimate</p>
               <p class="my-4 chiken">
                 <img src="../assets/img/chiken-banner.svg" alt="">
@@ -58,6 +58,7 @@ export default {
   }
   .chiken-block {
     font-size: 1.3rem;
+    width: 100%; 
   }
   .chiken{
     position: relative;

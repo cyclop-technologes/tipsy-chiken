@@ -2,17 +2,19 @@
   <div id="app">
     <Banner></Banner>
     <Video></Video>
-    <About></About>
-    <Cards></Cards>
+  <section>
+    <HowToPlay></HowToPlay>
+    <SuggestCard></SuggestCard>
     <Footer></Footer>
+  </section>
   </div>
 </template>
 
 <script>
 import Banner from './components/Banner.vue';
 import Video from './components/Video.vue';
-import About from './components/About.vue';
-import Cards from './components/Cards.vue';
+import HowToPlay from './components/HowToPlay.vue';
+import SuggestCard from './components/SuggestCard.vue';
 import Footer from './components/Footer.vue';
 
 export default {
@@ -20,8 +22,8 @@ export default {
   components: {
     Banner,
     Video,
-    About,
-    Cards,
+    HowToPlay,
+    SuggestCard,
     Footer,
   },
 };
