@@ -58,7 +58,7 @@
       </div>
       <div class="rooster_boo-ha-re-koo text-center step-padding"><img src="../assets/img/rooster_boo-ha-re-koo.svg"></div>
     </div>
-    <div class="container fifth-step">
+    <div class="container fifth-step fifth-step-padding">
       <div class="d-flex justify-content-between step-padding position-relative">
         <div class="step font-weight-bold">5</div>
         <img class="center-absolute" src="../assets/img/rat.svg">
@@ -75,6 +75,17 @@
         </div>
         <div class="drunk-goose text-center"><img src="../assets/img/drunk_goose.svg"></div>
       </div>
+    </div>
+    <div class="suspicious-chicken">
+      <div class="text-center position-relative">
+        <p class="ready-to-play">Psssst... Hey, you!<br>
+          Ready to play?</p>
+        <div class="mt-5">
+          <b-button class="px-5 py-4" variant="warning">BUY ON AMAZON</b-button>
+        </div>
+        <div class="animation-chicken position-absolute"><img src="../assets/img/suspicious_chicken .svg"></div>
+      </div>
+      
     </div>
   </section>
 </template>
@@ -177,11 +188,31 @@
 }
 
 .drunk-goose {
-	position: absolute;
-	left: 50%;
+  position: absolute;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 2;
   bottom: -20rem;
+}
+
+.fifth-step-padding {
+  padding-bottom: 350px;
+}
+
+.suspicious-chicken {
+  padding: 300px 0px;
+}
+
+.ready-to-play {
+  color: $black;
+  font-size: 30px;
+  right: 0;
+  z-index: 10;
+}
+.animation-chicken {
+	right: 0;
+	top: 0;
+	z-index: 1;
 }
 
 </style>
