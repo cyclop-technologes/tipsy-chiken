@@ -1,5 +1,9 @@
 <template lang="html">
-
+  <div class="container">
+    <div class="farm">
+      <img src="../assets/img/farm.svg" alt="">
+    </div>
+  </div>
 </template>
 
 <script>
