@@ -40,7 +40,7 @@
         <img class="rooster-acrobat" src="../assets/img/rooster_acrobat.svg">
       </div>
     </div>
-    <div class="container fourth-step text-center step-padding">
+    <div class="container fourth-step text-center">
       <div class=" d-flex justify-content-between">
         <div class="step font-weight-bold">4</div>
         <div class="info font-weight-bold text-right text-uppercase">
@@ -49,7 +49,14 @@
             your dare card for points. </p>
         </div>
       </div>
-      <div class="draw-dare"><img src="../assets/img/draw_a_goat.svg"></div>
+      <div class="draw-dare step-padding"><img src="../assets/img/draw_a_goat.svg"></div>
+      <div class="text-right info font-weight-bold text-right text-uppercase">
+        <p> If you don't complete the<br>
+          dare, draw a chicken card<br>
+          and take your punishment.<br>
+          Discard the dare card.</p>
+      </div>
+      <div class="rooster_boo-ha-re-koo text-center step-padding"><img src="../assets/img/rooster_boo-ha-re-koo.svg"></div>
     </div>
   </section>
 </template>
