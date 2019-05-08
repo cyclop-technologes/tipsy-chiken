@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-container">
-    <div class="container d-flex align-items-center flex-column">
+  <section>
+    <div class="container d-flex align-items-center flex-column pb-5">
       <h1 class="how-to-play font-weight-bold">HOW TO PLAY</h1>
       <h1 class="five-simple-steps font-weight-bold">5 SIMPLE STEPS</h1>
     </div>
@@ -92,16 +92,14 @@
 <style lang="scss" scoped>
 @import '../assets/scss/main.scss';
 
-.bg-container {
-  background: url('../assets/img/bg.svg') 0 0 repeat;
-}
-
 .how-to-play {
   color: $primary;
+  font-size: 60px;
 }
 
 .five-simple-steps {
   color: $secondary;
+  font-size: 60px;
 }
 
 .center-absolute {
