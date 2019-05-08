@@ -1,6 +1,6 @@
 <template lang="html">
   <section class="video vh-100">
-    <div class="cloud position-absolute"><img src="../assets/img/cloud.svg"></div>
+    <div class="cloud position-absolute my-0 py-0"><img src="../assets/img/cloud.svg"></div>
       <div class="overlay"></div>
       <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="../assets/media/Cards-video.mp4" type="video/mp4">

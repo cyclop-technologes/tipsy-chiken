@@ -2,14 +2,13 @@
   <div id="app">
     <Banner></Banner>
     <Video></Video>
-  <section >
-    <HowToPlay></HowToPlay>
-    <SuggestCard></SuggestCard>
-    <Footer></Footer>
-  </section>
+    <section class="bg-container">
+      <HowToPlay></HowToPlay>
+      <SuggestCard></SuggestCard>
+      <Footer></Footer>
+    </section>
   </div>
 </template>
-
 <script>
 import Banner from './components/Banner.vue';
 import Video from './components/Video.vue';
@@ -27,8 +26,8 @@ export default {
     Footer,
   },
 };
-</script>
 
+</script>
 <style lang="scss">
 @import './assets/scss/main.scss';
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
@@ -40,4 +39,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.bg-container {
+  background: url('assets/img/bg.svg') 0 0 repeat;
+}
+
 </style>
