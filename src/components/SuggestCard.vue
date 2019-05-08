@@ -13,7 +13,7 @@
 @import '../assets/scss/main.scss';
 
 .h1 {
-  font-size: 60px;
+  font-size: $h1-fsize;
   color: $primary;
 
   span {
@@ -24,6 +24,7 @@
 .h2 {
 	font-size: 30px;
 	color: $white;
+	padding: 50px 0px;
 }
 
 </style>
