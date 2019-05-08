@@ -1,6 +1,6 @@
 <template lang="html">
   <header class="header shadow">
-    <div class="container">
+    <div class="container-fluid px-4">
       <b-navbar type="dark">
         <b-navbar-brand><img src="../assets/img/logo.svg" alt=""></b-navbar-brand>
         <b-navbar-nav class="ml-auto">
