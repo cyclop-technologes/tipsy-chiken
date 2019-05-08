@@ -58,6 +58,24 @@
       </div>
       <div class="rooster_boo-ha-re-koo text-center step-padding"><img src="../assets/img/rooster_boo-ha-re-koo.svg"></div>
     </div>
+    <div class="container fifth-step">
+      <div class="d-flex justify-content-between step-padding position-relative">
+        <div class="step font-weight-bold">5</div>
+        <img class="center-absolute" src="../assets/img/rat.svg">
+        <div class="info font-weight-bold text-right text-uppercase">
+          <p>next player's turn.</p>
+        </div>
+      </div>
+      <div class="first-one-wins position-relative">
+        <div class="one-wins-banner text-center text-uppercase font-weight-bold mx-auto">
+          <p class="first-article">first one to <span>7 points</span> wins... or play until you get the drunchies!</p>
+          <p class="second-article">(At which point, stop...<br>
+            and immediately order<br>
+            take-out! <span>YUM!</span>)</p>
+        </div>
+        <div class="drunk-goose text-center"><img src="../assets/img/drunk_goose.svg"></div>
+      </div>
+    </div>
   </section>
 </template>
 <script>
@@ -131,6 +149,39 @@
   top: 0;
   left: 90%;
   width: 284px;
+}
+
+.one-wins-banner {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  color: $primary;
+  background-color: #111111;
+  border-radius: 35px;
+  padding: 64px 58px 55px 58px;
+  margin-top: 200px;
+  width: 900px;
+
+  .first-article {
+    font-size: 50px;
+    line-height: 59px;
+  }
+
+  .second-article {
+    font-size: 36px;
+    line-height: 34px;
+    padding-top: 20px;
+  }
+
+  span {
+    color: $secondary;
+  }
+}
+
+.drunk-goose {
+	position: absolute;
+	left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  bottom: -20rem;
 }
 
 </style>
