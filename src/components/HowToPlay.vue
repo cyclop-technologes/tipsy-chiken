@@ -4,7 +4,7 @@
       <h1 class="how-to-play font-weight-bold">HOW TO PLAY</h1>
       <h1 class="five-simple-steps font-weight-bold">5 SIMPLE STEPS</h1>
     </div>
-    <div class="container first-step position-relative d-flex justify-content-between  mt-1">
+    <div class="container first-step position-relative d-flex justify-content-between step-padding mt-1">
       <div class="step font-weight-bold">1</div>
       <img class="center-absolute" src="../assets/img/team.svg">
       <div class="info font-weight-bold text-right">
@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-    <div class="container second-step ">
+    <div class="container second-step step-padding">
       <div class="rooster-box position-relative d-flex justify-content-between">
         <img class="center-absolute" src="../assets/img/rooster.svg">
         <div class="step font-weight-bold">2</div>
@@ -29,6 +29,14 @@
         </div>
       </div>
       <div class="cards text-center"><img src="../assets/img/cards.svg"></div>
+    </div>
+    <div class="container third-step position-relative d-flex justify-content-between">
+    	<div class="step font-weight-bold">3</div>
+    	<img class="center-absolute" src="../assets/img/complete_dare.svg">
+    	<img class="rooster-acrobat" src="../assets/img/rooster_acrobat.svg">
+    	<div class="info font-weight-bold text-right text-uppercase">
+          <p>complete the dare.</p>
+        </div>
     </div>
   </section>
 </template>
@@ -57,12 +65,12 @@
   width: 500px;
 }
 
-.first-step {
-	padding-bottom: 200px;
+.step-padding {
+	padding-bottom: 200px;	
 }
 
 .rooster-box {
-	padding-bottom: 200px;
+  padding-bottom: 200px;
 }
 
 .step {
@@ -78,6 +86,14 @@
 
 .info-bottom {
   padding-top: 200px;
+}
+
+.rooster-acrobat {
+	position: absolute;
+	z-index: 2;
+	top:0;
+	width: 284px;
+	right: 120px;
 }
 
 </style>
