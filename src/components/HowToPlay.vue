@@ -76,16 +76,14 @@
         <div class="drunk-goose text-center"><img src="../assets/img/drunk_goose.svg"></div>
       </div>
     </div>
-    <div class="suspicious-chicken">
-      <div class="text-center position-relative">
-        <p class="ready-to-play">Psssst... Hey, you!<br>
-          Ready to play?</p>
-        <div class="mt-5">
+    <div class="container-fluid px-0 text-right suspicious-chicken">
+      <div class="d-inline-block ml-auto text-center position-relative">
+        <div class="position-absolute chicken-content">
+          <p class="text">Psssst... Hey, you!<br>Ready to play?</p>
           <b-button class="px-5 py-4" variant="warning">BUY ON AMAZON</b-button>
         </div>
-        <div class="animation-chicken position-absolute"><img src="../assets/img/suspicious_chicken .svg"></div>
+        <div class="animation-chicken"><img src="../assets/img/suspicious_chicken.svg"></div>
       </div>
-      
     </div>
   </section>
 </template>
@@ -199,20 +197,24 @@
   padding-bottom: 350px;
 }
 
-.suspicious-chicken {
-  padding: 300px 0px;
-}
-
-.ready-to-play {
+.text {
+  right: 0;
   color: $black;
   font-size: 30px;
-  right: 0;
-  z-index: 10;
 }
+
+.chicken-content {
+  left: 250px;
+  top: 25px;
+
+}
+
+.suspicious-chicken {
+	padding: 200px 0px; 
+}
+
 .animation-chicken {
-	right: 0;
-	top: 0;
-	z-index: 1;
+  z-index: 1;
 }
 
 </style>
