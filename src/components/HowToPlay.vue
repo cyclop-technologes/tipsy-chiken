@@ -31,12 +31,14 @@
       <div class="cards text-center"><img src="../assets/img/cards.svg"></div>
     </div>
     <div class="container third-step position-relative d-flex justify-content-between">
-    	<div class="step font-weight-bold">3</div>
-    	<img class="center-absolute" src="../assets/img/complete_dare.svg">
-    	<img class="rooster-acrobat" src="../assets/img/rooster_acrobat.svg">
-    	<div class="info font-weight-bold text-right text-uppercase">
-          <p>complete the dare.</p>
-        </div>
+      <div class="step font-weight-bold">3</div>
+      <div class="info font-weight-bold text-right text-uppercase">
+        <p>complete the dare.</p>
+      </div>
+      <div class="cards-box">
+        <img src="../assets/img/complete_dare.svg">
+        <img class="rooster-acrobat" src="../assets/img/rooster_acrobat.svg">
+      </div>
     </div>
   </section>
 </template>
@@ -66,7 +68,7 @@
 }
 
 .step-padding {
-	padding-bottom: 200px;	
+  padding-bottom: 200px;
 }
 
 .rooster-box {
@@ -88,12 +90,20 @@
   padding-top: 200px;
 }
 
+.cards-box {
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .rooster-acrobat {
-	position: absolute;
-	z-index: 2;
-	top:0;
-	width: 284px;
-	right: 120px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 90%;
+  width: 284px;
 }
 
 </style>
