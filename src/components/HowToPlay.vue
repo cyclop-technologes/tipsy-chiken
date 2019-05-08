@@ -30,7 +30,7 @@
       </div>
       <div class="cards text-center"><img src="../assets/img/cards.svg"></div>
     </div>
-    <div class="container third-step position-relative d-flex justify-content-between">
+    <div class="container third-step position-relative d-flex justify-content-between step-margin">
       <div class="step font-weight-bold">3</div>
       <div class="info font-weight-bold text-right text-uppercase">
         <p>complete the dare.</p>
@@ -39,6 +39,17 @@
         <img src="../assets/img/complete_dare.svg">
         <img class="rooster-acrobat" src="../assets/img/rooster_acrobat.svg">
       </div>
+    </div>
+    <div class="container fourth-step text-center step-padding">
+      <div class=" d-flex justify-content-between">
+        <div class="step font-weight-bold">4</div>
+        <div class="info font-weight-bold text-right text-uppercase">
+          <p>if you complete the dare,<br>
+            draw a GOAT card and keep<br>
+            your dare card for points. </p>
+        </div>
+      </div>
+      <div class="draw-dare"><img src="../assets/img/draw_a_goat.svg"></div>
     </div>
   </section>
 </template>
@@ -71,6 +82,10 @@
   padding-bottom: 200px;
 }
 
+.step-margin {
+  margin-bottom: 500px;
+}
+
 .rooster-box {
   padding-bottom: 200px;
 }
@@ -78,6 +93,11 @@
 .step {
   color: $primary;
   font-size: 100px;
+  line-height: 1;
+}
+
+.draw-dare {
+  padding-top: 100px;
 }
 
 .info {
