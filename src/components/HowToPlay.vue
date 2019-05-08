@@ -4,7 +4,7 @@
       <h1 class="how-to-play font-weight-bold">HOW TO PLAY</h1>
       <h1 class="five-simple-steps font-weight-bold">5 SIMPLE STEPS</h1>
     </div>
-    <div class="container first-step position-relative d-flex justify-content-between step-padding mt-1">
+    <div class="container first-step position-relative d-flex justify-content-between step-padding mt-4">
       <div class="step font-weight-bold">1</div>
       <img class="center-absolute" src="../assets/img/team.svg">
       <div class="info font-weight-bold text-right">
@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-    <div class="container second-step step-padding">
+    <div class="container second-step">
       <div class="rooster-box position-relative d-flex justify-content-between">
         <img class="center-absolute" src="../assets/img/rooster.svg">
         <div class="step font-weight-bold">2</div>
@@ -30,7 +30,7 @@
       </div>
       <div class="cards text-center"><img src="../assets/img/cards.svg"></div>
     </div>
-    <div class="container third-step position-relative d-flex justify-content-between step-margin">
+    <div class="container third-step position-relative d-flex justify-content-between vh-100 step-margin">
       <div class="step font-weight-bold">3</div>
       <div class="info font-weight-bold text-right text-uppercase">
         <p>complete the dare.</p>
@@ -49,14 +49,14 @@
             your dare card for points. </p>
         </div>
       </div>
-      <div class="draw-dare step-padding"><img src="../assets/img/draw_a_goat.svg"></div>
+      <div class="draw-dare"><img src="../assets/img/draw_a_goat.svg"></div>
       <div class="text-right info font-weight-bold text-right text-uppercase">
         <p> If you don't complete the<br>
           dare, draw a chicken card<br>
           and take your punishment.<br>
           Discard the dare card.</p>
       </div>
-      <div class="rooster_boo-ha-re-koo text-center step-padding"><img src="../assets/img/rooster_boo-ha-re-koo.svg"></div>
+      <div class="rooster_boo-ha-re-koo text-center"><img src="../assets/img/rooster_boo-ha-re-koo.svg"></div>
     </div>
     <div class="container fifth-step fifth-step-padding">
       <div class="d-flex justify-content-between step-padding position-relative">
@@ -94,42 +94,53 @@
 
 .how-to-play {
   color: $primary;
-  font-size: 60px;
+  font-size: $h1-fsize;
 }
 
 .five-simple-steps {
   color: $secondary;
-  font-size: 60px;
+  font-size: $h1-fsize;
 }
 
 .center-absolute {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 500px;
+  left: 250px;
+}
+
+.second-step {
+  padding-bottom: 6.25rem;
 }
 
 .step-padding {
-  padding-bottom: 200px;
+  padding-bottom: 12.5rem;
 }
 
 .step-margin {
-  margin-bottom: 500px;
+  margin-bottom: 6.25rem;
 }
 
 .rooster-box {
-  padding-bottom: 200px;
+  padding-bottom: 12.5rem;
 }
 
 .step {
   color: $primary;
-  font-size: 100px;
+  font-size: 6.25rem;
   line-height: 1;
 }
 
 .draw-dare {
-  padding-top: 100px;
+  padding-top: 6.25rem;
+  padding-bottom: 12rem;
+}
+
+.rooster_boo-ha-re-koo {
+  padding-bottom: 15.625rem;
+}
+
+.cards {
+  padding-top: 3.125rem;
 }
 
 .info {
@@ -139,22 +150,21 @@
 }
 
 .info-bottom {
-  padding-top: 200px;
+  padding-top: 12.5rem;
 }
 
 .cards-box {
-
+  padding-top: 4rem;
   position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 100px;
+  left: 210px;
 }
 
 .rooster-acrobat {
   position: absolute;
   z-index: 2;
-  top: 0;
-  left: 90%;
+  top: 150px;
+  left: 480px;
   width: 284px;
 }
 
@@ -164,7 +174,7 @@
   background-color: #111111;
   border-radius: 35px;
   padding: 64px 58px 55px 58px;
-  margin-top: 200px;
+  margin-top: 15.625rem;
   width: 900px;
 
   .first-article {
@@ -208,7 +218,7 @@
 }
 
 .suspicious-chicken {
-	padding: 200px 0px; 
+	padding: 130px 0px; 
 }
 
 .animation-chicken {
