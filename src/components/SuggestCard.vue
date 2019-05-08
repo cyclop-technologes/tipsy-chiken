@@ -8,17 +8,17 @@
     </div>
     <div>
       <Slick ref="slick" :options="slickOptions">
-        <img src="../assets/img/card_bull.svg">
-        <img src="../assets/img/card_fish.svg">
-        <img src="../assets/img/card_goose.svg">
-        <img src="../assets/img/card_horse.svg">
-        <img src="../assets/img/card_owl.svg">
-        <img src="../assets/img/card_piggy.svg">
-        <img src="../assets/img/card_rat.svg">
-        <img src="../assets/img/card_rooster.svg">
-        <img src="../assets/img/card_sheeps.svg">
-        <img src="../assets/img/card_spider.svg">
-        <img src="../assets/img/card_offer.svg">
+        <img class="carousel-item" src="../assets/img/card_bull.svg">
+        <img class="carousel-item" src="../assets/img/card_fish.svg">
+        <img class="carousel-item" src="../assets/img/card_goose.svg">
+        <img class="carousel-item" src="../assets/img/card_horse.svg">
+        <img class="carousel-item" src="../assets/img/card_owl.svg">
+        <img class="carousel-item" src="../assets/img/card_piggy.svg">
+        <img class="carousel-item" src="../assets/img/card_rat.svg">
+        <img class="carousel-item" src="../assets/img/card_rooster.svg">
+        <img class="carousel-item" src="../assets/img/card_sheeps.svg">
+        <img class="carousel-item" src="../assets/img/card_spider.svg">
+        <img class="carousel-item" src="../assets/img/card_offer.svg">
       </Slick>
     </div>
   </section>
@@ -56,5 +56,4 @@ export default {
   color: $white;
   padding: 50px 0px;
 }
-
 </style>
