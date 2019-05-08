@@ -6,7 +6,7 @@
     <div class="h2 text-center text-uppercase font-weight-bold">
       <p>your card</p>
     </div>
-    <div>
+    <div class="container my-5">
       <Slick ref="slick" :options="slickOptions">
         <img class="carousel-item" src="../assets/img/card_bull.svg">
         <img class="carousel-item" src="../assets/img/card_fish.svg">
@@ -32,6 +32,8 @@ export default {
     return {
       slickOptions: {
         slidesToShow: 3,
+        arrows: false,
+        centerPadding: '50px',
         // Any other options that can be got from plugin documentation
       },
     };
@@ -39,21 +41,25 @@ export default {
 }
 
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../assets/scss/main.scss';
-
-.h1 {
-  font-size: $h1-fsize;
-  color: $primary;
-
-  span {
-    color: $secondary;
+  .slick-current{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
   }
-}
+  .h1 {
+    font-size: $h1-fsize;
+    color: $primary;
 
-.h2 {
-  font-size: 30px;
-  color: $white;
-  padding: 50px 0px;
-}
+    span {
+      color: $secondary;
+    }
+  }
+
+  .h2 {
+    font-size: 30px;
+    color: $white;
+    padding: 50px 0px;
+  }
 </style>
