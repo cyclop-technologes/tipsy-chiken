@@ -2,7 +2,7 @@
   <div id="app">
     <Banner></Banner>
     <Video></Video>
-  <section>
+  <section >
     <HowToPlay></HowToPlay>
     <SuggestCard></SuggestCard>
     <Footer></Footer>
@@ -32,6 +32,9 @@ export default {
 <style lang="scss">
 @import './assets/scss/main.scss';
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
+.bg-container {
+  background: url('assets/img/bg.svg') 0 0 repeat;
+}
 #app {
   font-family: 'Rubik', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

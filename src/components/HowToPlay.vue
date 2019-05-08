@@ -65,10 +65,6 @@
 <style lang="scss" scoped>
 @import '../assets/scss/main.scss';
 
-.bg-container {
-  background: url('../assets/img/bg.svg') 0 0 repeat;
-}
-
 .how-to-play {
   color: $primary;
 }
