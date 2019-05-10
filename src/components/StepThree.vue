@@ -54,4 +54,10 @@ export default {
   bottom: -325px;
 }
 
+@media screen and (max-width: 375px) {
+    .cards-box {
+    	max-width: 350px;
+    }
+}
+
 </style>

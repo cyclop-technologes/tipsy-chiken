@@ -3,7 +3,7 @@
   <div class="container fifth-step fifth-step-padding">
     <div class="d-flex justify-content-between step-padding position-relative">
       <div class="step font-weight-bold">5</div>
-      <img class="center-absolute" src="../assets/img/rat.svg">
+      <img class="center-absolute" id="rat-card" src="../assets/img/rat.svg">
       <div class="info font-weight-bold text-right text-uppercase">
         <p>next player's turn.</p>
       </div>
@@ -75,6 +75,28 @@ export default {
 
 .fifth-step-padding {
   padding-bottom: 350px;
+}
+
+@media screen and (max-width: 375px) {
+  #rat-card {
+    max-width: 350px;
+  }
+
+  .one-wins-banner {
+    max-width: 350px;
+    padding: 30px 22px 30px 22px;
+
+    .first-article {
+      font-size: 24px;
+      line-height: 59px;
+    }
+
+    .second-article {
+      font-size: 20px;
+      line-height: 34px;
+      padding-top: 20px;
+    }
+  }
 }
 
 </style>
