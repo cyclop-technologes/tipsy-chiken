@@ -1,0 +1,31 @@
+<template>
+  <div class="container-fluid px-0 text-right suspicious-chicken">
+    <div class="d-inline-block ml-auto text-center position-relative">
+      <div class="position-absolute chicken-content">
+        <p class="text">Psssst... Hey, you!<br>Ready to play?</p>
+        <b-button class="px-5 py-4" variant="warning">BUY ON AMAZON</b-button>
+      </div>
+      <div class="animation-chicken"><img src="../assets/img/suspicious_chicken.svg"></div>
+    </div>
+  </div>
+</template>
+<script>
+</script>
+<style lang="scss">
+@import '../assets/scss/main.scss';
+
+.chicken-content {
+  left: 250px;
+  top: 25px;
+
+}
+
+.suspicious-chicken {
+  padding: 130px 0px;
+}
+
+.animation-chicken {
+  z-index: 1;
+}
+
+</style>

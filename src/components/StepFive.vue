@@ -1,29 +1,29 @@
 <template>
-<!-- STEP 5 -->
-    <div class="container fifth-step fifth-step-padding">
-      <div class="d-flex justify-content-between step-padding position-relative">
-        <div class="step font-weight-bold">5</div>
-        <img class="center-absolute" src="../assets/img/rat.svg">
-        <div class="info font-weight-bold text-right text-uppercase">
-          <p>next player's turn.</p>
-        </div>
-        <div class="rat-traces-container position-absolute">
-          <RatTrace></RatTrace>
-          <RatTrace></RatTrace>
-          <RatTrace></RatTrace>
-        </div>
+  <!-- STEP 5 -->
+  <div class="container fifth-step fifth-step-padding">
+    <div class="d-flex justify-content-between step-padding position-relative">
+      <div class="step font-weight-bold">5</div>
+      <img class="center-absolute" src="../assets/img/rat.svg">
+      <div class="info font-weight-bold text-right text-uppercase">
+        <p>next player's turn.</p>
       </div>
-      <div class="first-one-wins position-relative">
-        <div class="one-wins-banner text-center text-uppercase font-weight-bold mx-auto">
-          <p class="first-article">first one to <span>7 points</span> wins... or play until you get the drunchies!</p>
-          <p class="second-article">(At which point, stop...<br>
-            and immediately order<br>
-            take-out! <span>YUM!</span>)</p>
-        </div>
-        <div class="drunk-goose text-center"><img src="../assets/img/drunk_goose.svg"></div>
+      <div class="rat-traces-container position-absolute">
+        <RatTrace></RatTrace>
+        <RatTrace></RatTrace>
+        <RatTrace></RatTrace>
       </div>
     </div>
-    <!-- /STEP 5 -->
+    <div class="first-one-wins position-relative">
+      <div class="one-wins-banner text-center text-uppercase font-weight-bold mx-auto">
+        <p class="first-article">first one to <span>7 points</span> wins... or play until you get the drunchies!</p>
+        <p class="second-article">(At which point, stop...<br>
+          and immediately order<br>
+          take-out! <span>YUM!</span>)</p>
+      </div>
+      <div class="drunk-goose text-center"><img src="../assets/img/drunk_goose.svg"></div>
+    </div>
+  </div>
+  <!-- /STEP 5 -->
 </template>
 <script>
 import Traces from './Traces.vue';
@@ -64,7 +64,6 @@ export default {
     color: $secondary;
   }
 }
-
 
 .drunk-goose {
   position: absolute;

@@ -9,15 +9,8 @@
     <StepThree></StepThree>
     <StepFour></StepFour>
     <StepFive></StepFive>
-    <div class="container-fluid px-0 text-right suspicious-chicken">
-      <div class="d-inline-block ml-auto text-center position-relative">
-        <div class="position-absolute chicken-content">
-          <p class="text">Psssst... Hey, you!<br>Ready to play?</p>
-          <b-button class="px-5 py-4" variant="warning">BUY ON AMAZON</b-button>
-        </div>
-        <div class="animation-chicken"><img src="../assets/img/suspicious_chicken.svg"></div>
-      </div>
-    </div>
+    <SuspiciousChicken></SuspiciousChicken>
+    
   </section>
 </template>
 <script>
@@ -28,6 +21,8 @@ import StepTwo from './StepTwo.vue';
 import StepThree from './StepThree.vue';
 import StepFour from './StepFour.vue';
 import StepFive from './StepFive.vue';
+import SuspiciousChicken from './SuspiciousChicken.vue';
+
 
 export default {
   components: {
@@ -38,6 +33,7 @@ export default {
     StepThree,
     StepFour,
     StepFive,
+    SuspiciousChicken,
   },
 };
 
@@ -55,20 +51,6 @@ export default {
 .five-simple-steps {
   color: $secondary;
   font-size: $h1-fsize;
-}
-
-.chicken-content {
-  left: 250px;
-  top: 25px;
-
-}
-
-.suspicious-chicken {
-  padding: 130px 0px;
-}
-
-.animation-chicken {
-  z-index: 1;
 }
 
 </style>
