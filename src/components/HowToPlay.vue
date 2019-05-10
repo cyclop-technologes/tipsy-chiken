@@ -36,7 +36,7 @@
           <p>draw a Dare card.</p>
         </div>
       </div>
-      <div class="traces-container-step-two position-absolute">
+      <div class="traces-container-step-two-top position-absolute">
         <Traces></Traces>
         <Traces></Traces>
         <Traces></Traces>
@@ -61,10 +61,19 @@
         <img src="../assets/img/complete_dare.svg">
         <img class="rooster-acrobat" src="../assets/img/rooster_acrobat.svg">
       </div>
+      <div class="traces-container-step-three-bottom position-absolute">
+        <Traces></Traces>
+        <Traces></Traces>
+        <Traces></Traces>
+        <Traces></Traces>
+        <Traces></Traces>
+        <Traces></Traces>
+        <Traces></Traces>
+      </div>
     </div>
     <!-- /STEP 3 -->
     <!-- STEP 4 -->
-    <div class="container fourth-step text-center">
+    <div class="container fourth-step text-center position-relative">
       <div class=" d-flex justify-content-between">
         <div class="step font-weight-bold">4</div>
         <div class="info font-weight-bold text-right text-uppercase">
@@ -81,6 +90,13 @@
           Discard the dare card.</p>
       </div>
       <div class="rooster_boo-ha-re-koo text-center"><img src="../assets/img/rooster_boo-ha-re-koo.svg"></div>
+      <div class="traces-container-step-four-bottom position-absolute">
+        <Traces></Traces>
+        <Traces></Traces>
+        <Traces></Traces>
+        <Traces></Traces>
+        <Traces></Traces>
+      </div>
     </div>
     <!-- /STEP 4 -->
     <!-- STEP 5 -->
@@ -91,6 +107,11 @@
         <div class="info font-weight-bold text-right text-uppercase">
           <p>next player's turn.</p>
         </div>
+        <div class="rat-traces-container position-absolute">
+        <RatTrace></RatTrace>
+        <RatTrace></RatTrace>
+        <RatTrace></RatTrace>
+      </div>
       </div>
       <div class="first-one-wins position-relative">
         <div class="one-wins-banner text-center text-uppercase font-weight-bold mx-auto">
@@ -115,11 +136,13 @@
   </section>
 </template>
 <script>
-import Traces from './Traces.vue'
+import Traces from './Traces.vue';
+import RatTrace from './RatTrace.vue';
 
 export default {
   components: {
     Traces,
+    RatTrace,
   },
 };
 
@@ -132,7 +155,7 @@ export default {
   bottom: 0;
 }
 
-.traces-container-step-two {
+.traces-container-step-two-top {
   right: 525px;
   top: 310px;
 
@@ -141,6 +164,25 @@ export default {
 .traces-container-step-two-bottom {
   right: 525px;
   bottom: -200px;
+}
+
+.traces-container-step-three-bottom {
+  left: 500px;
+  bottom: -325px;
+}
+
+.traces-container-step-four-top {
+  
+}
+
+.traces-container-step-four-bottom {
+  right: 575px;
+  bottom: -20px;
+}
+
+.rat-traces-container {
+  right: 525px;
+  bottom: -330px;
 }
 
 .how-to-play {
