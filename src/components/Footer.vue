@@ -10,7 +10,7 @@
           <h6 class="text-primary text-uppercase font-weight-bold ">Navigation</h6>
           <nav class="nav flex-column">
             <a href="" class="p-0 text-white font-weight-bolder nav-link">Home</a>
-            <a href="" class="p-0 text-white font-weight-bolder nav-link">How to Play</a>
+            <a href="" class="p-0 text-white font-weight-bold nav-link">How to Play</a>
             <a href="" class="p-0 text-white font-weight-bolder nav-link">Buy Now</a>
             <a href="" class="p-0 text-white font-weight-bolder nav-link">Suggest a Сard</a>
           </nav>

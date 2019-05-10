@@ -18,11 +18,7 @@
       </div>
       <div data-aos="fade-up" class="rooster_boo-ha-re-koo text-center"><img src="../assets/img/rooster_boo-ha-re-koo.svg"></div>
       <div class="traces-container-step-four-bottom position-absolute">
-        <Traces></Traces>
-        <Traces></Traces>
-        <Traces></Traces>
-        <Traces></Traces>
-        <Traces></Traces>
+        <Traces v-for="index in 5" :key="index"></Traces>
       </div>
     </div>
     <!-- /STEP 4 -->

@@ -8,9 +8,7 @@
         <p>next player's turn.</p>
       </div>
       <div class="rat-traces-container position-absolute">
-        <RatTrace></RatTrace>
-        <RatTrace></RatTrace>
-        <RatTrace></RatTrace>
+        <RatTrace v-for="index in 3" :key="index"></RatTrace>
       </div>
     </div>
     <div  class="first-one-wins position-relative">

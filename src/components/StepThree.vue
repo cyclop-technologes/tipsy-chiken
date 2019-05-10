@@ -10,13 +10,7 @@
         <img data-aos="fade-left" class="rooster-acrobat" src="../assets/img/rooster_acrobat.svg">
       </div>
       <div class="traces-container-step-three-bottom position-absolute">
-        <Traces></Traces>
-        <Traces></Traces>
-        <Traces></Traces>
-        <Traces></Traces>
-        <Traces></Traces>
-        <Traces></Traces>
-        <Traces></Traces>
+        <Traces v-for="index in 7" :key="index"></Traces>
       </div>
     </div>
     <!-- /STEP 3 -->

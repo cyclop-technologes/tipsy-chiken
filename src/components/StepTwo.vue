@@ -9,17 +9,11 @@
         </div>
       </div>
       <div class="traces-container-step-two-top position-absolute">
-        <Traces></Traces>
-        <Traces></Traces>
-        <Traces></Traces>
+        <Traces v-for="index in 3" :key="index" ></Traces>
       </div>
       <div data-aos="fade-up" class="cards text-center"><img src="../assets/img/cards.svg"></div>
       <div class="traces-container-step-two-bottom position-absolute">
-        <Traces></Traces>
-        <Traces></Traces>
-        <Traces></Traces>
-        <Traces></Traces>
-        <Traces></Traces>
+        <Traces v-for="index in 5" :key="index"></Traces>
       </div>
     </div>
     <!-- /STEP 2 -->

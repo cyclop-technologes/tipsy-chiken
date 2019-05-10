@@ -16,9 +16,7 @@
       </div>
     </div>
     <div class="traces-container position-absolute">
-      <Traces></Traces>
-      <Traces></Traces>
-      <Traces></Traces>
+      <Traces v-for="index in 3" :key="index"></Traces>
     </div>
   </div>
   <!-- /STEP 1 -->
