@@ -2,8 +2,7 @@
 <!-- STEP 2 -->
     <div class="container second-step position-relative step-padding">
       <div class="rooster-box position-relative d-flex justify-content-between">
-        <img class="center-absolute" id="rooster" src="../assets/img/rooster.svg">
-        <img data-aos="fade-up" class="center-absolute" src="../assets/img/rooster.svg">
+        <img data-aos="fade-up" class="center-absolute" id="rooster" src="../assets/img/rooster.svg">
         <div class="step font-weight-bold">2</div>
         <div class="info font-weight-bold text-right text-uppercase">
           <p>draw a Dare card.</p>
