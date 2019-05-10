@@ -3,8 +3,7 @@
   <div  class="container fifth-step fifth-step-padding">
     <div class="d-flex justify-content-between step-padding position-relative">
       <div class="step font-weight-bold">5</div>
-      <img class="center-absolute" id="rat-card" src="../assets/img/rat.svg">
-      <img data-aos="fade-up" class="center-absolute" src="../assets/img/rat.svg">
+      <img data-aos="fade-up" class="center-absolute" id="rat-card"  src="../assets/img/rat.svg">
       <div class="info font-weight-bold text-right text-uppercase">
         <p>next player's turn.</p>
       </div>
