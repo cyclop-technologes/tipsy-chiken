@@ -6,8 +6,8 @@
         <p>complete the dare.</p>
       </div>
       <div class="cards-box">
-        <img src="../assets/img/complete_dare.svg">
-        <img class="rooster-acrobat" src="../assets/img/rooster_acrobat.svg">
+        <img data-aos="fade-up" src="../assets/img/complete_dare.svg">
+        <img data-aos="fade-left" class="rooster-acrobat" src="../assets/img/rooster_acrobat.svg">
       </div>
       <div class="traces-container-step-three-bottom position-absolute">
         <Traces></Traces>

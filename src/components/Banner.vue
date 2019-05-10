@@ -6,8 +6,8 @@
         <div data-aos="zoom-out-right" class="col-6 align-self-center">
           <img class="w-100" src="../assets/img/box.png" alt="">
         </div>
-        <div data-aos="zoom-out-left" class="col-6 align-self-center text-center h-100 d-flex flex-column justify-content-between">
-          <div class="top-block">
+        <div class="col-6 align-self-center text-center h-100 d-flex flex-column justify-content-between">
+          <div data-aos="zoom-out-left" class="top-block">
             <div class="mt-5 pt-5">
               <img src="../assets/img/logo-inline.svg" alt="">
             </div>
@@ -15,7 +15,7 @@
               <b-button class="px-5 py-4" variant="warning">BUY ON AMAZON</b-button>
             </div>
           </div>
-          <div class="chiken-block font-weight-bold text-white my-5 pb-5">
+          <div data-aos="fade-up" class="chiken-block font-weight-bold text-white my-5 pb-5">
               <p class="my-4 ">The ultimate</p>
               <p class="my-4 chiken">
                 <img src="../assets/img/chiken-banner.svg" alt="">
@@ -45,7 +45,7 @@ export default {
   .banner{
     background: $black;
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
   .btn {
     background: $primary;
