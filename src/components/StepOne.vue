@@ -2,7 +2,11 @@
   <!-- STEP 1 -->
   <div class="container first-step position-relative d-flex flex-xs-column justify-content-between step-padding mt-4">
     <div class="step font-weight-bold">1</div>
+<<<<<<< HEAD
     <img class="center-absolute" id="img-team" src="../assets/img/team.svg">
+=======
+    <img data-aos="fade-up" class="center-absolute" src="../assets/img/team.svg">
+>>>>>>> 587594c7e8931f2388191488b16fb5dad3e1279c
     <div class="info font-weight-bold text-right">
       <div class="info-top text-uppercase">
         <p>Always keep your <br>

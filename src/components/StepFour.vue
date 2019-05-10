@@ -9,14 +9,14 @@
             your dare card for points. </p>
         </div>
       </div>
-      <div class="draw-dare"><img src="../assets/img/draw_a_goat.svg"></div>
+      <div data-aos="fade-up" class="draw-dare"><img src="../assets/img/draw_a_goat.svg"></div>
       <div class="text-right info font-weight-bold text-right text-uppercase">
         <p> If you don't complete the<br>
           dare, draw a chicken card<br>
           and take your punishment.<br>
           Discard the dare card.</p>
       </div>
-      <div class="rooster_boo-ha-re-koo text-center"><img src="../assets/img/rooster_boo-ha-re-koo.svg"></div>
+      <div data-aos="fade-up" class="rooster_boo-ha-re-koo text-center"><img src="../assets/img/rooster_boo-ha-re-koo.svg"></div>
       <div class="traces-container-step-four-bottom position-absolute">
         <Traces></Traces>
         <Traces></Traces>

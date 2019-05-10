@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid px-0 text-right suspicious-chicken">
-    <div class="d-inline-block ml-auto text-center position-relative">
+    <div data-aos="fade-left" class="d-inline-block ml-auto text-center position-relative">
       <div class="position-absolute chicken-content">
         <p class="text">Psssst... Hey, you!<br>Ready to play?</p>
         <b-button class="px-5 py-4" variant="warning">BUY ON AMAZON</b-button>

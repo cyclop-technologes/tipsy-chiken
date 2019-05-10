@@ -2,7 +2,11 @@
 <!-- STEP 2 -->
     <div class="container second-step position-relative step-padding">
       <div class="rooster-box position-relative d-flex justify-content-between">
+<<<<<<< HEAD
         <img class="center-absolute" id="rooster" src="../assets/img/rooster.svg">
+=======
+        <img data-aos="fade-up" class="center-absolute" src="../assets/img/rooster.svg">
+>>>>>>> 587594c7e8931f2388191488b16fb5dad3e1279c
         <div class="step font-weight-bold">2</div>
         <div class="info font-weight-bold text-right text-uppercase">
           <p>draw a Dare card.</p>
@@ -13,7 +17,7 @@
         <Traces></Traces>
         <Traces></Traces>
       </div>
-      <div class="cards text-center"><img src="../assets/img/cards.svg"></div>
+      <div data-aos="fade-up" class="cards text-center"><img src="../assets/img/cards.svg"></div>
       <div class="traces-container-step-two-bottom position-absolute">
         <Traces></Traces>
         <Traces></Traces>
