@@ -1,0 +1,40 @@
+.step {
+  color: $primary;
+  font-size: 6.25rem;
+  line-height: 1;
+}
+
+.center-absolute {
+  position: absolute;
+  top: 0;
+  left: 250px;
+}
+
+.info {
+  color: $white;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.info-bottom {
+  padding-top: 12.5rem;
+}
+
+.traces-container {
+  right: 525px;
+  bottom: 0;
+}
+
+.step-padding {
+  padding-bottom: 12.5rem;
+}
+
+.step-margin {
+  margin-bottom: 6.25rem;
+}
+
+.text {
+  right: 0;
+  color: $black;
+  font-size: 30px;
+}
