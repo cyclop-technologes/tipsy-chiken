@@ -1,9 +1,10 @@
 <template>
   <section>
-    <div class="container d-flex align-items-center flex-column pb-5">
+    <div class="container d-flex align-items-center flex-column pb-5 position-relative">
       <h1 class="how-to-play font-weight-bold">HOW TO PLAY</h1>
       <h1 class="five-simple-steps font-weight-bold">5 SIMPLE STEPS</h1>
     </div>
+    <!-- STEP 1 -->
     <div class="container first-step position-relative d-flex justify-content-between step-padding mt-4">
       <div class="step font-weight-bold">1</div>
       <img class="center-absolute" src="../assets/img/team.svg">
@@ -19,8 +20,15 @@
           <p>Play for 30-90 minutes.</p>
         </div>
       </div>
+      <div class="traces-container position-absolute">
+        <Traces></Traces>
+        <Traces></Traces>
+        <Traces></Traces>
+      </div>
     </div>
-    <div class="container second-step">
+    <!-- /STEP 1 -->
+    <!-- STEP 2 -->
+    <div class="container second-step position-relative step-padding">
       <div class="rooster-box position-relative d-flex justify-content-between">
         <img class="center-absolute" src="../assets/img/rooster.svg">
         <div class="step font-weight-bold">2</div>
@@ -28,8 +36,22 @@
           <p>draw a Dare card.</p>
         </div>
       </div>
+      <div class="traces-container-step-two position-absolute">
+        <Traces></Traces>
+        <Traces></Traces>
+        <Traces></Traces>
+      </div>
       <div class="cards text-center"><img src="../assets/img/cards.svg"></div>
+      <div class="traces-container-step-two-bottom position-absolute">
+        <Traces></Traces>
+        <Traces></Traces>
+        <Traces></Traces>
+        <Traces></Traces>
+        <Traces></Traces>
+      </div>
     </div>
+    <!-- /STEP 2 -->
+    <!-- STEP 3 -->
     <div class="container third-step position-relative d-flex justify-content-between vh-100 step-margin">
       <div class="step font-weight-bold">3</div>
       <div class="info font-weight-bold text-right text-uppercase">
@@ -40,6 +62,8 @@
         <img class="rooster-acrobat" src="../assets/img/rooster_acrobat.svg">
       </div>
     </div>
+    <!-- /STEP 3 -->
+    <!-- STEP 4 -->
     <div class="container fourth-step text-center">
       <div class=" d-flex justify-content-between">
         <div class="step font-weight-bold">4</div>
@@ -58,6 +82,8 @@
       </div>
       <div class="rooster_boo-ha-re-koo text-center"><img src="../assets/img/rooster_boo-ha-re-koo.svg"></div>
     </div>
+    <!-- /STEP 4 -->
+    <!-- STEP 5 -->
     <div class="container fifth-step fifth-step-padding">
       <div class="d-flex justify-content-between step-padding position-relative">
         <div class="step font-weight-bold">5</div>
@@ -76,6 +102,7 @@
         <div class="drunk-goose text-center"><img src="../assets/img/drunk_goose.svg"></div>
       </div>
     </div>
+    <!-- /STEP 5 -->
     <div class="container-fluid px-0 text-right suspicious-chicken">
       <div class="d-inline-block ml-auto text-center position-relative">
         <div class="position-absolute chicken-content">
@@ -88,9 +115,33 @@
   </section>
 </template>
 <script>
+import Traces from './Traces.vue'
+
+export default {
+  components: {
+    Traces,
+  },
+};
+
 </script>
 <style lang="scss" scoped>
 @import '../assets/scss/main.scss';
+
+.traces-container {
+  right: 525px;
+  bottom: 0;
+}
+
+.traces-container-step-two {
+  right: 525px;
+  top: 310px;
+
+}
+
+.traces-container-step-two-bottom {
+  right: 525px;
+  bottom: -200px;
+}
 
 .how-to-play {
   color: $primary;
@@ -218,7 +269,7 @@
 }
 
 .suspicious-chicken {
-	padding: 130px 0px; 
+  padding: 130px 0px;
 }
 
 .animation-chicken {
