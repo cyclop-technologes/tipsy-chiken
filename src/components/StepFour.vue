@@ -54,4 +54,11 @@ export default {
   padding-bottom: 12rem;
 }
 
+@media screen and (max-width: 375px) {
+    .draw-dare,
+    .rooster_boo-ha-re-koo {
+      max-width: 350px;
+    }
+}
+
 </style>

@@ -2,7 +2,7 @@
 <!-- STEP 2 -->
     <div class="container second-step position-relative step-padding">
       <div class="rooster-box position-relative d-flex justify-content-between">
-        <img data-aos="fade-up" class="center-absolute" src="../assets/img/rooster.svg">
+        <img data-aos="fade-up" class="center-absolute" id="rooster" src="../assets/img/rooster.svg">
         <div class="step font-weight-bold">2</div>
         <div class="info font-weight-bold text-right text-uppercase">
           <p>draw a Dare card.</p>
@@ -58,6 +58,12 @@ export default {
 
 .rooster-box {
   padding-bottom: 12.5rem;
+}
+
+@media screen and (max-width: 375px) {
+    #rooster {
+    	max-width: 350px;
+    }
 }
 
 </style>
