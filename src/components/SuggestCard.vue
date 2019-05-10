@@ -7,7 +7,7 @@
       <p>your card</p>
     </div>
     <div class="container my-5">
-      <Slick ref="slick" :options="slickOptions">
+     <!--  <Slick ref="slick" :options="slickOptions">
         <img class="carousel-item" src="../assets/img/card_bull.svg">
         <img class="carousel-item" src="../assets/img/card_fish.svg">
         <img class="carousel-item" src="../assets/img/card_goose.svg">
@@ -19,7 +19,7 @@
         <img class="carousel-item" src="../assets/img/card_sheeps.svg">
         <img class="carousel-item" src="../assets/img/card_spider.svg">
         <img class="carousel-item" src="../assets/img/card_offer.svg">
-      </Slick>
+      </Slick> -->
     </div>
   </section>
 </template>
