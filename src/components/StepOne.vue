@@ -1,0 +1,39 @@
+<template>
+  <!-- STEP 1 -->
+  <div class="container first-step position-relative d-flex justify-content-between step-padding mt-4">
+    <div class="step font-weight-bold">1</div>
+    <img class="center-absolute" src="../assets/img/team.svg">
+    <div class="info font-weight-bold text-right">
+      <div class="info-top text-uppercase">
+        <p>Always keep your <br>
+          shot glass full <br>
+          and a cocktail<br>
+          chaser handy.</p>
+      </div>
+      <div class="info-bottom">
+        <p>Gather 3-9 players.</p>
+        <p>Play for 30-90 minutes.</p>
+      </div>
+    </div>
+    <div class="traces-container position-absolute">
+      <Traces></Traces>
+      <Traces></Traces>
+      <Traces></Traces>
+    </div>
+  </div>
+  <!-- /STEP 1 -->
+</template>
+<script>
+import Traces from './Traces.vue';
+
+export default {
+  components: {
+    Traces,
+  },
+};
+
+</script>
+<style lang="scss">
+@import '../assets/scss/main.scss';
+
+</style>

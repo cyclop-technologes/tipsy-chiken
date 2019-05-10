@@ -13,4 +13,9 @@
 <style lang="scss">
 @import '../assets/scss/main.scss';
 
+.rat-traces-container {
+  right: 525px;
+  bottom: -330px;
+}
+
 </style>
