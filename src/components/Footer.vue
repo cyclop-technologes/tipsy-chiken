@@ -29,12 +29,22 @@
           </nav>
         </div>
         <b-nav class="media align-self-end">
-           <b-nav-item ><font-awesome-icon :icon="['fab', 'amazon']" /></b-nav-item>
-           <b-nav-item class="ml-3"><font-awesome-icon :icon="['fab', 'instagram']" /></b-nav-item>
-           <b-nav-item class="ml-3"><font-awesome-icon :icon="['fab', 'youtube']" /></b-nav-item>
-           <b-nav-item class="ml-3"><font-awesome-icon :icon="['fab', 'facebook-f']" /></b-nav-item>
-           <b-nav-item class="ml-3"><font-awesome-icon :icon="['fab', 'twitter']" /></b-nav-item>
-         </b-nav>
+          <b-nav-item>
+            <font-awesome-icon :icon="['fab', 'amazon']" />
+          </b-nav-item>
+          <b-nav-item class="ml-3">
+            <font-awesome-icon :icon="['fab', 'instagram']" />
+          </b-nav-item>
+          <b-nav-item class="ml-3">
+            <font-awesome-icon :icon="['fab', 'youtube']" />
+          </b-nav-item>
+          <b-nav-item class="ml-3">
+            <font-awesome-icon :icon="['fab', 'facebook-f']" />
+          </b-nav-item>
+          <b-nav-item class="ml-3">
+            <font-awesome-icon :icon="['fab', 'twitter']" />
+          </b-nav-item>
+        </b-nav>
       </div>
       <div class="footer-bottom py-5 d-flex justify-content-between align-items-center">
         <div class="privacy font-weight-bold">
@@ -48,42 +58,58 @@
     </footer>
   </div>
 </template>
-
 <script>
 </script>
-
 <style lang="scss" scoped>
-  @import '../assets/scss/main.scss';
-  .text-primary{
-    color: $primary !important;
+@import '../assets/scss/main.scss';
+
+.text-primary {
+  color: $primary !important;
+}
+
+.media {
+  .nav-link {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: $primary;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    color: $gray;
   }
-  .media{
-    .nav-link{
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      background: $primary;
-      display: flex;
-      -ms-align-items: center;
-      align-items: center;
-      justify-content: center;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      padding: 0;
-      color: $gray;
+}
+
+.footer-bottom {
+
+  .privacy,
+  a {
+    color: $primary;
+  }
+
+  div {
+    font-size: 0.65rem;
+  }
+}
+
+.logo-footer {
+  top: 45px;
+  left: 150px;
+  width: 250px;
+}
+
+@media screen and (max-width: 375px) {
+  .farm {
+
+    img {
+      max-width: 446px;
     }
+
   }
-  .footer-bottom {
-    .privacy, a{
-      color: $primary;
-    }
-    div{
-      font-size: 0.65rem;
-    }
-  }
-  .logo-footer{
-    top: 45px;
-    left: 150px;
-    width: 250px;
-  }
+}
+
 </style>

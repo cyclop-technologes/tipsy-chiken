@@ -12,11 +12,12 @@
           <p>draw a Dare card.</p>
         </div>
       </div>
-      <Traces class="traces-container-step-two-top position-absolute" count="3"></Traces>
-      <div data-aos="fade-up" class="cards text-center"><img src="../assets/img/cards.svg"></div>
-      <Traces class="traces-container-step-two-bottom position-absolute" count="5"></Traces>
     </div>
-    <!-- /STEP 2 -->
+    <Traces class="traces-container-step-two-top position-absolute" count="5"></Traces>
+    <div data-aos="fade-up" class="cards position-relative text-center"><img src="../assets/img/cards.svg"></div>
+    <Traces class="traces-container-step-two-bottom position-absolute" count="5"></Traces>
+  </div>
+  <!-- /STEP 2 -->
 </template>
 <script>
 import Traces from './Traces.vue';
@@ -48,8 +49,6 @@ export default {
 
 .cards {
   padding-top: 3.125rem;
-  z-index: 10;
-  position: relative;
 }
 
 .rooster-box {
@@ -58,7 +57,14 @@ export default {
 
 @media screen and (max-width: 375px) {
   #rooster {
-    max-width: 350px;
+    max-width: 346px;
+  }
+
+  .cards {
+    img {
+      max-width: 346px;
+    }
+
   }
 }
 

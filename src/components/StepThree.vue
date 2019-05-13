@@ -20,7 +20,15 @@
         <Traces class="traces-container-step-three-bottom position-absolute" count="7"></Traces>
       </div>
     </div>
-    <!-- /STEP 3 -->
+    <div class="cards-box">
+      <img data-aos="fade-up" src="../assets/img/complete_dare.svg">
+      <img data-aos="fade-left" class="rooster-acrobat" src="../assets/img/rooster_acrobat.svg">
+    </div>
+
+      <Traces class="traces-container-step-three-bottom position-absolute" count="7"></Traces>
+
+  </div>
+  <!-- /STEP 3 -->
 </template>
 <script>
 import Traces from './Traces.vue';
@@ -58,7 +66,9 @@ export default {
 
 @media screen and (max-width: 375px) {
   .cards-box {
-    max-width: 350px;
+    img {
+      max-width: 346px;
+    }
   }
 }
 
