@@ -9,9 +9,9 @@
       <img data-aos="fade-up" src="../assets/img/complete_dare.svg">
       <img data-aos="fade-left" class="rooster-acrobat" src="../assets/img/rooster_acrobat.svg">
     </div>
-    <div>
+
       <Traces class="traces-container-step-three-bottom position-absolute" count="7"></Traces>
-    </div>
+  
   </div>
   <!-- /STEP 3 -->
 </template>
