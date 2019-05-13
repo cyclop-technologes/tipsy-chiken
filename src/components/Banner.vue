@@ -12,7 +12,7 @@
               <img src="../assets/img/logo-inline.svg" alt="">
             </div>
             <div class="mt-5">
-              <b-button class="px-5 py-4" variant="warning">BUY ON AMAZON</b-button>
+              <b-button class="px-5 py-3" variant="warning">BUY ON AMAZON</b-button>
             </div>
           </div>
           <div data-aos="fade-up" class="chiken-block font-weight-bold text-white my-5 pb-5">
