@@ -7,19 +7,15 @@
       <p>your card</p>
     </div>
     <div class="container my-5">
-     <!--  <Slick ref="slick" :options="slickOptions">
-        <img class="carousel-item" src="../assets/img/card_bull.svg">
-        <img class="carousel-item" src="../assets/img/card_fish.svg">
-        <img class="carousel-item" src="../assets/img/card_goose.svg">
-        <img class="carousel-item" src="../assets/img/card_horse.svg">
-        <img class="carousel-item" src="../assets/img/card_owl.svg">
-        <img class="carousel-item" src="../assets/img/card_piggy.svg">
-        <img class="carousel-item" src="../assets/img/card_rat.svg">
-        <img class="carousel-item" src="../assets/img/card_rooster.svg">
-        <img class="carousel-item" src="../assets/img/card_sheeps.svg">
-        <img class="carousel-item" src="../assets/img/card_spider.svg">
-        <img class="carousel-item" src="../assets/img/card_offer.svg">
-      </Slick> -->
+      <div class="row">
+        <div class="col-8 mx-auto">
+          <Slick ref="slick" :options="slickOptions">
+            <div v-for="animal in animals" :key="animal" class="slide">
+              <img  :src="`${publicPath}img/card_${animal}.svg`">
+            </div>
+          </Slick>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -30,23 +26,38 @@ export default {
 
   data() {
     return {
+      publicPath: process.env.BASE_URL,
+      animals: ['bull', 'fish', 'goose', 'horse', 'owl', 'piggy', 'rat', 'rooster', 'sheeps', 'spider', 'offer'],
       slickOptions: {
         slidesToShow: 3,
         arrows: false,
-        centerPadding: '50px',
+        centerMode: true,
         // Any other options that can be got from plugin documentation
       },
+      card: {
+
+      }
     };
   },
 }
 
 </script>
 <style lang="scss">
-@import '../assets/scss/main.scss';
-  .slick-current{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+  @import '../assets/scss/main.scss';
+  .carousel-item{
+    @extend .mx-5;
+  }
+  .slick-slider{
+
+    .slick-current{
+      transform: scale(1.2);
+      z-index: 999;
+      position: relative;
+    }
+    .slick-slide{
+      transition: 0.2s;
+      // @extend mx-5;
+    }
   }
   .h1 {
     font-size: $h1-fsize;
