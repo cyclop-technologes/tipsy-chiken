@@ -90,6 +90,12 @@ export default {
       padding-top: 20px;
     }
   }
+
+  .drunk-goose {
+    img {
+      max-width: 346px;
+    }
+  }
 }
 
 </style>

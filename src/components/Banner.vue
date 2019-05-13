@@ -3,10 +3,10 @@
     <Header></Header>
     <div class="container flex-grow-1">
       <div class="row h-100">
-        <div data-aos="zoom-out-right" class="col-6 align-self-center">
+        <div data-aos="zoom-out-right" class="col-sm-4 col-lg-6 align-self-center">
           <img class="w-100" src="../assets/img/box.png" alt="">
         </div>
-        <div class="col-6 align-self-center text-center h-100 d-flex flex-column justify-content-between">
+        <div class="col-sm-4 col-lg-6 align-self-center text-center h-100 d-flex flex-column justify-content-between">
           <div data-aos="zoom-out-left" class="top-block">
             <div class="mt-5 pt-5">
               <img src="../assets/img/logo-inline.svg" alt="">

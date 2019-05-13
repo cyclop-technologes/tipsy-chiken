@@ -1,6 +1,6 @@
 <template>
   <!-- STEP 1 -->
-  <div class="container first-step position-relative d-flex flex-xs-column justify-content-between step-padding mt-4">
+  <div class="container first-step position-relative d-flex flex-sm-column justify-content-between step-padding mt-4">
     <div class="step font-weight-bold">1</div>
     <img data-aos="fade-up" class="center-absolute" id="img-team" src="../assets/img/team.svg">
     <div class="info font-weight-bold text-right">

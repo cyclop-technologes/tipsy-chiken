@@ -1,18 +1,18 @@
 <template>
-<!-- STEP 2 -->
-    <div class="container second-step position-relative step-padding">
-      <div class="rooster-box position-relative d-flex justify-content-between">
-        <img data-aos="fade-up" class="center-absolute" id="rooster" src="../assets/img/rooster.svg">
-        <div class="step font-weight-bold">2</div>
-        <div class="info font-weight-bold text-right text-uppercase">
-          <p>draw a Dare card.</p>
-        </div>
+  <!-- STEP 2 -->
+  <div class="container second-step position-relative step-padding">
+    <div class="rooster-box position-relative d-flex justify-content-between">
+      <img data-aos="fade-up" class="center-absolute" id="rooster" src="../assets/img/rooster.svg">
+      <div class="step font-weight-bold">2</div>
+      <div class="info font-weight-bold text-right text-uppercase">
+        <p>draw a Dare card.</p>
       </div>
-      <Traces class="traces-container-step-two-top position-absolute" count="5"></Traces>
-      <div data-aos="fade-up" class="cards text-center"><img src="../assets/img/cards.svg"></div>
-      <Traces class="traces-container-step-two-bottom position-absolute" count="5"></Traces>
     </div>
-    <!-- /STEP 2 -->
+    <Traces class="traces-container-step-two-top position-absolute" count="5"></Traces>
+    <div data-aos="fade-up" class="cards text-center"><img src="../assets/img/cards.svg"></div>
+    <Traces class="traces-container-step-two-bottom position-absolute" count="5"></Traces>
+  </div>
+  <!-- /STEP 2 -->
 </template>
 <script>
 import Traces from './Traces.vue';
@@ -53,9 +53,16 @@ export default {
 }
 
 @media screen and (max-width: 375px) {
-    #rooster {
-    	max-width: 350px;
+  #rooster {
+    max-width: 346px;
+  }
+
+  .cards {
+    img {
+      max-width: 346px;
     }
+
+  }
 }
 
 </style>
