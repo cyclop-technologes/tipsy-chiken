@@ -13,27 +13,30 @@
     </div>
     <div  class="first-one-wins position-relative">
       <div class="one-wins-banner text-center text-uppercase font-weight-bold mx-auto">
-        <p class="first-article">first one to <span>7 points</span> wins... or play until you get the drunchies!</p>
+        <p class="first-article">first one to
+          <span>7 points</span>
+          wins... or play until you get the drunchies!</p>
         <p class="second-article">(At which point, stop...<br>
           and immediately order<br>
           take-out! <span>YUM!</span>)</p>
-          <div data-aos="fade-up" class="drunk-goose"><img src="../assets/img/drunk_goose.svg"></div>
+          <div
+          data-aos="fade-up"
+          class="drunk-goose">
+            <img src="../assets/img/drunk_goose.svg">
+          </div>
       </div>
     </div>
   </div>
   <!-- /STEP 5 -->
 </template>
 <script>
-import Traces from './Traces.vue';
 import RatTrace from './RatTrace.vue';
 
 export default {
   components: {
-    Traces,
     RatTrace,
   },
 };
-
 </script>
 <style lang="scss">
 @import '../assets/scss/main.scss';

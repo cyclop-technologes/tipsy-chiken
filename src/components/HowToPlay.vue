@@ -10,12 +10,10 @@
     <StepFour></StepFour>
     <StepFive></StepFive>
     <SuspiciousChicken></SuspiciousChicken>
-    
+
   </section>
 </template>
 <script>
-import Traces from './Traces.vue';
-import RatTrace from './RatTrace.vue';
 import StepOne from './StepOne.vue';
 import StepTwo from './StepTwo.vue';
 import StepThree from './StepThree.vue';
@@ -26,8 +24,6 @@ import SuspiciousChicken from './SuspiciousChicken.vue';
 
 export default {
   components: {
-    Traces,
-    RatTrace,
     StepOne,
     StepTwo,
     StepThree,

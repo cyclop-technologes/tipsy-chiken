@@ -43,56 +43,55 @@ export default {
 
 </script>
 <style lang="scss">
-@import '../assets/scss/main.scss';
+  @import '../assets/scss/main.scss';
 
-.rooster_boo-ha-re-koo {
-  padding-bottom: 15.625rem;
-  z-index: 10;
-  position: relative;
-}
+  .rooster_boo-ha-re-koo {
+    padding-bottom: 15.625rem;
+    z-index: 10;
+    position: relative;
+  }
 
-.traces-container-step-four-bottom {
-  right: 600px;
-  bottom: -20px;
-}
+  .traces-container-step-four-bottom {
+    right: 600px;
+    bottom: -20px;
+  }
 
-.draw-dare {
-  padding-top: 6.25rem;
-  padding-bottom: 12rem;
-}
+  .draw-dare {
+    padding-top: 6.25rem;
+    padding-bottom: 12rem;
+  }
 
-.trace-around-block-two {
-  top: 95px;
-  left: -215px;
-}
+  .trace-around-block-two {
+    top: 95px;
+    left: -215px;
+  }
 
-.trace-around-block-three {
-  top: 230px;
-  left: -390px;
-}
+  .trace-around-block-three {
+    top: 230px;
+    left: -390px;
+  }
 
-.trace-around-block-four {
-  top: 450px;
-  left: -450px;
-}
-.trace-around-block-five {
-  top: 690px;
-  left: -435px;
-}
-.trace-around-block-six {
-  top: 800px;
-  left: -190px;
-}
-.trace-around-block-seven {
-  top: 1090px;
-  left: 10px;
-}
+  .trace-around-block-four {
+    top: 450px;
+    left: -450px;
+  }
+  .trace-around-block-five {
+    top: 690px;
+    left: -435px;
+  }
+  .trace-around-block-six {
+    top: 800px;
+    left: -190px;
+  }
+  .trace-around-block-seven {
+    top: 1090px;
+    left: 10px;
+  }
 
-@media screen and (max-width: 375px) {
-    .draw-dare,
-    .rooster_boo-ha-re-koo {
-      max-width: 350px;
-    }
-}
-
+  @media screen and (max-width: 375px) {
+      .draw-dare,
+      .rooster_boo-ha-re-koo {
+        max-width: 350px;
+      }
+  }
 </style>

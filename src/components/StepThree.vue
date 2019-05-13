@@ -1,6 +1,13 @@
 <template>
 <!-- STEP 3 -->
-    <div class="container third-step position-relative d-flex justify-content-between vh-100 step-margin">
+    <div class="
+      container
+      third-step
+      position-relative
+      d-flex
+      justify-content-between
+      vh-100
+      step-margin">
       <div class="step font-weight-bold">3</div>
       <div class="info font-weight-bold text-right text-uppercase">
         <p>complete the dare.</p>
@@ -50,9 +57,9 @@ export default {
 }
 
 @media screen and (max-width: 375px) {
-    .cards-box {
-    	max-width: 350px;
-    }
+  .cards-box {
+    max-width: 350px;
+  }
 }
 
 </style>

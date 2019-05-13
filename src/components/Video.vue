@@ -1,6 +1,8 @@
 <template lang="html">
   <section class="video vh-100 position-relative">
-    <div class="cloud position-absolute my-0 py-0"><img src="../assets/img/cloud.svg"></div>
+    <div class="cloud position-absolute my-0 py-0">
+      <img src="../assets/img/cloud.svg">
+    </div>
       <div class="overlay"></div>
       <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="../assets/media/Cards-video.mp4" type="video/mp4">
@@ -8,9 +10,15 @@
       <div class="container h-100">
         <div class="d-flex h-100 text-center align-items-center">
           <div class="w-100 text-white">
-            <b-button class="play-btn" v-b-modal.my-modal ><img src="../assets/img/btn_play.svg" alt=""></b-button>
+            <b-button class="play-btn" v-b-modal.my-modal >
+              <img src="../assets/img/btn_play.svg" alt="">
+            </b-button>
             <b-modal id="my-modal" centered hide-header hide-footer size="lg">
-              <button type="button" class="close"  @click="$bvModal.hide('my-modal')" aria-label="Close">
+              <button
+                type="button"
+                class="close"
+                @click="$bvModal.hide('my-modal')"
+                aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
               <div class="embed-responsive embed-responsive-16by9">
@@ -25,23 +33,23 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        videoSrc: '',
-      };
-    },
-    mounted() {
-      this.$root.$on('bv::modal::show', (bvEvent, modalId) => {
-        console.log('Modal is about to be shown', bvEvent, modalId);
-        this.videoSrc = 'https://www.youtube.com/embed/A-twOC3W558?autoplay=1&amp;modestbranding=1&amp;showinfo=0';
-      });
-      this.$root.$on('bv::modal::hide', (bvEvent, modalId) => {
-        console.log('Modal is about to be shown', bvEvent, modalId);
-        this.videoSrc = 'https://www.youtube.com/embed/A-twOC3W558';
-      });
-    },
-  };
+export default {
+  data() {
+    return {
+      videoSrc: '',
+    };
+  },
+  mounted() {
+    this.$root.$on('bv::modal::show', (bvEvent, modalId) => {
+      console.log('Modal is about to be shown', bvEvent, modalId);
+      this.videoSrc = 'https://www.youtube.com/embed/A-twOC3W558?autoplay=1&amp;modestbranding=1&amp;showinfo=0';
+    });
+    this.$root.$on('bv::modal::hide', (bvEvent, modalId) => {
+      console.log('Modal is about to be shown', bvEvent, modalId);
+      this.videoSrc = 'https://www.youtube.com/embed/A-twOC3W558';
+    });
+  },
+};
 </script>
 
 <style lang="scss">

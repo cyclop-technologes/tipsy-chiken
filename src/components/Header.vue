@@ -1,5 +1,5 @@
 <template lang="html">
-  <header class="header shadow position-fixed fixed-top w-100">
+  <header id="header" class="header shadow position-fixed fixed-top w-100">
     <div class="container-fluid px-4">
       <b-navbar type="dark">
         <b-navbar-brand><img src="../assets/img/logo.svg" alt=""></b-navbar-brand>
@@ -15,7 +15,42 @@
 </template>
 
 <script>
+import jQuery from "jquery";
+const $ = jQuery;
+window.$ = $;
+
 export default {
+  created() {
+    let didScroll;
+    let lastScrollTop = 0;
+    const delta = 5;
+    const navbarHeight = $('#header').outerHeight();
+
+    $(window).scroll(function(event){
+        didScroll = true;
+    });
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+    function hasScrolled() {
+        let st = $(this).scrollTop();
+        if(Math.abs(lastScrollTop - st) <= delta)
+            return;
+        if (st > lastScrollTop && st > navbarHeight){
+            // Scroll Down
+            $('#header').removeClass('nav-down').addClass('nav-up');
+        } else {
+            // Scroll Up
+            if(st + $(window).height() < $(document).height()) {
+                $('#header').removeClass('nav-up').addClass('nav-down');
+            }
+        }
+        lastScrollTop = st;
+    }
+  },
 };
 </script>
 

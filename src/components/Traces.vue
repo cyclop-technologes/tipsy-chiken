@@ -11,20 +11,20 @@
   </div>
 </template>
 <script>
-	export default {
-    props: {
-      count: String,
-      rotate: String,
+export default {
+  props: {
+    count: String,
+    rotate: String,
+  },
+  computed: {
+    tracesCount() {
+      return this.count ? Number(this.count) : 1;
     },
-    computed: {
-      tracesCount() {
-        return this.count ? Number(this.count) : 1
-      },
-      normalRotate() {
-        return this.rotate ? this.rotate : 0
-      }
-    }
-  };
+    normalRotate() {
+      return this.rotate ? this.rotate : 0;
+    },
+  },
+};
 </script>
 <style lang="scss">
 @import '../assets/scss/main.scss';

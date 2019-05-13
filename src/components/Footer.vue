@@ -18,8 +18,14 @@
         <div class="navbar-nav mr-auto">
           <h6 class="text-primary text-uppercase font-weight-bold">CONTACT US</h6>
           <nav class="nav flex-column">
-            <a href="" class="p-0 text-white font-weight-bolder nav-link">info@tipsychickengame.com</a>
-            <a href="" class="p-0 text-white font-weight-bolder nav-link">(888) 660-2938</a>
+            <a href="" class="p-0
+              text-white
+              font-weight-bolder
+              nav-link">info@tipsychickengame.com</a>
+            <a href="" class="p-0
+              text-white
+              font-weight-bolder
+              nav-link">(888) 660-2938</a>
           </nav>
         </div>
         <b-nav class="media align-self-end">
@@ -31,8 +37,12 @@
          </b-nav>
       </div>
       <div class="footer-bottom py-5 d-flex justify-content-between align-items-center">
-        <div class="privacy font-weight-bold"><a href="">Privacy Policy</a> | <a href="">Terms of Service</a></div>
-        <div class="cpr text-white">All images, art, and game material are Copyright ©2019 Tipsy Chicken</div>
+        <div class="privacy font-weight-bold">
+          <a href="">Privacy Policy</a> | <a href="">Terms of Service</a>
+        </div>
+        <div class="cpr text-white">
+          All images, art, and game material are Copyright ©2019 Tipsy Chicken
+        </div>
         <div class="logo"><a href=""><img src="../assets/img/knowhow.svg" alt=""></a></div>
       </div>
     </footer>
