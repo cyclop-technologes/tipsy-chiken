@@ -101,7 +101,7 @@ export default {
     }
     .form-footer{
       input{
-        border-bottom: 1px solid $secondary;
+        border-bottom: 1px solid $secondary !important;
       }
     }
   }
