@@ -106,7 +106,7 @@ export default {
 
   .cloud {
     z-index: 10;
-    bottom: 0;
+    bottom: -1px;
   }
 
   @media (pointer: coarse) and (hover: none) {
