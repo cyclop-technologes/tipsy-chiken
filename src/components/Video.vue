@@ -8,7 +8,7 @@
       <div class="container h-100">
         <div class="d-flex h-100 text-center align-items-center">
           <div class="w-100 text-white">
-            <b-button v-b-modal.my-modal>Show Modal</b-button>
+            <b-button <v-b-modal class="my-modal"><img src="../assets/img/btn_play.svg" alt=""></v-b-modal></b-button>
             <b-modal id="my-modal" centered hide-header hide-footer size="lg">
               <button type="button" class="close"  @click="$bvModal.hide('my-modal')" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -105,8 +105,8 @@ export default {
   }
 
   .cloud {
-    z-index: 10;
-    bottom: 0;
+    z-index: 9;
+    bottom: -1px;
   }
 
   @media (pointer: coarse) and (hover: none) {
