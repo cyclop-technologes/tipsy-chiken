@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="footer">
     <div class="container-fluid farm text-center position-relative">
-      <img src="../assets/img/farm.svg" alt="">
+      <img class="farm-img mv-100 d-block" src="../assets/img/farm.svg" alt="">
       <img class="logo-footer position-absolute" src="../assets/img/logo.svg" alt="">
     </div>
     <footer class="container mt-5">
@@ -63,6 +63,9 @@
 <style lang="scss" scoped>
 @import '../assets/scss/main.scss';
 
+.farm-img{
+  max-width: 100%;
+}
 .text-primary {
   color: $primary !important;
 }

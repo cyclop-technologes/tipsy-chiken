@@ -8,12 +8,37 @@
     </div>
     <div class="container my-5">
       <div class="row">
-        <div class="col-8 mx-auto">
-          <Slick ref="slick" :options="slickOptions">
-            <div v-for="animal in animals" :key="animal" class="slide">
-              <img  :src="`${publicPath}img/card_${animal}.svg`">
+        <div class="col-10 mx-auto" >
+          <!-- <Slick ref="slick" :options="slickOptions">
+            <div v-for="animal in animals" :key="animal" class="slide mx-auto">
+              <img :src="`${publicPath}img/card_${animal}.svg`">
             </div>
-          </Slick>
+          </Slick> -->
+          <carousel-3d clickable="false" controlsVisible="true" width="330" height="480" display="3" perspective="0" border="0">
+            <slide v-for="(animal, index) in animals" :key="index" :index="index">
+                <img class="card-img" :src="`${publicPath}img/card_${animal}.svg`">
+                <form class="card-form px-3 py-4" action="">
+                  <div class="form-header">
+                    <input type="text" name="animal" placeholder="Animal">
+                    <input class="ml-auto" v-model="card.points" type="number" name="points" placeholder="points">
+                    <div class="points">{{card.points}}</div>
+                  </div>
+                  <div class="">
+                    <input type="text" name="title" placeholder="Card Title">
+                  </div>
+                  <div class="">
+                    <textarea name="Dare" placeholder="Your Dare" rows="6" cols="80"></textarea>
+                  </div>
+                  <div class="btn-container">
+                    <input class="btn py-2" type="submit" value="SUBMIT">
+                  </div>
+                  <div>
+                    <input type="text" name="name" placeholder="Your name">
+                    <input type="email" name="email" value="" placeholder="Email">
+                  </div>
+                </form>
+            </slide>
+          </carousel-3d>
         </div>
       </div>
     </div>
@@ -21,43 +46,108 @@
 </template>
 <script>
 import Slick from 'vue-slick';
-export default {
-  components: { Slick },
+import { Carousel3d, Slide } from 'vue-carousel-3d';
 
+export default {
+  components: { Slick, Carousel3d, Slide },
   data() {
     return {
+      card: {
+        points: '',
+      },
       publicPath: process.env.BASE_URL,
       animals: ['bull', 'fish', 'goose', 'horse', 'owl', 'piggy', 'rat', 'rooster', 'sheeps', 'spider', 'offer'],
       slickOptions: {
         slidesToShow: 3,
         arrows: false,
         centerMode: true,
-        // Any other options that can be got from plugin documentation
       },
-      card: {
-
-      }
     };
   },
-}
+};
 
 </script>
 <style lang="scss">
   @import '../assets/scss/main.scss';
-  .carousel-item{
-    @extend .mx-5;
+  .carousel-3d-slide{
+    border: none;
+    background: none;
   }
-  .slick-slider{
+  .points{
+    width: 42px;
+    height: 42px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: $white;
+    color: $secondary;
+  }
+  .current{
+    .card-form{
+      opacity: 1;
+      visibility: visible;
+    }
+    .form-header{
+      display: flex;
+      justify-content: space-between;
+      input{
+        width: 60px !important;
+      }
+    }
+  }
+  .card-form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    background: rgba($black, 0.7);
+    textarea{
+      background: transparent url('../assets/img/lines.svg') repeat-y;
+      border: none;
+      display: block;
+      box-sizing: border-box;
+      max-width: 100%;
+      &::placeholder{
+        color: $white;
+      }
+    }
+    input:not(.btn){
+      background: none;
+      border: none;
+      border-bottom: 2px solid $white;
+      color: $white;
+      width: 100%;
+      &::placeholder{
+        color: $white;
+      }
+    }
 
-    .slick-current{
-      transform: scale(1.2);
-      z-index: 999;
-      position: relative;
+    .btn{
+      background: $secondary;
+      margin: 0 auto;
+      color: $white;
+      font-weight: 500;
+      width: 185px;
     }
-    .slick-slide{
-      transition: 0.2s;
-      // @extend mx-5;
-    }
+  }
+
+  .btn-container{
+    text-align: center;
+  }
+  .card-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
   .h1 {
     font-size: $h1-fsize;
