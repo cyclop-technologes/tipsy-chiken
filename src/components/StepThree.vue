@@ -51,7 +51,7 @@ export default {
 .rooster-acrobat {
     position: absolute;
     z-index: 2;
-    top: 150px;
+    top: 80px;
     left: 480px;
     width: 284px;
 }
