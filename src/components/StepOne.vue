@@ -35,9 +35,9 @@ export default {
 @import '../assets/scss/main.scss';
 
 @media screen and (max-width: 375px) {
-    #img-team {
-    	width: 254px;
-    }
+  #img-team {
+    width: 254px;
+  }
 }
 
 </style>

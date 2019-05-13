@@ -1,5 +1,5 @@
 <template lang="html">
-  <header class="header shadow">
+  <header class="header shadow position-fixed fixed-top w-100">
     <div class="container-fluid px-4">
       <b-navbar type="dark">
         <b-navbar-brand><img src="../assets/img/logo.svg" alt=""></b-navbar-brand>
@@ -23,5 +23,6 @@ export default {
   @import '../assets/scss/main.scss';
   .header{
     background: linear-gradient(180deg, #2E2E2E 0%, #232323 100%);
+    z-index: 999;
   }
 </style>

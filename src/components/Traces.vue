@@ -1,5 +1,5 @@
 <template>
-  <div class="traces d-flex m0-auto">
+  <div  class="traces d-flex m0-auto">
     <div class="trace-left" data-aos="zoom-in" data-aos-delay="125">
       <img src="../assets/img/left_trace.svg">
     </div>
@@ -9,6 +9,7 @@
   </div>
 </template>
 <script>
+	
 </script>
 <style lang="scss">
 @import '../assets/scss/main.scss';
