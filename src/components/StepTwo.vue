@@ -8,13 +8,9 @@
           <p>draw a Dare card.</p>
         </div>
       </div>
-      <div class="traces-container-step-two-top position-absolute">
-        <Traces v-for="index in 3" :key="index" ></Traces>
-      </div>
+      <Traces class="traces-container-step-two-top position-absolute" count="5"></Traces>
       <div data-aos="fade-up" class="cards text-center"><img src="../assets/img/cards.svg"></div>
-      <div class="traces-container-step-two-bottom position-absolute">
-        <Traces v-for="index in 5" :key="index"></Traces>
-      </div>
+      <Traces class="traces-container-step-two-bottom position-absolute" count="5"></Traces>
     </div>
     <!-- /STEP 2 -->
 </template>

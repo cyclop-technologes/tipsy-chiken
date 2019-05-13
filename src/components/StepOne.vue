@@ -15,9 +15,7 @@
         <p>Play for 30-90 minutes.</p>
       </div>
     </div>
-    <div class="traces-container position-absolute">
-      <Traces v-for="index in 3" :key="index"></Traces>
-    </div>
+      <Traces class="traces-container position-absolute" count="3"></Traces>
   </div>
   <!-- /STEP 1 -->
 </template>

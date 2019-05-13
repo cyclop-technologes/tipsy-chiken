@@ -17,9 +17,7 @@
           Discard the dare card.</p>
       </div>
       <div data-aos="fade-up" class="rooster_boo-ha-re-koo text-center"><img src="../assets/img/rooster_boo-ha-re-koo.svg"></div>
-      <div class="traces-container-step-four-bottom position-absolute">
-        <Traces v-for="index in 5" :key="index"></Traces>
-      </div>
+      <Traces class="traces-container-step-four-bottom position-absolute" count="5"></Traces>
     </div>
     <!-- /STEP 4 -->
 </template>
