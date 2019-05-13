@@ -3,8 +3,8 @@
     <div class="container flex-grow-1">
       <div class="row h-100">
 
-        <div data-aos="zoom-out-right" class="col-sm-4 col-lg-6 align-self-center">
-          <img class="w-100" src="../assets/img/box.png" alt="">
+        <div data-aos="zoom-out-right" class="col-sm-4 col-lg-6 position-relative align-self-center">
+          <img class="img-main position-absolute" src="../assets/img/box.png" alt="">
         </div>
         <div class="col-sm-4
         col-lg-6
@@ -14,8 +14,6 @@
         d-flex
         flex-column
         justify-content-between">
-
-
           <div data-aos="zoom-out-left" class="top-block">
             <div class="mt-5 pt-5">
               <img src="../assets/img/logo-inline.svg" alt="">
@@ -53,6 +51,9 @@
     right: 0;
     top: 0;
     transform: translateY(-50%);
+  }
+  .top-block{
+    margin-top: 10rem;
   }
   .btn {
     background: $primary;

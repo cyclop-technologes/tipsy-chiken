@@ -32,7 +32,7 @@
                   <div class="btn-container">
                     <input class="btn py-2" type="submit" value="SUBMIT">
                   </div>
-                  <div>
+                  <div class="form-footer">
                     <input type="text" name="name" placeholder="Your name">
                     <input type="email" name="email" value="" placeholder="Email">
                   </div>
@@ -97,6 +97,11 @@ export default {
       justify-content: space-between;
       input{
         width: 60px !important;
+      }
+    }
+    .form-footer{
+      input{
+        border-bottom: 1px solid $secondary;
       }
     }
   }
