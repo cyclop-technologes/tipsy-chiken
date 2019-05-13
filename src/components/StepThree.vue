@@ -33,6 +33,7 @@ export default {
   position: absolute;
   top: 100px;
   left: 210px;
+  z-index: 2;
 }
 
 .rooster-acrobat {

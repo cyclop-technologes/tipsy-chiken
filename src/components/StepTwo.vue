@@ -7,6 +7,9 @@
       <div class="info font-weight-bold text-right text-uppercase">
         <p>draw a Dare card.</p>
       </div>
+      <Traces class="traces-container-step-two-top position-absolute" count="3"></Traces>
+      <div data-aos="fade-up" class="cards text-center"><img src="../assets/img/cards.svg"></div>
+      <Traces class="traces-container-step-two-bottom position-absolute" count="5"></Traces>
     </div>
     <Traces class="traces-container-step-two-top position-absolute" count="5"></Traces>
     <div data-aos="fade-up" class="cards text-center"><img src="../assets/img/cards.svg"></div>

@@ -21,7 +21,7 @@
         return this.count ? Number(this.count) : 1
       },
       normalRotate() {
-        return this.rotate ? this.rotate : 1
+        return this.rotate ? this.rotate : 0
       }
     }
   };

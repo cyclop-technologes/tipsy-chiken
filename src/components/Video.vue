@@ -8,7 +8,7 @@
       <div class="container h-100">
         <div class="d-flex h-100 text-center align-items-center">
           <div class="w-100 text-white">
-            <b-button <v-b-modal class="my-modal"><img src="../assets/img/btn_play.svg" alt=""></v-b-modal></b-button>
+            <b-button class="play-btn" v-b-modal.my-modal ><img src="../assets/img/btn_play.svg" alt=""></b-button>
             <b-modal id="my-modal" centered hide-header hide-footer size="lg">
               <button type="button" class="close"  @click="$bvModal.hide('my-modal')" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -25,27 +25,40 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      videoSrc: '',
-    };
-  },
-  mounted() {
-    this.$root.$on('bv::modal::show', (bvEvent, modalId) => {
-      console.log('Modal is about to be shown', bvEvent, modalId);
-      this.videoSrc = 'https://www.youtube.com/embed/A-twOC3W558?autoplay=1&amp;modestbranding=1&amp;showinfo=0';
-    });
-    this.$root.$on('bv::modal::hide', (bvEvent, modalId) => {
-      console.log('Modal is about to be shown', bvEvent, modalId);
-      this.videoSrc = 'https://www.youtube.com/embed/A-twOC3W558';
-    });
-  },
-};
+  export default {
+    data() {
+      return {
+        videoSrc: '',
+      };
+    },
+    mounted() {
+      this.$root.$on('bv::modal::show', (bvEvent, modalId) => {
+        console.log('Modal is about to be shown', bvEvent, modalId);
+        this.videoSrc = 'https://www.youtube.com/embed/A-twOC3W558?autoplay=1&amp;modestbranding=1&amp;showinfo=0';
+      });
+      this.$root.$on('bv::modal::hide', (bvEvent, modalId) => {
+        console.log('Modal is about to be shown', bvEvent, modalId);
+        this.videoSrc = 'https://www.youtube.com/embed/A-twOC3W558';
+      });
+    },
+  };
 </script>
 
 <style lang="scss">
   @import '../assets/scss/main.scss';
+  .btn.play-btn{
+    background: none;
+    border: none;
+    &:focus{
+      box-shadow: none;
+      -webkit-box-shadow: none;
+    }
+    &:hover{
+      background: none;
+      border: none;
+      outline: none;
+    }
+  }
   .modal-dialog {
       max-width: 800px;
       margin: 30px auto;

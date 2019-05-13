@@ -17,6 +17,10 @@
           draw a GOAT card and keep<br>
           your dare card for points. </p>
       </div>
+      <div data-aos="fade-up" class="rooster_boo-ha-re-koo text-center">
+        <img src="../assets/img/rooster_boo-ha-re-koo.svg">
+      </div>
+      <Traces class="traces-container-step-four-bottom position-absolute" count="5"></Traces>
     </div>
     <div data-aos="fade-up" class="draw-dare"><img src="../assets/img/draw_a_goat.svg"></div>
     <div class="text-right info font-weight-bold text-right text-uppercase">

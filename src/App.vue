@@ -1,28 +1,31 @@
 <template>
   <div id="app">
+    <Header></Header>
     <Banner></Banner>
     <Video></Video>
     <section class="bg-container">
       <HowToPlay></HowToPlay>
-      <SuggestCard></SuggestCard>
+      <Carousel></Carousel>
       <Footer></Footer>
     </section>
   </div>
 </template>
 <script>
+import Header from './components/Header.vue';
 import Banner from './components/Banner.vue';
 import Video from './components/Video.vue';
 import HowToPlay from './components/HowToPlay.vue';
-import SuggestCard from './components/SuggestCard.vue';
+import Carousel from './components/Carousel.vue';
 import Footer from './components/Footer.vue';
 
 export default {
   name: 'app',
   components: {
+    Header,
     Banner,
     Video,
     HowToPlay,
-    SuggestCard,
+    Carousel,
     Footer,
   },
 };
