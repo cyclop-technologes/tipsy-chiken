@@ -1,6 +1,8 @@
 <template>
   <div class="container-fluid px-0 text-right suspicious-chicken">
-    <div data-aos="fade-left" class="d-inline-block ml-auto text-center position-relative">
+    <div data-aos="fade-left"
+    data-aos-duration="1000"
+    class="d-inline-block ml-auto text-center position-relative">
       <div class="position-absolute chicken-content">
         <p class="text font-weight-bold">Psssst... Hey, you!<br>Ready to play?</p>
         <b-button class="buy-button px-5 py-3 font-weight-bold" variant="warning">BUY ON AMAZON</b-button>
