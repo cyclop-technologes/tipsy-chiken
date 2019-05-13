@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Header></Header>
     <Banner></Banner>
     <Video></Video>
     <section class="bg-container">
@@ -10,6 +11,7 @@
   </div>
 </template>
 <script>
+import Header from './components/Header.vue';
 import Banner from './components/Banner.vue';
 import Video from './components/Video.vue';
 import HowToPlay from './components/HowToPlay.vue';
@@ -19,6 +21,7 @@ import Footer from './components/Footer.vue';
 export default {
   name: 'app',
   components: {
+    Header,
     Banner,
     Video,
     HowToPlay,
