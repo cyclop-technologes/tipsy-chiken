@@ -71,7 +71,7 @@ export default {
   @import '../assets/scss/main.scss';
   .carousel-3d-slide{
     border: none;
-    background: none;
+    background: none !important;
     background-color: none !important;
   }
   .points{
