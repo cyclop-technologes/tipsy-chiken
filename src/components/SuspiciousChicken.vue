@@ -3,7 +3,7 @@
     <div data-aos="fade-left" class="d-inline-block ml-auto text-center position-relative">
       <div class="position-absolute chicken-content">
         <p class="text">Psssst... Hey, you!<br>Ready to play?</p>
-        <b-button class="px-5 py-3" variant="warning">BUY ON AMAZON</b-button>
+        <b-button class="px-5 py-3 font-weight-bold" variant="warning">BUY ON AMAZON</b-button>
       </div>
       <div class="animation-chicken"><img src="../assets/img/suspicious_chicken.svg"></div>
     </div>
