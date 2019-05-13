@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <!-- STEP 4 -->
   <div class="container fourth-step text-center position-relative">
     <div class="traces-around-container position-absolute">
@@ -16,6 +17,24 @@
         <p>if you complete the dare,<br>
           draw a GOAT card and keep<br>
           your dare card for points. </p>
+=======
+<!-- STEP 4 -->
+    <div class="container fourth-step text-center position-relative">
+      <div class=" d-flex justify-content-between">
+        <div class="step font-weight-bold">4</div>
+        <div class="info font-weight-bold text-right text-uppercase">
+          <p>if you complete the dare,<br>
+            draw a GOAT card and keep<br>
+            your dare card for points. </p>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="draw-dare"><img src="../assets/img/draw_a_goat.svg"></div>
+      <div class="text-right info font-weight-bold text-right text-uppercase">
+        <p> If you don't complete the<br>
+          dare, draw a chicken card<br>
+          and take your punishment.<br>
+          Discard the dare card.</p>
+>>>>>>> parent of a2f5093... Merge branch 'master' of https://github.com/knowhow-agency/tipsy-chiken
       </div>
       <div data-aos="fade-up" class="rooster_boo-ha-re-koo text-center">
         <img src="../assets/img/rooster_boo-ha-re-koo.svg">
@@ -49,12 +68,10 @@ export default {
 
 .rooster_boo-ha-re-koo {
   padding-bottom: 15.625rem;
-  z-index: 10;
-  position: relative;
 }
 
 .traces-container-step-four-bottom {
-  right: 600px;
+  right: 575px;
   bottom: -20px;
 }
 
@@ -63,6 +80,7 @@ export default {
   padding-bottom: 12rem;
 }
 
+<<<<<<< HEAD
 .trace-around-block-two {
   top: 95px;
   left: -215px;
@@ -93,6 +111,8 @@ export default {
   left: 10px;
 }
 
+=======
+>>>>>>> parent of a2f5093... Merge branch 'master' of https://github.com/knowhow-agency/tipsy-chiken
 @media screen and (max-width: 375px) {
 
   .draw-dare,
