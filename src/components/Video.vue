@@ -57,6 +57,7 @@ export default {
   .btn.play-btn{
     background: none;
     border: none;
+    margin-bottom: 7rem;
     &:focus{
       box-shadow: none;
       -webkit-box-shadow: none;
