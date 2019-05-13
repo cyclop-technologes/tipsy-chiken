@@ -6,7 +6,14 @@
         <div data-aos="zoom-out-right" class="col-sm-4 col-lg-6 align-self-center">
           <img class="w-100" src="../assets/img/box.png" alt="">
         </div>
-        <div class="col-sm-4 col-lg-6 align-self-center text-center h-100 d-flex flex-column justify-content-between">
+        <div class="col-sm-4
+        col-lg-6
+        align-self-center
+        text-center
+        h-100
+        d-flex
+        flex-column
+        justify-content-between">
 
 
           <div data-aos="zoom-out-left" class="top-block">
