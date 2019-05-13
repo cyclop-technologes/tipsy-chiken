@@ -10,7 +10,7 @@
       </div>
       <Traces class="traces-container-step-two-top position-absolute" count="5"></Traces>
       <div data-aos="fade-up" class="cards text-center"><img src="../assets/img/cards.svg"></div>
-      <Traces class="traces-container-step-two-bottom position-absolute" count="5"></Traces>
+      <Traces class="traces-container-step-two-bottom position-absolute" count="5" rotate="30"></Traces>
     </div>
     <!-- /STEP 2 -->
 </template>
