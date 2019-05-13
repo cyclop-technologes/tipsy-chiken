@@ -44,6 +44,8 @@ export default {
 
 .cards {
   padding-top: 3.125rem;
+  z-index: 10;
+  position: relative;
 }
 
 .rooster-box {

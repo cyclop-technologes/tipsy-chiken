@@ -1,5 +1,5 @@
 <template lang="html">
-  <section class="video vh-100">
+  <section class="video vh-100 position-relative">
     <div class="cloud position-absolute my-0 py-0"><img src="../assets/img/cloud.svg"></div>
       <div class="overlay"></div>
       <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
