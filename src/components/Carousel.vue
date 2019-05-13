@@ -72,6 +72,7 @@ export default {
   .carousel-3d-slide{
     border: none;
     background: none;
+    background-color: none;
   }
   .points{
     width: 42px;
