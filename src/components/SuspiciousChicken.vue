@@ -24,23 +24,20 @@
 }
 
 .suspicious-chicken {
-  padding: 130px 0px;
+  padding: 100px 0px;
   max-width: 100vw;
   overflow: hidden;
-
 }
 
 .animation-chicken {
   z-index: 1;
 }
 
-@media screen and (max-width: 375px) {
+@include media-breakpoint-up(sm) {
   .suspicious-chicken {
-
     img {
       max-width: 346px;
     }
-
   }
 
   .chicken-content {
@@ -54,6 +51,28 @@
 
     .buy-button {
       margin-top: 100px;
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .suspicious-chicken {
+    padding: 50px 0px;
+    img {
+      max-width: 675px;
+    }
+  }
+
+  .chicken-content {
+    left: 150px;
+
+    .text,
+    .buy-button {
+      font-size: 17px;
+
+    }
+
+    .buy-button {
+      margin-top: 0;
     }
 
   }
