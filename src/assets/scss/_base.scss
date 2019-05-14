@@ -27,6 +27,7 @@
 }
 
 .traces-around-container {
+  position: absolute;
   left: 375px;
   top: -80px;
 }
@@ -43,4 +44,7 @@
   right: 0;
   color: $black;
   font-size: 30px;
+}
+
+@media screen and (max-width: 375px) {
 }

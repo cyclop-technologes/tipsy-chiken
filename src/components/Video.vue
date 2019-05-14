@@ -1,6 +1,6 @@
 <template lang="html">
   <section class="video vh-100 position-relative">
-    <div class="cloud position-absolute my-0 py-0">
+    <div class="cloud my-0 py-0">
       <img src="../assets/img/cloud.svg">
     </div>
       <div class="overlay"></div>
@@ -29,7 +29,7 @@
           </div>
         </div>
       </div>
-      <div class="hidden-chicken position-absolute"><img src="../assets/img/chick.svg"></div>
+      <div class="hidden-chicken"><img src="../assets/img/chick.svg"></div>
   </section>
 </template>
 
@@ -128,6 +128,7 @@ export default {
   }
 
   .cloud {
+    position: absolute;
     z-index: 9;
     bottom: -1px;
   }
@@ -146,6 +147,7 @@ export default {
   }
 
   .hidden-chicken {
+    position: absolute;
     z-index: 5;
     bottom: -160px;
     left: 300px;

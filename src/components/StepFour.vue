@@ -1,14 +1,14 @@
 <template>
   <!-- STEP 4 -->
   <div class="container fourth-step text-center position-relative">
-    <div class="traces-around-container position-absolute">
+    <div class="traces-around-container">
       <Traces count="3" rotate="60"></Traces>
-      <Traces class="trace-around-block-two position-absolute" count="3" rotate="70"></Traces>
-      <Traces class="trace-around-block-three position-absolute" count="3" rotate="25"></Traces>
-      <Traces class="trace-around-block-four position-absolute" count="3" rotate="5"></Traces>
-      <Traces class="trace-around-block-five position-absolute" count="3" rotate="-15"></Traces>
-      <Traces class="trace-around-block-six position-absolute" count="5" rotate="-70"></Traces>
-      <Traces class="trace-around-block-seven position-absolute" count="2" rotate="-10"></Traces>
+      <Traces class="trace-around-block-two" count="3" rotate="70"></Traces>
+      <Traces class="trace-around-block-three" count="3" rotate="25"></Traces>
+      <Traces class="trace-around-block-four" count="3" rotate="5"></Traces>
+      <Traces class="trace-around-block-five" count="3" rotate="-15"></Traces>
+      <Traces class="trace-around-block-six" count="5" rotate="-70"></Traces>
+      <Traces class="trace-around-block-seven" count="2" rotate="-10"></Traces>
     </div>
     <div class=" d-flex justify-content-between">
       <div class="step font-weight-bold">4</div>
@@ -60,31 +60,37 @@ export default {
   }
 
   .trace-around-block-two {
+    position: absolute;
     top: 95px;
     left: -215px;
   }
 
   .trace-around-block-three {
+    position: absolute;
     top: 230px;
     left: -390px;
   }
 
 .trace-around-block-four {
+  position: absolute;
   top: 450px;
   left: -450px;
 }
 
 .trace-around-block-five {
+  position: absolute;
   top: 690px;
   left: -435px;
 }
 
 .trace-around-block-six {
+  position: absolute;
   top: 800px;
   left: -190px;
 }
 
 .trace-around-block-seven {
+  position: absolute;
   top: 1090px;
   left: 10px;
 }
