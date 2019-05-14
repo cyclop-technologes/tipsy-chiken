@@ -1,5 +1,5 @@
 <template lang="html">
-  <section class="banner vh-100 min-vh-100 d-flex flex-column">
+  <section id="banner" class="banner vh-100 min-vh-100 d-flex flex-column">
     <div class="container flex-grow-1">
       <div class="row h-100">
 
@@ -26,7 +26,7 @@
               <p class="my-4 ">The ultimate</p>
               <p class="my-4 chiken">
                 <img src="../assets/img/chiken-banner.svg" alt="">
-                <span>"What did i do last night?"</span>
+                <span>"What did I do last night?"</span>
               </p>
               <p class="my-4">party game</p>
             </div>
@@ -82,7 +82,7 @@
       z-index: 0;
       position: absolute;
       left: 0;
-      top: -25px;
+      top: -35px;
       width: 100%;
     }
   }

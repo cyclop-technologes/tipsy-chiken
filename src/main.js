@@ -2,7 +2,6 @@ import Vue from 'vue';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import BootstrapVue from 'bootstrap-vue';
-import '../node_modules/slick-carousel/slick/slick.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faAmazon,

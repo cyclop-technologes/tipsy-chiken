@@ -3,9 +3,6 @@
     <div class="container d-flex align-items-center flex-column">
       <h1 class="h1 font-weight-bold">SUGGEST <span>A CARD</span></h1>
     </div>
-    <div class="h2 text-center text-uppercase font-weight-bold">
-      <p>your card</p>
-    </div>
     <div class="container my-5 step-padding">
       <div class="row">
         <div class="col-10 mx-auto">
@@ -25,7 +22,7 @@
                     v-model="card.points"
                     type="number"
                     name="points"
-                    placeholder="points">
+                    placeholder="Points">
                     <div class="points">{{card.points}}</div>
                   </div>
                   <div class="">
@@ -60,7 +57,7 @@ export default {
         points: '',
       },
       publicPath: process.env.BASE_URL,
-      animals: ['bull', 'fish', 'goose', 'horse', 'owl', 'piggy', 'rat', 'rooster', 'sheeps', 'spider', 'offer'],
+      animals: ['bull', 'fish', 'goose', 'horse', 'owl', 'piggy', 'rat', 'rooster', 'sheeps', 'spider'],
       slickOptions: {
         slidesToShow: 3,
         arrows: false,
