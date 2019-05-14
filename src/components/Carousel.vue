@@ -102,11 +102,6 @@ export default {
         width: 60px !important;
       }
     }
-    .form-footer{
-      input{
-        border-bottom: 1px solid $secondary !important;
-      }
-    }
   }
   .card-form{
     position: relative;
@@ -120,7 +115,7 @@ export default {
     transition: 0.3s;
     background: rgba($black, 0.7);
     textarea{
-      background: transparent url('../assets/img/lines.svg') repeat-y;
+      background: transparent url('../assets/img/lines.svg');
       border: none;
       display: block;
       box-sizing: border-box;
@@ -149,6 +144,11 @@ export default {
     }
   }
 
+  .form-footer{
+    input{
+      border-bottom: 1px solid $secondary !important;
+    }
+  }
   .btn-container{
     text-align: center;
   }
