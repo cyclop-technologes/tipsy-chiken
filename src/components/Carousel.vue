@@ -50,7 +50,6 @@
   </section>
 </template>
 <script>
-import Slick from 'vue-slick';
 import { Carousel3d, Slide } from 'vue-carousel-3d';
 
 export default {
