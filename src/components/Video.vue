@@ -29,6 +29,7 @@
           </div>
         </div>
       </div>
+      <div class="hidden-chicken position-absolute"><img src="../assets/img/chick.svg"></div>
   </section>
 </template>
 
@@ -130,6 +131,30 @@ export default {
     z-index: 9;
     bottom: -1px;
   }
+
+  @keyframes chicken-hide {
+    from {
+      bottom: -160px;
+    }
+    50% {
+      bottom: -50px;
+    }
+    to {
+      bottom: -160px;
+      animation-delay: 3s;
+    }
+  }
+
+  .hidden-chicken {
+    z-index: 5;
+    bottom: -160px;
+    left: 300px;
+    width: 100%;
+    animation: chicken-hide 5s infinite ease-in-out;
+
+  }
+
+
 
   @media (pointer: coarse) and (hover: none) {
     .video {
