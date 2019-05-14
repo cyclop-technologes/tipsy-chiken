@@ -9,13 +9,23 @@
     <div class="container my-5 step-padding">
       <div class="row">
         <div class="col-10 mx-auto">
-          <carousel-3d clickable="false" controlsVisible="true" width="330" height="475" display="3" perspective="0" border="0">
+          <carousel-3d clickable="false"
+          controlsVisible="true"
+          width="330"
+          height="475"
+          display="3"
+          perspective="0"
+          border="0">
             <slide v-for="(animal, index) in animals" :key="index" :index="index">
                 <img class="card-img" :src="`${publicPath}img/card_${animal}.svg`">
                 <form class="card-form px-3 pt-4 pb-5" action="">
                   <div class="form-header">
                     <input type="text" name="animal" :placeholder="animal">
-                    <input class="ml-auto" v-model="card.points" type="number" name="points" placeholder="points">
+                    <input class="ml-auto"
+                    v-model="card.points"
+                    type="number"
+                    name="points"
+                    placeholder="points">
                     <div class="points">{{card.points}}</div>
                   </div>
                   <div class="">
@@ -44,7 +54,7 @@ import Slick from 'vue-slick';
 import { Carousel3d, Slide } from 'vue-carousel-3d';
 
 export default {
-  components: { Slick, Carousel3d, Slide },
+  components: { Carousel3d, Slide },
   data() {
     return {
       card: {
