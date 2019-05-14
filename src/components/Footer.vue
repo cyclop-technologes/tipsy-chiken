@@ -5,7 +5,7 @@
       <img class="logo-footer" src="../assets/img/logo.svg" alt="">
     </div>
     <footer class="container mt-5">
-      <div class="navbar align-items-start">
+      <div class="navbar align-items-start px-md-0">
         <div class="navbar-nav mr-5">
           <h6 class="text-primary text-uppercase font-weight-bold ">Navigation</h6>
           <nav class="nav flex-column">
@@ -106,13 +106,21 @@
   width: 250px;
 }
 
-@media screen and (max-width: 375px) {
+@include media-breakpoint-down(sm) {
   .farm {
 
     img {
       max-width: 446px;
     }
 
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .logo-footer {
+    width: 160px;
+    top: 0;
+    left: 38px;
   }
 }
 
