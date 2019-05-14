@@ -47,4 +47,9 @@
 }
 
 @media screen and (max-width: 375px) {
+  .center-absolute {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
 }

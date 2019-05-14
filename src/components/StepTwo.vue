@@ -58,7 +58,7 @@ export default {
   padding-bottom: 12.5rem;
 }
 
-@media screen and (max-width: 375px) {
+@include media-breakpoint-up(sm) {
   #rooster {
     max-width: 346px;
   }
@@ -67,7 +67,18 @@ export default {
     img {
       max-width: 346px;
     }
+  }
+}
 
+@include media-breakpoint-up(md) {
+  #rooster {
+    max-width: 350px;
+  }
+
+  .cards {
+    img {
+      max-width: 650px;
+    }
   }
 }
 

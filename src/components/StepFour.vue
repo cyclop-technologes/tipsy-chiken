@@ -94,12 +94,20 @@ export default {
   top: 1090px;
   left: 10px;
 }
-@media screen and (max-width: 375px) {
+@include media-breakpoint-up(sm) {
 
   .draw-dare,
   .rooster_boo-ha-re-koo {
     img {
       max-width: 350px;
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .draw-dare,
+  .rooster_boo-ha-re-koo {
+    img {
+      max-width: 690px;
     }
   }
 }
