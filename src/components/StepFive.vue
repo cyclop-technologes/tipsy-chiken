@@ -7,7 +7,7 @@
       <div class="info font-weight-bold text-right text-uppercase">
         <p>next player's turn.</p>
       </div>
-      <div class="rat-traces-container position-absolute">
+      <div class="rat-traces-container">
         <RatTrace v-for="index in 3" :key="index"></RatTrace>
       </div>
     </div>
@@ -22,7 +22,7 @@
           <div
           data-aos="fade-up"
           class="drunk-goose">
-            <img src="../assets/img/drunk_goose.svg">
+            <img src="../assets/img/drunk_goose.png">
           </div>
       </div>
     </div>
@@ -42,7 +42,10 @@ export default {
 @import '../assets/scss/main.scss';
 .drunk-goose{
   position: absolute;
-  top: calc(100% - 50px);
+  top: calc(100% - 200px);
+   img {
+     width: 654px;
+   }
 }
 .one-wins-banner {
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);

@@ -22,7 +22,7 @@
         <p>Play for 30-90 minutes.</p>
       </div>
     </div>
-      <Traces class="traces-container-step-one position-absolute" count="3"></Traces>
+      <Traces class="traces-container-step-one" count="3"></Traces>
   </div>
   <!-- /STEP 1 -->
 </template>
@@ -40,6 +40,7 @@ export default {
 @import '../assets/scss/main.scss';
 
 .traces-container-step-one {
+  position: absolute;
   right: 525px;
   bottom: -10px;
 }

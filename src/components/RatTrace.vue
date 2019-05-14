@@ -14,6 +14,7 @@
 @import '../assets/scss/main.scss';
 
 .rat-traces-container {
+  position: absolute;
   right: 525px;
   bottom: -330px;
 }

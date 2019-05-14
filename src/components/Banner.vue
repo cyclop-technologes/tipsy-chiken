@@ -2,8 +2,9 @@
   <section id="banner" class="banner vh-100 min-vh-100 d-flex flex-column">
     <div class="container flex-grow-1">
       <div class="row h-100">
-        <div data-aos="zoom-out-right" class="col-sm-4 col-lg-6 position-relative align-self-center">
-          <img class="img-main position-absolute" src="../assets/img/box.png" alt="">
+        <div data-aos="zoom-out-right"
+          class="col-sm-4 col-lg-6 position-relative align-self-center">
+          <img class="img-main" src="../assets/img/box.png" alt="">
         </div>
         <div class="col-sm-4
         col-lg-6

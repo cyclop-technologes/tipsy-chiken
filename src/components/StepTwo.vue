@@ -12,11 +12,11 @@
           <p>draw a Dare card.</p>
         </div>
       </div>
-    <Traces class="traces-container-step-two-top position-absolute" count="5"></Traces>
+    <Traces class="traces-container-step-two-top" count="5"></Traces>
     <div data-aos="fade-up" class="cards position-relative text-center">
       <img src="../assets/img/cards.svg">
     </div>
-    <Traces class="traces-container-step-two-bottom position-absolute" count="5"></Traces>
+    <Traces class="traces-container-step-two-bottom" count="5"></Traces>
   </div>
   <!-- /STEP 2 -->
 </template>
@@ -38,12 +38,14 @@ export default {
 }
 
 .traces-container-step-two-top {
+  position: absolute;
   right: 525px;
   top: 310px;
 
 }
 
 .traces-container-step-two-bottom {
+  position: absolute;
   right: 525px;
   bottom: -200px;
 }

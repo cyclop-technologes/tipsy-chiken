@@ -3,9 +3,11 @@
     <div data-aos="fade-left"
     data-aos-duration="1000"
     class="d-inline-block ml-auto text-center position-relative">
-      <div class="position-absolute chicken-content">
+      <div class="chicken-content">
         <p class="text font-weight-bold">Psssst... Hey, you!<br>Ready to play?</p>
-        <b-button class="buy-button px-5 py-3 font-weight-bold" variant="warning">BUY ON AMAZON</b-button>
+        <b-button
+          class="buy-button px-5 py-3 font-weight-bold"
+          variant="warning">BUY ON AMAZON</b-button>
       </div>
       <div class="animation-chicken"><img src="../assets/img/suspicious_chicken.svg"></div>
     </div>
@@ -17,6 +19,7 @@
 @import '../assets/scss/main.scss';
 
 .chicken-content {
+  position: absolute;
   left: 250px;
   top: 25px;
 
@@ -24,6 +27,9 @@
 
 .suspicious-chicken {
   padding: 130px 0px;
+  max-width: 100vw;
+  overflow: hidden;
+
 }
 
 .animation-chicken {

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container d-flex align-items-center flex-column pb-5 position-relative">
+    <div class="container d-flex align-items-center flex-column pb-5 position-relative text-center">
       <h1 class="how-to-play font-weight-bold">HOW TO PLAY</h1>
       <h1 class="five-simple-steps font-weight-bold">5 SIMPLE STEPS</h1>
     </div>
@@ -48,5 +48,9 @@ export default {
   color: $secondary;
   font-size: $h1-fsize;
 }
+
+@media screen and (max-width: 375px) {
+
+  }
 
 </style>
