@@ -2,7 +2,6 @@
   <section id="banner" class="banner vh-100 min-vh-100 d-flex flex-column">
     <div class="container flex-grow-1">
       <div class="row h-100">
-
         <div data-aos="zoom-out-right" class="col-sm-4 col-lg-6 position-relative align-self-center">
           <img class="img-main position-absolute" src="../assets/img/box.png" alt="">
         </div>
@@ -40,50 +39,50 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/scss/main.scss';
+@import '../assets/scss/main.scss';
 
-  .banner{
+.banner {
     background: $black;
     position: relative;
     z-index: 2;
-  }
-  .img-main{
+}
+.img-main {
     right: 0;
     top: 0;
     transform: translateY(-50%);
     width: 651px;
-  }
-  .top-block{
+}
+.top-block {
     margin-top: 4.5rem;
-  }
-  .btn {
+}
+.btn {
     background: $primary;
     color: $black;
     font-weight: bold;
     border: none;
     opacity: 1;
-    &:active{
-      background: $primary;
-      color: $black;
+    &:active {
+        background: $primary;
+        color: $black;
     }
-  }
-  .chiken-block {
+}
+.chiken-block {
     font-size: 1.3rem;
     width: 100%;
-  }
-  .chiken{
+}
+.chiken {
     position: relative;
     color: $primary;
-    span{
-      position: relative;
-      z-index: 2;
+    span {
+        position: relative;
+        z-index: 2;
     }
-    img{
-      z-index: 0;
-      position: absolute;
-      left: 0;
-      top: -35px;
-      width: 100%;
+    img {
+        z-index: 0;
+        position: absolute;
+        left: 0;
+        top: -35px;
+        width: 100%;
     }
-  }
+}
 </style>
