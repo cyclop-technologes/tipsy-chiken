@@ -95,12 +95,12 @@ export default {
       opacity: 1;
       visibility: visible;
     }
-    .form-header{
-      display: flex;
-      justify-content: space-between;
-      input{
-        width: 60px !important;
-      }
+  }
+  .form-header{
+    display: flex;
+    justify-content: space-between;
+    input{
+      width: 60px !important;
     }
   }
   .card-form{
