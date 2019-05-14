@@ -1,9 +1,9 @@
 <template lang="html">
-    <b-navbar id="header" class="header px-4" fixed="top" type="dark">
+    <b-navbar toggleable="sm" id="header" class="header px-4" fixed="top" type="dark">
       <b-navbar-brand v-smooth-scroll href="#banner">
         <img src="../assets/img/logo.svg" alt="">
       </b-navbar-brand>
-      <b-navbar-toggle target="#navbarToggler"></b-navbar-toggle>
+      <b-navbar-toggle target="navbarToggler"></b-navbar-toggle>
       <b-collapse is-nav class="collapse navbar-collapse" id="navbarToggler">
         <b-navbar-nav class="ml-auto">
           <b-nav-item>HOW TO PLAY</b-nav-item>
@@ -25,6 +25,7 @@ export default {
         document.getElementById('header').style.top = '0';
       } else {
         document.getElementById('header').style.top = '-80px';
+        document.getElementById('navbarToggler').classList.remove('show');
       }
       prevScrollpos = currentScrollPos;
     };

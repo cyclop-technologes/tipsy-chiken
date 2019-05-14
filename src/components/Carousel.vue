@@ -68,7 +68,8 @@ export default {
 </script>
 <style lang="scss">
   @import '../assets/scss/main.scss';
-  input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
