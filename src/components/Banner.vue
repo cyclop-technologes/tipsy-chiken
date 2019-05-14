@@ -51,6 +51,7 @@
     right: 0;
     top: 0;
     transform: translateY(-50%);
+    width: 651px;
   }
   .top-block{
     margin-top: 10rem;
