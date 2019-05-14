@@ -5,7 +5,9 @@
     class="d-inline-block ml-auto text-center position-relative">
       <div class="chicken-content">
         <p class="text font-weight-bold">Psssst... Hey, you!<br>Ready to play?</p>
-        <b-button class="buy-button px-5 py-3 font-weight-bold" variant="warning">BUY ON AMAZON</b-button>
+        <b-button
+          class="buy-button px-5 py-3 font-weight-bold"
+          variant="warning">BUY ON AMAZON</b-button>
       </div>
       <div class="animation-chicken"><img src="../assets/img/suspicious_chicken.svg"></div>
     </div>

@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import BootstrapVue from 'bootstrap-vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import vueSmoothScroll from 'vue-smooth-scroll'
+import vueSmoothScroll from 'vue-smooth-scroll';
 import {
   faAmazon,
   faTwitter,

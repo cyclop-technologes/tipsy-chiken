@@ -6,8 +6,9 @@
     <div class="container my-5 step-padding">
       <div class="row">
         <div class="col-10 mx-auto">
-          <carousel-3d clickable="false"
-          controlsVisible="true"
+          <carousel-3d
+          :clickable="clickable"
+          :controlsVisible="controlsVisible"
           width="330"
           height="475"
           display="3"
@@ -58,11 +59,8 @@ export default {
       },
       publicPath: process.env.BASE_URL,
       animals: ['bull', 'fish', 'goose', 'horse', 'owl', 'piggy', 'rat', 'rooster', 'sheeps', 'spider'],
-      slickOptions: {
-        slidesToShow: 3,
-        arrows: false,
-        centerMode: true,
-      },
+      clickable: false,
+      controlsVisible: true,
     };
   },
 };

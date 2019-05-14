@@ -153,10 +153,7 @@ export default {
     left: 300px;
     width: 100%;
     animation: chicken-hide 5s infinite ease-in-out;
-
   }
-
-
 
   @media (pointer: coarse) and (hover: none) {
     .video {
