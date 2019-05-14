@@ -94,7 +94,7 @@ export default {
   top: 1090px;
   left: 10px;
 }
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-down(sm) {
 
   .draw-dare,
   .rooster_boo-ha-re-koo {
@@ -103,7 +103,7 @@ export default {
     }
   }
 }
-@include media-breakpoint-up(md) {
+@include media-breakpoint-down(md) {
   .draw-dare,
   .rooster_boo-ha-re-koo {
     img {

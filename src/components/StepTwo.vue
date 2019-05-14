@@ -58,7 +58,7 @@ export default {
   padding-bottom: 12.5rem;
 }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-down(sm) {
   #rooster {
     max-width: 346px;
   }
@@ -70,7 +70,7 @@ export default {
   }
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-down(md) {
   #rooster {
     max-width: 350px;
   }

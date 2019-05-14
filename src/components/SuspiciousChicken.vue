@@ -35,7 +35,7 @@
   z-index: 1;
 }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-down(sm) {
   .suspicious-chicken {
     img {
       max-width: 346px;
@@ -56,7 +56,7 @@
     }
   }
 }
-@include media-breakpoint-up(md) {
+@include media-breakpoint-down(md) {
   .suspicious-chicken {
     padding: 50px 0px;
     img {

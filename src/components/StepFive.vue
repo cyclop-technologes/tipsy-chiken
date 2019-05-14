@@ -76,7 +76,7 @@ export default {
   padding-bottom: 350px;
 }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-down(sm) {
   #rat-card {
     max-width: 350px;
   }
@@ -104,7 +104,7 @@ export default {
   }
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-down(md) {
   .one-wins-banner {
     max-width: 690px;
     padding: 30px 22px 30px 22px;
@@ -118,6 +118,13 @@ export default {
       font-size: 25px;
       line-height: 34px;
       padding-top: 20px;
+    }
+  }
+  .drunk-goose {
+    top: 200px;
+    left: 125px;
+    img {
+      max-width: 460px;
     }
   }
 }
