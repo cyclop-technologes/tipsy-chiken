@@ -1,5 +1,5 @@
 <template lang="html">
-    <b-navbar id="header" class="header px-4" fixed="top" type="dark">
+    <b-navbar id="header" class="header shadow-sm px-4" fixed="top" type="dark">
       <b-navbar-brand href="#banner"><img src="../assets/img/logo.svg" alt=""></b-navbar-brand>
       <b-navbar-nav class="ml-auto">
         <b-nav-item>HOW TO PLAY</b-nav-item>
