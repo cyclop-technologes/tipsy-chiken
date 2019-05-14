@@ -22,7 +22,7 @@
         <p>Play for 30-90 minutes.</p>
       </div>
     </div>
-      <Traces class="traces-container position-absolute" count="3"></Traces>
+      <Traces class="traces-container-step-one position-absolute" count="3"></Traces>
   </div>
   <!-- /STEP 1 -->
 </template>
@@ -38,6 +38,11 @@ export default {
 </script>
 <style lang="scss">
 @import '../assets/scss/main.scss';
+
+.traces-container-step-one {
+  right: 525px;
+  bottom: -10px;
+}
 
 @media screen and (max-width: 375px) {
   #img-team {

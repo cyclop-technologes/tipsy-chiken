@@ -3,19 +3,26 @@
     <div class="container d-flex align-items-center flex-column">
       <h1 class="h1 font-weight-bold">SUGGEST <span>A CARD</span></h1>
     </div>
-    <div class="h2 text-center text-uppercase font-weight-bold">
-      <p>your card</p>
-    </div>
     <div class="container my-5 step-padding">
       <div class="row">
         <div class="col-10 mx-auto">
-          <carousel-3d clickable="false" controlsVisible="true" width="330" height="475" display="3" perspective="0" border="0">
+          <carousel-3d clickable="false"
+          controlsVisible="true"
+          width="330"
+          height="475"
+          display="3"
+          perspective="0"
+          border="0">
             <slide v-for="(animal, index) in animals" :key="index" :index="index">
                 <img class="card-img" :src="`${publicPath}img/card_${animal}.svg`">
                 <form class="card-form px-3 pt-4 pb-5" action="">
                   <div class="form-header">
                     <input type="text" name="animal" :placeholder="animal">
-                    <input class="ml-auto" v-model="card.points" type="number" name="points" placeholder="points">
+                    <input class="ml-auto"
+                    v-model="card.points"
+                    type="number"
+                    name="points"
+                    placeholder="Points">
                     <div class="points">{{card.points}}</div>
                   </div>
                   <div class="">
@@ -40,18 +47,17 @@
   </section>
 </template>
 <script>
-import Slick from 'vue-slick';
 import { Carousel3d, Slide } from 'vue-carousel-3d';
 
 export default {
-  components: { Slick, Carousel3d, Slide },
+  components: { Carousel3d, Slide },
   data() {
     return {
       card: {
         points: '',
       },
       publicPath: process.env.BASE_URL,
-      animals: ['bull', 'fish', 'goose', 'horse', 'owl', 'piggy', 'rat', 'rooster', 'sheeps', 'spider', 'offer'],
+      animals: ['bull', 'fish', 'goose', 'horse', 'owl', 'piggy', 'rat', 'rooster', 'sheeps', 'spider'],
       slickOptions: {
         slidesToShow: 3,
         arrows: false,
