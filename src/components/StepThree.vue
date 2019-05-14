@@ -39,7 +39,7 @@ export default {
     padding-top: 4rem;
     position: absolute;
     top: 100px;
-    left: 210px;
+    left: 125px;
     z-index: 2;
 }
 
@@ -57,11 +57,25 @@ export default {
     bottom: -325px;
 }
 
-@media screen and (max-width: 375px) {
+@include media-breakpoint-down(sm) {
     .cards-box {
         img {
             max-width: 346px;
         }
     }
+    .rooster-acrobat {
+      width: 129px;
+    }
+}
+@include media-breakpoint-down(md) {
+  .cards-box {
+      img {
+          max-width: 420px;
+      }
+  }
+  .rooster-acrobat {
+    left: 350px;
+    width: 209px;
+  }
 }
 </style>
