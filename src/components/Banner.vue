@@ -54,7 +54,7 @@
     width: 651px;
   }
   .top-block{
-    margin-top: 10rem;
+    margin-top: 4.5rem;
   }
   .btn {
     background: $primary;
