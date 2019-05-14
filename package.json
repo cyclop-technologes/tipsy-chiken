@@ -24,6 +24,7 @@
     "vue": "^2.6.10",
     "vue-carousel-3d": "^0.2.0",
     "vue-slick": "^1.1.15",
+    "vue-smooth-scroll": "^1.0.13",
     "yt-player": "^3.1.0"
   },
   "devDependencies": {

@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import BootstrapVue from 'bootstrap-vue';
 import '../node_modules/slick-carousel/slick/slick.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import vueSmoothScroll from 'vue-smooth-scroll'
 import {
   faAmazon,
   faTwitter,
@@ -19,6 +20,7 @@ library.add(faAmazon, faTwitter, faInstagram, faYoutube, faFacebookF);
 
 AOS.init();
 Vue.config.productionTip = false;
+Vue.use(vueSmoothScroll);
 Vue.use(BootstrapVue);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);

@@ -120,6 +120,8 @@ export default {
       display: block;
       box-sizing: border-box;
       max-width: 100%;
+      color: $white;
+      line-height: 2;
       &::placeholder{
         color: $white;
       }
