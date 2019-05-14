@@ -6,7 +6,7 @@
     <div class="h2 text-center text-uppercase font-weight-bold">
       <p>your card</p>
     </div>
-    <div class="container my-5">
+    <div class="container my-5 step-padding">
       <div class="row">
         <div class="col-10 mx-auto">
           <carousel-3d clickable="false" controlsVisible="true" width="330" height="475" display="3" perspective="0" border="0">
