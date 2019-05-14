@@ -1,12 +1,15 @@
 <template lang="html">
     <b-navbar id="header" class="header px-4" fixed="top" type="dark">
       <b-navbar-brand v-smooth-scroll href="#banner"><img src="../assets/img/logo.svg" alt=""></b-navbar-brand>
-      <b-navbar-nav class="ml-auto">
-        <b-nav-item>HOW TO PLAY</b-nav-item>
-        <b-nav-item>STORE</b-nav-item>
-        <b-nav-item>APP</b-nav-item>
-        <b-nav-item>FAQ</b-nav-item>
-      </b-navbar-nav>
+      <b-navbar-toggle target="#navbarToggler"></b-navbar-toggle>
+      <b-collapse is-nav class="collapse navbar-collapse " id="navbarToggler">
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item>HOW TO PLAY</b-nav-item>
+          <b-nav-item>STORE</b-nav-item>
+          <b-nav-item>APP</b-nav-item>
+          <b-nav-item>FAQ</b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
     </b-navbar>
 </template>
 
@@ -25,7 +28,7 @@ export default {
         document.getElementById("header").style.top = "-80px";
       }
       prevScrollpos = currentScrollPos;
-    }
+    };
   },
 };
 </script>
