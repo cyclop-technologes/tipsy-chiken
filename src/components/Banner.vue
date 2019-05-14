@@ -3,10 +3,10 @@
     <div class="container flex-grow-1">
       <div class="row h-100">
         <div data-aos="zoom-out-right"
-          class="col-sm-4 col-lg-6 position-relative align-self-center">
+          class="col-sm-12 col-lg-6 position-relative align-self-center">
           <img class="img-main" src="../assets/img/box.png" alt="">
         </div>
-        <div class="col-sm-4
+        <div class="col-sm-12
         col-lg-6
         align-self-center
         text-center
@@ -50,6 +50,7 @@
 .img-main {
     right: 0;
     top: 0;
+    position: absolute;
     transform: translateY(-50%);
     width: 651px;
 }
@@ -85,5 +86,14 @@
         top: -35px;
         width: 100%;
     }
+}
+
+@include media-breakpoint-down(xs) {
+  .img-main{
+    position: relative !important;
+    transform: translateY(0);
+    width: 100%;
+    margin-top: 6rem;
+  }
 }
 </style>
