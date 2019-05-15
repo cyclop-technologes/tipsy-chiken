@@ -39,7 +39,7 @@ export default {
     padding-top: 4rem;
     position: absolute;
     top: 100px;
-    left: 125px;
+    left: 240px;
     z-index: 2;
 }
 
@@ -48,7 +48,6 @@ export default {
     z-index: 2;
     top: 80px;
     left: 480px;
-    // width: 284px;
 }
 
 .traces-container-step-three-bottom {
