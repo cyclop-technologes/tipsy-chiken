@@ -105,6 +105,10 @@ export default {
 }
 
 @include media-breakpoint-down(md) {
+  #rat-card {
+    max-width: 408px;
+  }
+
   .one-wins-banner {
     max-width: 690px;
     padding: 30px 22px 30px 22px;
