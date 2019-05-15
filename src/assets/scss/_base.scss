@@ -45,11 +45,15 @@
   color: $black;
   font-size: 30px;
 }
+.text-shadow{
+  text-shadow: 1px 1px 1px $black;
+}
 
-@media screen and (max-width: 375px) {
+@include media-breakpoint-down(md) {
   .center-absolute {
     position: relative;
     right: 0;
     top: 0;
+    left: 0;
   }
 }
