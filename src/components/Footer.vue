@@ -32,17 +32,23 @@
           <b-nav-item>
             <font-awesome-icon :icon="['fab', 'amazon']" />
           </b-nav-item>
-          <b-nav-item class="ml-3">
-            <font-awesome-icon :icon="['fab', 'instagram']" />
+          <b-nav-item
+            target="_blank"
+            href="https://instagram.com/tipsychickengame"
+            class="ml-3">
+              <font-awesome-icon :icon="['fab', 'instagram']" />
           </b-nav-item>
-          <b-nav-item class="ml-3">
-            <font-awesome-icon :icon="['fab', 'youtube']" />
+          <b-nav-item
+            target="_blank"
+            href="https://www.youtube.com/channel/UCNUEehQ7YLrCXCUriKrrJiQ/featured"
+            class="ml-3">
+              <font-awesome-icon :icon="['fab', 'youtube']" />
           </b-nav-item>
-          <b-nav-item class="ml-3">
-            <font-awesome-icon :icon="['fab', 'facebook-f']" />
+          <b-nav-item target="_blank" href="https://facebook.com/tipsychickengame" class="ml-3">
+              <font-awesome-icon :icon="['fab', 'facebook-f']" />
           </b-nav-item>
-          <b-nav-item class="ml-3">
-            <font-awesome-icon :icon="['fab', 'twitter']" />
+          <b-nav-item target="_blank" href="https://twitter.com/tipsy_chicken" class="ml-3">
+              <font-awesome-icon :icon="['fab', 'twitter']" />
           </b-nav-item>
         </b-nav>
       </div>
