@@ -90,7 +90,7 @@
     }
 }
 
-@include media-breakpoint-down(xs) {
+@include media-breakpoint-down(sm) {
   .img-main{
     position: relative !important;
     transform: translateY(0);
