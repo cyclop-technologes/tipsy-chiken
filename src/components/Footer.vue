@@ -59,7 +59,11 @@
         <div class="cpr text-white">
           All images, art, and game material are Copyright ©2019 Tipsy Chicken
         </div>
-        <div class="logo"><a href=""><img src="../assets/img/knowhow.svg" alt=""></a></div>
+        <div class="logo">
+          <a target="_blank"
+          href="https://www.knowhow.agency/en">
+            <img src="../assets/img/knowhow.svg" alt="">
+          </a></div>
       </div>
     </footer>
   </div>

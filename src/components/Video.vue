@@ -136,13 +136,43 @@ export default {
   @keyframes chicken-hide {
     from {
       bottom: -160px;
+      left: 300px;
+    }
+    10% {
+      bottom: -50px;
+      left: 300px;
+    }
+    20% {
+      bottom: -160px;
+      left: 300px;
+    }
+    30% {
+      bottom: -160px;
+      left: 1050px;
+    }
+    40% {
+      bottom: 5px;
+      left: 1050px;
     }
     50% {
-      bottom: -50px;
+      bottom: -160px;
+      left: 1050px;
     }
+    60% {
+      bottom: -160px;
+      left: 600px;
+    }
+    70% {
+      bottom: -25px;
+      left: 600px;
+    }
+    80% {
+      bottom: -160px;
+      left: 600px;
+    }
+
     to {
       bottom: -160px;
-      animation-delay: 3s;
     }
   }
 
@@ -152,7 +182,7 @@ export default {
     bottom: -160px;
     left: 300px;
     width: 100%;
-    animation: chicken-hide 5s infinite ease-in-out;
+    animation: chicken-hide 12s infinite ease-in-out;
   }
 
   @media (pointer: coarse) and (hover: none) {
