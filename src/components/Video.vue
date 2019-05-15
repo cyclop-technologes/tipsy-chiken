@@ -182,7 +182,7 @@ export default {
     bottom: -160px;
     left: 300px;
     width: 100%;
-    animation: chicken-hide 12s 1 ease-in-out;
+    animation: chicken-hide 12s infinite ease-in-out;
   }
 
   @media (pointer: coarse) and (hover: none) {

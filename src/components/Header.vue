@@ -5,7 +5,7 @@
       </b-navbar-brand>
       <b-navbar-toggle target="navbarToggler"></b-navbar-toggle>
       <b-collapse is-nav class="collapse navbar-collapse" id="navbarToggler">
-        <b-navbar-nav class="ml-auto">
+        <b-navbar-nav class="ml-auto font-weight-semibold">
           <b-nav-item>HOW TO PLAY</b-nav-item>
           <b-nav-item>STORE</b-nav-item>
           <b-nav-item>APP</b-nav-item>
