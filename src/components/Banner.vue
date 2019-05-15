@@ -122,16 +122,21 @@
       font-size: 1rem;
     }
   }
-  .cloud{
-    max-width: 100%;
+  .chiken{
+    .cloud{
+      max-width: 100%;
+    }
     .cloud-img{
       width: 420px;
     }
-    .chiken-cloud{
+    .chiken-img{
       top: 80px;
       left: 0px;
       width: 230px;
     }
+  }
+  .chiken-block{
+    padding-bottom: 4rem;
   }
 }
 @include media-breakpoint-down(sm) {
