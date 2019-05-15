@@ -112,7 +112,7 @@
 .logo-footer {
   position: absolute;
   top: 45px;
-  left: 150px;
+  left: 165px;
   width: 250px;
 }
 

@@ -49,8 +49,9 @@ export default {
 }
  #img-team {
    position: absolute;
-   top: 0;
-   right: 300px;
+   top: 10px;
+   right: 250px;
+   width: 600px;
  }
 @include media-breakpoint-up(md){
   .info-top{
