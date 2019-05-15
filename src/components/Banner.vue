@@ -3,7 +3,7 @@
     <div class="container min-vh-100">
       <div class="row min-vh-100">
         <div data-aos="zoom-out-right"
-          class="col-sm-12 col-lg-6 position-relative align-self-center">
+          class="col-sm-12 col-lg-6 position-relative align-self-center text-sm-center">
           <img class="img-main" src="../assets/img/box.png" alt="">
         </div>
         <div class="
@@ -16,10 +16,10 @@
           flex-column
           justify-content-between">
           <div data-aos="zoom-out-left" class="top-block">
-            <div class="banner-logo mt-5 pt-5">
+            <div class="banner-logo">
               <img src="../assets/img/logo-inline.svg" alt="">
             </div>
-            <div class="mt-sm-0 mt-md-5">
+            <div class="mt-sm-0 mt-md-4 mt-lg-5">
               <b-button class="px-5 py-4 text-shadow" variant="warning">BUY ON AMAZON</b-button>
             </div>
           </div>
@@ -44,8 +44,6 @@
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/main.scss';
-
 .banner {
     background: $black;
     position: relative;
@@ -99,20 +97,46 @@
 .main-container{
   height: 100vh;
 }
-@include media-breakpoint-down(md){  
+.banner-logo{
+  margin-top: 10rem;
+}
+@include media-breakpoint-down(md){
   .img-main{
     position: relative !important;
     transform: translateY(0);
     width: 100%;
     margin-top: 6rem;
+    max-width: 500px;
+  }
+  .banner-logo{
+    margin-top: 0rem;
+  }
+  .top-block{
+    margin-top: 2rem;
+  }
+  .main-container{
+    height: auto;
+  }
+  .chiken-block{
+    p{
+      font-size: 1rem;
+    }
+  }
+  .cloud{
+    max-width: 100%;
+    .cloud-img{
+      width: 420px;
+    }
+    .chiken-cloud{
+      top: 80px;
+      left: 0px;
+      width: 230px;
+    }
   }
 }
 @include media-breakpoint-down(sm) {
   .banner-logo {
     display: none;
-  }
-  .main-container{
-    height: auto;
   }
   .chiken-block{
     padding-bottom: 2rem;
