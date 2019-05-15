@@ -12,7 +12,6 @@
           col-lg-6
           align-self-center
           text-center
-          h-100
           d-flex
           flex-column
           justify-content-between">
@@ -21,14 +20,17 @@
               <img src="../assets/img/logo-inline.svg" alt="">
             </div>
             <div class="mt-sm-0 mt-md-5">
-              <b-button class="px-5 py-4" variant="warning">BUY ON AMAZON</b-button>
+              <b-button class="px-5 py-4 text-shadow" variant="warning">BUY ON AMAZON</b-button>
             </div>
           </div>
-          <div data-aos="fade-up" class="chiken-block font-weight-bold text-white my-5 pb-5">
+          <div data-aos="fade-up" class="chiken-block font-weight-bold text-white">
               <p class="my-4 ">The ultimate</p>
               <p class="my-4 chiken">
-                <img src="../assets/img/chiken-banner.svg" alt="">
-                <span>"What did I do last night?"</span>
+                <span class="cloud">
+                  <img class="chiken-img" src="../assets/img/chiken-banner.svg" alt="">
+                  <img class="cloud-img" src="../assets/img/chiken-cloud.svg" alt="">
+                </span>
+                <span class="text-shadow">"What did I do last night?"</span>
               </p>
               <p class="my-4">party game</p>
             </div>
@@ -73,6 +75,7 @@
 .chiken-block {
     font-size: 1.3rem;
     width: 100%;
+    padding-bottom: 9rem;
 }
 .chiken {
     position: relative;
@@ -81,27 +84,53 @@
         position: relative;
         z-index: 2;
     }
-    img {
-        z-index: 0;
-        position: absolute;
-        left: 0;
-        top: -1rem;
-        width: 100%;
+    .cloud{
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .chiken-img{
+      position: absolute;
+      top: 120px;
+      left: -20px;
     }
 }
-
-@include media-breakpoint-down(xs) {
+.main-container{
+  height: 100vh;
+}
+@include media-breakpoint-down(md){  
   .img-main{
     position: relative !important;
     transform: translateY(0);
     width: 100%;
     margin-top: 6rem;
   }
+}
+@include media-breakpoint-down(sm) {
   .banner-logo {
     display: none;
   }
   .main-container{
     height: auto;
+  }
+  .chiken-block{
+    padding-bottom: 2rem;
+  }
+  .chiken{
+    .cloud{
+      width: 100%;
+      top: -10px;
+    }
+    .cloud-img{
+      width: 100%;
+    }
+    .chiken-img{
+      top: 80px;
+      left: -260px;
+      width: 290px;
+      transform: rotateY(180deg);
+    }
   }
   .top-block{
     margin-top: 1rem;

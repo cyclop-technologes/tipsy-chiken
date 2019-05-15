@@ -1,5 +1,5 @@
 <template lang="html">
-    <b-navbar toggleable="sm" id="header" class="header px-4" fixed="top" type="dark">
+    <b-navbar toggleable="sm" id="header" class="header px-4 border-0" fixed="top" type="dark">
       <b-navbar-brand v-smooth-scroll href="#banner">
         <img src="../assets/img/logo.svg" alt="">
       </b-navbar-brand>
