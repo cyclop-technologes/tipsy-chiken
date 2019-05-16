@@ -18,7 +18,7 @@
                 <img class="card-img" :src="`${publicPath}img/card_${animal}.svg`">
                 <form class="card-form px-3 pt-4 pb-5" action="">
                   <div class="form-header">
-                    <input type="text" name="animal" :placeholder="animal">
+                    <input class="animal-input" :disabled="animal !== 'offer'" type="text" name="animal" :placeholder="animal">
                     <input class="ml-auto"
                     v-model="card.points"
                     type="number"
@@ -67,7 +67,6 @@ export default {
 
 </script>
 <style lang="scss">
-  @import '../assets/scss/main.scss';
   input[type="number"]::-webkit-outer-spin-button,
   input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -76,6 +75,10 @@ export default {
 
   input[type="number"] {
     -moz-appearance: textfield;
+  }
+
+  .animal-input{
+    text-transform: capitalize;
   }
   .carousel-3d-slide{
     border: none;

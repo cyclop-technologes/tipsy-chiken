@@ -48,6 +48,11 @@
 .text-shadow{
   text-shadow: 1px 1px 1px $black;
 }
+@include media-breakpoint-down(md) {
+  .step-padding {
+    margin-bottom: 9.2rem;
+  }
+}
 
 @include media-breakpoint-down(sm) {
   .center-absolute {
