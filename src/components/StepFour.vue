@@ -10,7 +10,10 @@
       <Traces class="trace-around-block-six" count="5" rotate="-70"></Traces>
       <Traces class="trace-around-block-seven" count="2" rotate="-10"></Traces>
     </div>
-    <div class=" d-flex justify-content-between">
+    <div class="d-flex
+     flex-column
+     flex-md-row
+     justify-content-between">
       <div class="step font-weight-bold">4</div>
       <div class="info font-weight-bold text-right text-uppercase">
         <p>if you complete the dare,
@@ -42,12 +45,6 @@ export default {
 </script>
 <style lang="scss">
   @import '../assets/scss/main.scss';
-
-  .rooster_boo-ha-re-koo {
-    padding-bottom: 15.625rem;
-    z-index: 10;
-    position: relative;
-  }
 
   .traces-container-step-four-bottom {
     right: 600px;
@@ -94,22 +91,17 @@ export default {
   top: 1090px;
   left: 10px;
 }
-@include media-breakpoint-down(sm) {
 
-  .draw-dare {
-    img {
-      max-width: 350px;
-    }
-  }
-  .rooster_boo-ha-re-koo {
-    img {
-      max-width: 350px;
-    }
-  }
+.rooster_boo-ha-re-koo {
+  padding-bottom: 15.625rem;
+  z-index: 10;
+  position: relative;
 }
+
 @include media-breakpoint-down(md) {
   .draw-dare {
   padding-top: 8.5rem;
+  padding-bottom: 4.5rem;
     img {
       max-width: 690px;
     }
@@ -120,6 +112,22 @@ export default {
     margin-bottom: 8rem;
     img {
       max-width: 517px;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .step {
+    margin-bottom: 3rem;
+  }
+  .draw-dare {
+    padding-top: 2.5rem;
+    img {
+      max-width: 346px;
+    }
+  }
+  .rooster_boo-ha-re-koo {
+    img {
+      max-width: 346px;
     }
   }
 }
