@@ -16,7 +16,7 @@
     <div data-aos="fade-up" class="cards position-relative text-center">
       <img src="../assets/img/cards.svg">
     </div>
-    <Traces class="traces-container-step-two-bottom" count="5"></Traces>
+    <Traces class="traces-container-step-two-bottom" count="6"></Traces>
   </div>
   <!-- /STEP 2 -->
 </template>
@@ -47,7 +47,7 @@ export default {
 .traces-container-step-two-bottom {
   position: absolute;
   right: 525px;
-  bottom: -200px;
+  bottom: -360px;
 }
 
 .cards {

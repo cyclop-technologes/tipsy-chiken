@@ -1,7 +1,7 @@
 <template>
   <!-- STEP 5 -->
   <div  class="container fifth-step fifth-step-padding">
-    <div class="d-flex justify-content-between step-padding position-relative">
+    <div class="d-flex justify-content-between position-relative step-five-container">
       <div class="step font-weight-bold">5</div>
       <img data-aos="fade-up" class="center-absolute" id="rat-card"  src="../assets/img/rat.svg">
       <div class="info font-weight-bold text-right text-uppercase">
@@ -40,6 +40,11 @@ export default {
 </script>
 <style lang="scss">
 @import '../assets/scss/main.scss';
+
+.step-five-container {
+  padding-bottom: 251px;
+  margin-bottom: 200px;
+}
 .drunk-goose{
   position: absolute;
   top: calc(100% - 200px);

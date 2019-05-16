@@ -45,7 +45,7 @@ export default {
 .traces-container-step-one {
   position: absolute;
   right: 525px;
-  bottom: -10px;
+  bottom: -200px;
 }
  #img-team {
    position: absolute;

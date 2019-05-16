@@ -16,7 +16,7 @@
 .rat-traces-container {
   position: absolute;
   right: 525px;
-  bottom: -330px;
+  bottom: -285px;
 }
 
 </style>
