@@ -13,16 +13,16 @@
     <div class=" d-flex justify-content-between">
       <div class="step font-weight-bold">4</div>
       <div class="info font-weight-bold text-right text-uppercase">
-        <p>if you complete the dare,<br>
-          draw a GOAT card and keep<br>
+        <p>if you complete the dare,
+          draw a GOAT card and keep
           your dare card for points. </p>
       </div>
     </div>
     <div data-aos="fade-up" class="draw-dare position-relative"><img src="../assets/img/draw_a_goat.svg"></div>
     <div class="text-right info font-weight-bold text-right text-uppercase">
-      <p> If you don't complete the<br>
-        dare, draw a chicken card<br>
-        and take your punishment.<br>
+      <p> If you don't complete the
+        dare, draw a chicken card
+        and take your punishment.
         Discard the dare card.</p>
     </div>
     <div data-aos="fade-up" class="rooster_boo-ha-re-koo text-center position-relative"><img src="../assets/img/rooster_boo-ha-re-koo.svg"></div>

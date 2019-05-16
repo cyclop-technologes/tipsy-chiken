@@ -18,6 +18,7 @@
   color: $white;
   font-size: 30px;
   line-height: 36px;
+  max-width: 458px;
 }
 
 .traces-container {
@@ -52,6 +53,10 @@
   .step-padding {
     margin-bottom: 9.2rem;
   }
+  .info {
+    max-width: 332px;
+    font-size: 22px;
+  }
 }
 
 @include media-breakpoint-down(sm) {
@@ -60,6 +65,10 @@
     right: 0;
     top: 0;
     left: 0;
+  }
+  .info {
+    max-width: 346px;
+    font-size: 20px;
   }
   .step{
     font-size: 5.2rem;
