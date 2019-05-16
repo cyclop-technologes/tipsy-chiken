@@ -20,10 +20,6 @@
   line-height: 36px;
 }
 
-.info-bottom {
-  padding-top: 12.5rem;
-}
-
 .traces-container {
   right: 525px;
   bottom: 0;
@@ -53,11 +49,14 @@
   text-shadow: 1px 1px 1px $black;
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
   .center-absolute {
     position: relative;
     right: 0;
     top: 0;
     left: 0;
+  }
+  .step{
+    font-size: 5.2rem;
   }
 }

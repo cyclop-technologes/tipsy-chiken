@@ -1,8 +1,15 @@
 <template>
   <section>
-    <div class="container d-flex align-items-center flex-column pb-5 position-relative text-center">
-      <h1 class="how-to-play font-weight-bold">HOW TO PLAY</h1>
-      <h1 class="five-simple-steps font-weight-bold">5 SIMPLE STEPS</h1>
+    <div class="container
+      d-flex
+      align-items-center
+      flex-column
+      mb-sm-5
+      mb-lg-5
+      position-relative
+      text-center">
+      <h1 class="title how-to-play font-weight-bold">HOW TO PLAY</h1>
+      <h1 class="title five-simple-steps font-weight-bold">5 SIMPLE STEPS</h1>
     </div>
     <StepOne></StepOne>
     <StepTwo></StepTwo>
@@ -49,8 +56,11 @@ export default {
   font-size: $h1-fsize;
 }
 
-@media screen and (max-width: 375px) {
-
+@include media-breakpoint-down(md){
+  .title{
+    font-size: 2.8rem;
+    line-height: 2.8rem;
   }
+}
 
 </style>

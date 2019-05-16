@@ -1,9 +1,12 @@
 <template lang="html">
-  <section class="video vh-100 position-relative">
-    <div class="cloud my-0 py-0">
-      <img src="../assets/img/cloud.svg">
-    </div>
+  <section class="video position-relative">
+
       <div class="overlay"></div>
+      <div class="cloud my-0 py-0">
+        <div class="hidden-chicken"><img src="../assets/img/chick.svg"></div>
+        <img class="d-sm-none d-lg-block" src="../assets/img/cloud.svg">
+        <img class="d-sm-block d-lg-none" src="../assets/img/cloud-md.svg" alt="">
+      </div>
       <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="../assets/media/Cards-video.mp4" type="video/mp4">
       </video>
@@ -23,13 +26,15 @@
               </button>
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item"
-                :src="videoSrc" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                  :src="videoSrc" id="video"
+                  allowscriptaccess="always"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen ></iframe>
               </div>
             </b-modal>
           </div>
         </div>
       </div>
-      <div class="hidden-chicken"><img src="../assets/img/chick.svg"></div>
   </section>
 </template>
 
@@ -43,11 +48,11 @@ export default {
   mounted() {
     this.$root.$on('bv::modal::show', (bvEvent, modalId) => {
       console.log('Modal is about to be shown', bvEvent, modalId);
-      this.videoSrc = 'https://www.youtube.com/embed/A-twOC3W558?autoplay=1&amp;modestbranding=1&amp;showinfo=0';
+      this.videoSrc = 'https://www.youtube.com/embed/sZjGvpb58oM?autoplay=1&amp&;showinfo=0';
     });
     this.$root.$on('bv::modal::hide', (bvEvent, modalId) => {
       console.log('Modal is about to be shown', bvEvent, modalId);
-      this.videoSrc = 'https://www.youtube.com/embed/A-twOC3W558';
+      this.videoSrc = 'https://www.youtube.com/embed/sZjGvpb58oM';
     });
   },
 };
@@ -94,6 +99,7 @@ export default {
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
+    height: 100vh;
   }
 
   .video video {
@@ -126,11 +132,15 @@ export default {
     opacity: 0.5;
     z-index: 1;
   }
-
+  #my-modal{}
   .cloud {
     position: absolute;
-    z-index: 9;
+    z-index: 1;
     bottom: -1px;
+    img{
+      z-index: 9;
+      position: relative;
+    }
   }
 
   @keyframes chicken-hide {
@@ -184,7 +194,11 @@ export default {
     width: 100%;
     animation: chicken-hide 12s infinite ease-in-out;
   }
-
+  @include media-breakpoint-down(md) {
+    .video{
+      height: 1rem;
+    }
+  }
   @media (pointer: coarse) and (hover: none) {
     .video {
       background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;

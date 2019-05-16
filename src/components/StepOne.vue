@@ -10,7 +10,7 @@
     align-items-md-start
     justify-content-between
     step-padding
-    mt-4">
+    mt-lg-4">
     <div class="step font-weight-bold">1</div>
     <div class="info font-weight-bold text-sm-center text-md-right position-relative">
       <div class="info-top text-uppercase ml-md-auto">
@@ -40,35 +40,53 @@ export default {
 
 </script>
 <style lang="scss">
-// @import '../assets/scss/main.scss';
-
 .traces-container-step-one {
   position: absolute;
   right: 525px;
   bottom: -200px;
 }
- #img-team {
-   position: absolute;
-   top: 10px;
-   right: 250px;
-   width: 600px;
- }
-@include media-breakpoint-up(md){
+#img-team {
+  position: absolute;
+  top: 10px;
+  right: 250px;
+  width: 600px;
+}
+.info-bottom {
+   padding-top: 12.5rem;
+}
+@include media-breakpoint-up(sm){
   .info-top{
     width: 300px;
   }
+
 }
 @include media-breakpoint-down(md){
+  .first-step{
+    margin-top: 6rem;
+  }
+  .step{
+    font-size: 5rem !important;
+  }
   .info{
-    font-size: 1.35rem;
-    line-height: 1.2;
+    p{
+      font-size: 1.35rem;
+      line-height: 1.2;
+    }
   }
   .info-top{
     width: 220px;
   }
   #img-team{
-    right: 250px;
-    width: 380px;
+    right: 197px;
+    top: -20px;
+    width: 430px;
+  }
+  .info-bottom{
+    padding-top: 0;
+    margin-top: 7.7rem;
+  }
+  .traces-container-step-one{
+    right: 365px;
   }
 }
 @include media-breakpoint-down(sm){
