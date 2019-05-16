@@ -3,7 +3,7 @@
       <b-navbar-brand v-smooth-scroll href="#banner">
         <img src="../assets/img/logo.svg" alt="">
       </b-navbar-brand>
-      <b-navbar-toggle target="navbarToggler"></b-navbar-toggle>
+      <b-navbar-toggle class="border-0" target="navbarToggler"></b-navbar-toggle>
       <b-collapse is-nav class="collapse navbar-collapse" id="navbarToggler">
         <b-navbar-nav class="header-item ml-auto font-weight-semibold">
           <b-nav-item>HOW TO PLAY</b-nav-item>
