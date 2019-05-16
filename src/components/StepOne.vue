@@ -4,7 +4,7 @@
     first-step
     position-relative
     d-flex
-    flex-sm-column
+    flex-column
     flex-md-row
     align-items-sm-center
     align-items-md-start

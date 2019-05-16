@@ -10,7 +10,7 @@
       step-margin">
 
   <div class="step font-weight-bold">3</div>
-  <div class="info font-weight-bold text-right text-uppercase">
+  <div class="info font-weight-bold text-right text-uppercase mt-md-4 mt-lg-0">
     <p>complete the dare.</p>
   </div>
   <div class="cards-box">
@@ -68,6 +68,8 @@ export default {
 }
 @include media-breakpoint-down(md) {
   .cards-box {
+    left: 12vw;
+    top: 60px;
       img {
           max-width: 420px;
       }

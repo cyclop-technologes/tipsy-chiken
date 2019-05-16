@@ -27,17 +27,17 @@
                     <div class="points">{{card.points}}</div>
                   </div>
                   <div class="">
-                    <input type="text" name="title" placeholder="Card Title">
+                    <input v-model="card.cardName" type="text" name="title" placeholder="Card Title">
                   </div>
                   <div class="">
-                    <textarea name="Dare" placeholder="Your Dare" rows="6" cols="80"></textarea>
+                    <textarea v-model="card.dare" name="Dare" placeholder="Your Dare" rows="6" cols="80"></textarea>
                   </div>
                   <div class="btn-container">
                     <input class="btn py-2" type="submit" value="SUBMIT">
                   </div>
                   <div class="form-footer">
-                    <input type="text" name="name" placeholder="Your name">
-                    <input type="email" name="email" value="" placeholder="Email">
+                    <input v-model="card.name" type="text" name="name" placeholder="Your name">
+                    <input v-model="card.email" type="email" name="email" value="" placeholder="Email">
                   </div>
                 </form>
             </slide>
@@ -56,6 +56,10 @@ export default {
     return {
       card: {
         points: '',
+        cardName: '',
+        dare: '',
+        name: '',
+        email: '',
       },
       publicPath: process.env.BASE_URL,
       animals: ['bull', 'fish', 'goose', 'horse', 'owl', 'piggy', 'rat', 'rooster', 'sheeps', 'spider'],
