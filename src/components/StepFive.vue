@@ -1,12 +1,18 @@
 <template>
   <!-- STEP 5 -->
   <div  class="container fifth-step">
-    <div class="d-flex justify-content-between position-relative step-five-container">
+    <div class="d-flex
+    flex-column
+    flex-md-row
+    justify-content-between
+    position-relative
+    step-five-container
+    align-items-sm-center">
       <div class="step font-weight-bold">5</div>
-      <img data-aos="fade-up" class="rat-card"  src="../assets/img/rat.svg">
-      <div class="info font-weight-bold text-right text-uppercase">
+      <div class="info font-weight-bold text-uppercase">
         <p>next player's turn.</p>
       </div>
+      <img data-aos="fade-up" class="rat-card"  src="../assets/img/rat.svg">
       <div class="rat-traces-container">
         <RatTrace v-for="index in 3" :key="index"></RatTrace>
       </div>
@@ -49,6 +55,7 @@ export default {
   left: 250px;
 }
 .step-five-container {
+  text-align: center;
   padding-bottom: 251px;
   margin-bottom: 205px;
 }
@@ -80,34 +87,6 @@ export default {
 
   span {
     color: $secondary;
-  }
-}
-
-@include media-breakpoint-down(sm) {
-  .rad-card {
-    max-width: 350px;
-  }
-
-  .one-wins-banner {
-    max-width: 350px;
-    padding: 30px 22px 30px 22px;
-
-    .first-article {
-      font-size: 24px;
-      line-height: 59px;
-    }
-
-    .second-article {
-      font-size: 20px;
-      line-height: 34px;
-      padding-top: 20px;
-    }
-  }
-
-  .drunk-goose {
-    img {
-      max-width: 346px;
-    }
   }
 }
 
@@ -146,6 +125,51 @@ export default {
     left: 145px;
     img {
       max-width: 463px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+    .fifth-step {
+      padding-bottom: 190px;
+    }
+
+  .rat-card {
+    position: relative;
+    max-width: 350px;
+    left: 0;
+
+  }
+
+  .step-five-container {
+    text-align: center;
+    padding-bottom: 125px;
+    margin-bottom: 50px;
+  }
+
+  .one-wins-banner {
+    max-width: 350px;
+    padding: 30px 22px 30px 22px;
+
+    .first-article {
+      max-width: 302px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .second-article {
+      max-width: 260px;
+      font-size: 20px;
+      line-height: 24px;
+      padding-top: 20px;
+    }
+  }
+
+  .drunk-goose {
+    left: 30px;
+    top: 175px;
+    img {
+      max-width: 346px;
     }
   }
 }
