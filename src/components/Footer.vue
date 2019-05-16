@@ -54,7 +54,7 @@
       </div>
       <div class="footer-bottom py-5 d-flex justify-content-between align-items-center">
         <div class="privacy font-weight-bold">
-          <a href="">Privacy Policy</a> | <a href="">Terms of Service</a>
+          <a href="../assets/media/TipsyChicken_Privacy_Policy.pdf">Privacy Policy</a> | <a href="../assets/media/TipsyChicken_TermsOfServices.pdf">Terms of Service</a>
         </div>
         <div class="cpr text-white">
           All images, art, and game material are Copyright ©2019 Tipsy Chicken
