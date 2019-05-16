@@ -60,6 +60,9 @@
 }
 
 @include media-breakpoint-down(sm) {
+  .step-padding {
+    margin-bottom: 2rem;
+  }
   .center-absolute {
     position: relative;
     right: 0;

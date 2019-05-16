@@ -6,13 +6,20 @@
     d-flex
     flex-column
     flex-md-row
-    align-items-sm-center
+    align-items-center
     align-items-md-start
     justify-content-between
     step-padding
-    mt-lg-4">
+    mt-3
+    mt-md-4">
     <div class="step font-weight-bold">1</div>
-    <div class="info font-weight-bold text-sm-center text-md-right position-relative">
+    <div class="info
+      font-weight-bold
+      text-sm-center
+      text-md-right
+      mt-5
+      mt-md-0
+      position-relative">
       <div class="info-top text-uppercase ml-md-auto">
         <p>Always keep your
           shot glass full
@@ -93,6 +100,9 @@ export default {
   .info-top{
     width: 100%;
   }
+  .info-bottom{
+    margin-top: 2.5rem;
+  }
   .first-step{
     text-align: center;
   }
@@ -100,7 +110,8 @@ export default {
     position: relative;
     right: auto;
     top: auto;
-    width: 254px;
+    width: 320px;
+    max-width: 100%;
   }
 }
 

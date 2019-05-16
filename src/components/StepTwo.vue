@@ -1,16 +1,31 @@
 <template>
 <!-- STEP 2 -->
-    <div class="container second-step position-relative step-padding">
-      <div class="rooster-box position-relative d-flex justify-content-between">
-        <img
-          data-aos="fade-up"
-          class="center-absolute"
-          id="rooster"
-          src="../assets/img/rooster.svg">
+    <div class="container
+      second-step
+      position-relative
+      step-padding">
+      <div class="rooster-box
+        position-relative
+        d-flex
+        flex-column
+        flex-md-row
+        align-items-center
+        align-items-md-start
+        justify-content-between">
         <div class="step font-weight-bold">2</div>
-        <div class="info font-weight-bold text-right text-uppercase mt-md-4 mt-lg-0">
+        <div class="info
+          font-weight-bold
+          text-right
+          text-uppercase
+          mt-4
+          mt-lg-0">
           <p>draw a Dare card.</p>
         </div>
+        <img
+        data-aos="fade-up"
+        class="center-absolute"
+        id="rooster"
+        src="../assets/img/rooster.svg">
       </div>
     <Traces class="traces-container-step-two-top" count="5"></Traces>
     <div data-aos="fade-up" class="cards position-relative text-center">
@@ -60,17 +75,6 @@ export default {
   z-index: 2;
 }
 
-@include media-breakpoint-down(sm) {
-  #rooster {
-    max-width: 350px;
-  }
-  .cards {
-    img {
-      max-width: 346px;
-    }
-  }
-}
-
 @include media-breakpoint-down(md) {
   #rooster {
     max-width: 480px;
@@ -91,6 +95,17 @@ export default {
   .cards {
     img {
       max-width: 650px;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  #rooster {
+    max-width: 350px;
+    left: 0;
+  }
+  .cards {
+    img {
+      max-width: 346px;
     }
   }
 }

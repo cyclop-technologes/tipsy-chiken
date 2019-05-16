@@ -62,5 +62,11 @@ export default {
     line-height: 2.8rem;
   }
 }
+@include media-breakpoint-down(sm){
+  .title{
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+  }
+};
 
 </style>

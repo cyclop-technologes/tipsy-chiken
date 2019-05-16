@@ -4,7 +4,7 @@
       <div class="overlay"></div>
       <div class="cloud my-0 py-0">
         <div class="hidden-chicken"><img src="../assets/img/chick.svg"></div>
-        <img class="d-sm-none d-lg-block" src="../assets/img/cloud.svg">
+        <img class="d-none d-lg-block" src="../assets/img/cloud.svg">
         <img class="d-sm-block d-lg-none" src="../assets/img/cloud-md.svg" alt="">
       </div>
       <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
