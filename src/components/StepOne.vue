@@ -17,8 +17,6 @@
       font-weight-bold
       text-sm-center
       text-md-right
-      mt-5
-      mt-md-0
       position-relative">
       <div class="info-top text-uppercase ml-md-auto">
         <p>Always keep your

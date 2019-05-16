@@ -5,21 +5,21 @@
       third-step
       position-relative
       d-flex
-      justify-content-between
-      vh-100
+      flex-column
+      flex-md-row
+      align-items-center
+      align-items-md-start
+      justify-content-md-between
       step-margin">
-
   <div class="step font-weight-bold">3</div>
-  <div class="info font-weight-bold text-right text-uppercase mt-md-4 mt-lg-0">
-    <p>complete the dare.</p>
-  </div>
+  <div class="info font-weight-bold text-right text-uppercase mt-md-4 mt-lg-0">complete the dare.</div>
   <div class="cards-box">
-    <img data-aos="fade-up" src="../assets/img/complete_dare.svg">
+    <img class="cards-box-img" data-aos="fade-up" src="../assets/img/complete_dare.svg">
     <img data-aos="fade-left"
     class="rooster-acrobat"
     src="../assets/img/rooster_acrobat.svg">
   </div>
-    <Traces class="traces-container-step-three-bottom" count="7"></Traces>
+  <Traces class="traces-container-step-three-bottom" count="7"></Traces>
 </div>
 <!-- /STEP 3 -->
 </template>
@@ -34,7 +34,9 @@ export default {
 </script>
 <style lang="scss">
 @import '../assets/scss/main.scss';
-
+.third-step{
+  min-height: 100vh;
+}
 .cards-box {
     padding-top: 4rem;
     position: absolute;
@@ -55,17 +57,6 @@ export default {
     left: 500px;
     bottom: -325px;
 }
-
-@include media-breakpoint-down(sm) {
-    .cards-box {
-        img {
-            max-width: 346px;
-        }
-    }
-    .rooster-acrobat {
-      width: 129px;
-    }
-}
 @include media-breakpoint-down(md) {
   .cards-box {
     left: 12vw;
@@ -78,5 +69,27 @@ export default {
     left: 350px;
     width: 209px;
   }
+}
+@include media-breakpoint-down(sm) {
+    .third-step{
+      min-height: auto;
+    }
+    .cards-box {
+      position: relative;
+      top: 0;
+      left: 0;
+      padding: 2rem;
+    }
+    .cards-box-img{
+      width: 262px;
+      position: relative;
+      top: -7px;
+      left: -40px;
+    }
+    .rooster-acrobat {
+      width: 129px;
+      top: 20px;
+      left: 210px;
+    }
 }
 </style>

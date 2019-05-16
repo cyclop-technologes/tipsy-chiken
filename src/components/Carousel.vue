@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container d-flex align-items-center flex-column">
-      <h1 class="h1 font-weight-bold">SUGGEST <span>A CARD</span></h1>
+      <h1 class="h1 text-center font-weight-bold">SUGGEST <span>A CARD</span></h1>
     </div>
     <div class="container carousel">
       <div class="row">
@@ -64,9 +64,21 @@ export default {
       publicPath: process.env.BASE_URL,
       animals: ['bull', 'fish', 'goose', 'horse', 'owl', 'piggy', 'rat', 'rooster', 'sheeps', 'spider'],
       clickable: false,
-      controlsVisible: true,
+      vw: 1440,
     };
   },
+  computed: {
+    controlsVisible() {
+      return this.vw > 768;
+    }
+  },
+  created() {
+    const vm = this;
+    vm.vw = window.innerWidth;
+    window.onresize = function() {
+      vm.vw = window.innerWidth;
+    };
+  }
 };
 
 </script>

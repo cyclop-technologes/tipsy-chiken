@@ -16,7 +16,7 @@
             <b-button class="play-btn" v-b-modal.my-modal >
               <img src="../assets/img/btn_play.svg" alt="">
             </b-button>
-            <b-modal id="my-modal" centered hide-header hide-footer size="lg">
+            <b-modal id="my-modal" centered hide-header hide-footer size="xl">
               <button
                 type="button"
                 class="close"
@@ -47,11 +47,9 @@ export default {
   },
   mounted() {
     this.$root.$on('bv::modal::show', (bvEvent, modalId) => {
-      console.log('Modal is about to be shown', bvEvent, modalId);
       this.videoSrc = 'https://www.youtube.com/embed/sZjGvpb58oM?autoplay=1&amp&;showinfo=0';
     });
     this.$root.$on('bv::modal::hide', (bvEvent, modalId) => {
-      console.log('Modal is about to be shown', bvEvent, modalId);
       this.videoSrc = 'https://www.youtube.com/embed/sZjGvpb58oM';
     });
   },
@@ -94,14 +92,16 @@ export default {
   }
   .video {
     position: relative;
-    background-color: black;
+    background-color: $black;
     height: 75vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
     height: 100vh;
   }
-
+  .modal-content{
+    background-color: $black !important;
+  }
   .video video {
     position: absolute;
     top: 50%;

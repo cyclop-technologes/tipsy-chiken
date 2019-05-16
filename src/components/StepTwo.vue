@@ -16,9 +16,7 @@
         <div class="info
           font-weight-bold
           text-right
-          text-uppercase
-          mt-4
-          mt-lg-0">
+          text-uppercase">
           <p>draw a Dare card.</p>
         </div>
         <img
@@ -102,6 +100,9 @@ export default {
   #rooster {
     max-width: 350px;
     left: 0;
+  }
+  .rooster-box{
+    padding-bottom: 0;
   }
   .cards {
     img {
