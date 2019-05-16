@@ -3,7 +3,7 @@
     <div class="container d-flex align-items-center flex-column">
       <h1 class="h1 font-weight-bold">SUGGEST <span>A CARD</span></h1>
     </div>
-    <div class="container my-5 step-padding">
+    <div class="container carousel">
       <div class="row">
         <div class="col-10 mx-auto">
           <carousel-3d
@@ -81,6 +81,10 @@ export default {
     border: none;
     background: none !important;
     background-color: transparent !important;
+  }
+  .carousel {
+    margin-top: 3.25rem;
+    margin-bottom: 6.25rem;
   }
   .points{
     width: 42px;
@@ -178,5 +182,15 @@ export default {
     font-size: 30px;
     color: $white;
     padding: 50px 0px;
+  }
+
+  @include media-breakpoint-down(md) {
+    .h1 {
+      font-size: 6rem;
+    }
+    .carousel {
+      margin-top: 4.5rem;
+      margin-bottom: 6.25rem;
+    }
   }
 </style>

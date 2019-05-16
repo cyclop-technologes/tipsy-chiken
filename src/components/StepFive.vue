@@ -1,9 +1,9 @@
 <template>
   <!-- STEP 5 -->
-  <div  class="container fifth-step fifth-step-padding">
+  <div  class="container fifth-step">
     <div class="d-flex justify-content-between position-relative step-five-container">
       <div class="step font-weight-bold">5</div>
-      <img data-aos="fade-up" class="center-absolute" id="rat-card"  src="../assets/img/rat.svg">
+      <img data-aos="fade-up" class="rat-card"  src="../assets/img/rat.svg">
       <div class="info font-weight-bold text-right text-uppercase">
         <p>next player's turn.</p>
       </div>
@@ -14,8 +14,7 @@
     <div  class="first-one-wins position-relative">
       <div class="one-wins-banner text-center text-uppercase font-weight-bold mx-auto">
         <p class="first-article">first one to
-          <span>7 points</span>
-          wins... or play until you get the drunchies!</p>
+          <span>7 points</span> wins... or play until you get the drunchies!</p>
         <p class="second-article">(At which point, stop...<br>
           and immediately order<br>
           take-out! <span>YUM!</span>)</p>
@@ -40,10 +39,18 @@ export default {
 </script>
 <style lang="scss">
 @import '../assets/scss/main.scss';
-
+.fifth-step {
+  padding-bottom: 325px;
+  margin-bottom: 100px;
+}
+.rat-card {
+  position: absolute;
+  top: 0;
+  left: 250px;
+}
 .step-five-container {
   padding-bottom: 251px;
-  margin-bottom: 200px;
+  margin-bottom: 205px;
 }
 .drunk-goose{
   position: absolute;
@@ -58,7 +65,6 @@ export default {
   background-color: #111111;
   border-radius: 35px;
   padding: 64px 58px 55px 58px;
-  margin-top: 15.625rem;
   width: 900px;
 
   .first-article {
@@ -69,7 +75,7 @@ export default {
   .second-article {
     font-size: 36px;
     line-height: 34px;
-    padding-top: 20px;
+    margin-top: 20px;
   }
 
   span {
@@ -77,12 +83,8 @@ export default {
   }
 }
 
-.fifth-step-padding {
-  padding-bottom: 350px;
-}
-
 @include media-breakpoint-down(sm) {
-  #rat-card {
+  .rad-card {
     max-width: 350px;
   }
 
@@ -110,30 +112,40 @@ export default {
 }
 
 @include media-breakpoint-down(md) {
-  #rat-card {
-    max-width: 408px;
+  .fifth-step  {
+    margin-bottom: 50px;
+  }
+
+  .rat-card {
+    max-width: 410px;
+    top: 5px;
+    left: 110px;
+  }
+  .step-five-container {
+    margin-bottom: 7rem;
   }
 
   .one-wins-banner {
     max-width: 690px;
-    padding: 30px 22px 30px 22px;
+    padding: 60px 122px 60px 122px;
 
     .first-article {
+      width: 455px;
       font-size: 30px;
-      line-height: 59px;
+      line-height: 36px;
     }
 
     .second-article {
       font-size: 25px;
-      line-height: 34px;
-      padding-top: 20px;
+      line-height: 30px;
+      margin-top: 20px;
     }
   }
   .drunk-goose {
     top: 200px;
-    left: 125px;
+    left: 145px;
     img {
-      max-width: 460px;
+      max-width: 463px;
     }
   }
 }

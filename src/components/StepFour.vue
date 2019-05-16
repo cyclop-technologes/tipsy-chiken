@@ -96,7 +96,11 @@ export default {
 }
 @include media-breakpoint-down(sm) {
 
-  .draw-dare,
+  .draw-dare {
+    img {
+      max-width: 350px;
+    }
+  }
   .rooster_boo-ha-re-koo {
     img {
       max-width: 350px;
@@ -104,10 +108,18 @@ export default {
   }
 }
 @include media-breakpoint-down(md) {
-  .draw-dare,
-  .rooster_boo-ha-re-koo {
+  .draw-dare {
+  padding-top: 8.5rem;
     img {
       max-width: 690px;
+    }
+  }
+  .rooster_boo-ha-re-koo {
+    margin-top: 3.75rem;
+    padding-bottom: 0;
+    margin-bottom: 8rem;
+    img {
+      max-width: 517px;
     }
   }
 }

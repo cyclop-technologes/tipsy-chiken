@@ -26,7 +26,7 @@
 }
 
 .suspicious-chicken {
-  padding: 100px 0px;
+  padding: 80px 0px;
   max-width: 100vw;
   overflow: hidden;
 }
@@ -48,9 +48,7 @@
     .text,
     .buy-button {
       font-size: 17px;
-
     }
-
     .buy-button {
       margin-top: 100px;
     }
@@ -58,23 +56,23 @@
 }
 @include media-breakpoint-down(md) {
   .suspicious-chicken {
-    padding: 50px 0px;
+    margin-bottom: 40px;
+    padding: 0px 0px;
     img {
-      max-width: 675px;
+      max-width: 680px;
     }
   }
 
   .chicken-content {
     left: 150px;
 
-    .text,
-    .buy-button {
-      font-size: 17px;
+    .text {
+    font-size: 24px;
 
     }
-
     .buy-button {
-      margin-top: 0;
+      font-size: 18px;
+      margin-top: -10px;
     }
 
   }
