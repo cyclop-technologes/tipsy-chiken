@@ -49,4 +49,10 @@ export default {
   background: url('assets/img/bg.svg') 0 0 repeat;
 }
 
+@include media-breakpoint-down(sm){
+  .bg-container {
+    background: url('assets/img/bg-sm.png') top center repeat;
+  }
+}
+
 </style>

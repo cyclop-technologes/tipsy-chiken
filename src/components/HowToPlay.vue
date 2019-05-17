@@ -6,8 +6,8 @@
       flex-column
       mb-sm-5
       mb-lg-5
-      mt-5
-      mt-sm-0
+      pt-5
+      pt-sm-0
       position-relative
       text-center">
       <h1 class="title how-to-play font-weight-bold">HOW TO PLAY</h1>

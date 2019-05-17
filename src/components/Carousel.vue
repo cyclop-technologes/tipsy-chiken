@@ -5,7 +5,7 @@
     </div>
     <div class="container carousel">
       <div class="row">
-        <div class="col-10 mx-auto">
+        <div class="col-12 col-sm-10 mx-auto">
           <carousel-3d
           :clickable="clickable"
           :controlsVisible="controlsVisible"
@@ -120,6 +120,8 @@ export default {
   }
   .current{
     .card-form{
+      position: relative;
+      z-index: 9999;
       opacity: 1;
       visibility: visible;
     }
@@ -214,7 +216,7 @@ export default {
   }
   @include media-breakpoint-down(sm) {
     .carousel-title{
-      font-size: 1.8rem !important; 
+      font-size: 1.8rem !important;
     }
   };
 </style>
