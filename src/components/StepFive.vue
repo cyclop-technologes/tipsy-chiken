@@ -151,6 +151,7 @@ export default {
   .one-wins-banner {
     max-width: 350px;
     padding: 30px 22px 30px 22px;
+    text-align: center;
 
     .first-article {
       max-width: 302px;
