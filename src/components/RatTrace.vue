@@ -25,7 +25,4 @@
   bottom: -205px;
   }
 }
-
-
-
 </style>
