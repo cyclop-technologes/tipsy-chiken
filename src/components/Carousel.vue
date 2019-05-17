@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container d-flex align-items-center flex-column">
-      <h1 class="h1 text-center font-weight-bold">SUGGEST <span>A CARD</span></h1>
+      <h1 class="carousel-title h1 text-center font-weight-bold">SUGGEST <span>A CARD</span></h1>
     </div>
     <div class="container carousel">
       <div class="row">
@@ -212,4 +212,9 @@ export default {
       margin-bottom: 6.25rem;
     }
   }
+  @include media-breakpoint-down(sm) {
+    .carousel-title{
+      font-size: 1.8rem !important; 
+    }
+  };
 </style>
