@@ -143,6 +143,7 @@ export default {
 
   .step-five-container {
     text-align: center;
+    align-items: center;
     padding-bottom: 125px;
     margin-bottom: 50px;
   }

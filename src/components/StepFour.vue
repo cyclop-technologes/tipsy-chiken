@@ -21,6 +21,7 @@
           your dare card for points. </p>
       </div>
     </div>
+    <div class="mobile-trace-s-four-top"><img src="../assets/img/mobile_trace_small.svg"></div>
     <div data-aos="fade-up" class="draw-dare position-relative"><img src="../assets/img/draw_a_goat.svg"></div>
     <div class="info font-weight-bold text-uppercase text-right ml-sm-auto">
       <p> If you don't complete the
@@ -28,6 +29,7 @@
         and take your punishment.
         Discard the dare card.</p>
     </div>
+    <div class="mobile-trace-s-four-bottom"><img src="../assets/img/mobile_trace_small.svg"></div>
     <div data-aos="fade-up" class="rooster_boo-ha-re-koo text-center position-relative"><img src="../assets/img/rooster_boo-ha-re-koo.svg"></div>
     <Traces class="traces-container-step-four-bottom position-absolute" count="5" rotate="-10"></Traces>
   </div>
@@ -49,6 +51,11 @@ export default {
   .traces-container-step-four-bottom {
     right: 600px;
     bottom: -20px;
+  }
+
+  .mobile-trace-s-four-bottom,
+  .mobile-trace-s-four-top {
+    display: none;
   }
 
   .draw-dare {
@@ -99,6 +106,7 @@ export default {
 }
 
 @include media-breakpoint-down(md) {
+
   .draw-dare {
   padding-top: 8.5rem;
   padding-bottom: 4.5rem;
@@ -119,6 +127,17 @@ export default {
   .step {
     margin-bottom: 3rem;
   }
+  .mobile-trace-s-four-top {
+    position: absolute;
+    top: 200px;
+    left: 190px;
+  }
+  .mobile-trace-s-four-bottom {
+    position: absolute;
+    bottom: 200px;
+    left: 190px;
+  }
+
   .draw-dare {
     padding-top: 2.5rem;
     img {

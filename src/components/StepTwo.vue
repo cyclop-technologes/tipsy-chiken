@@ -26,6 +26,7 @@
         src="../assets/img/rooster.svg">
       </div>
     <Traces class="traces-container-step-two-top" count="5"></Traces>
+    <div class="mobile-traces-s-two"><img src="../assets/img/mobile_trace.svg"></div>
     <div data-aos="fade-up" class="cards position-relative text-center">
       <img src="../assets/img/cards.svg">
     </div>
@@ -52,6 +53,10 @@ export default {
   left: 525px;
   top: 310px;
 
+}
+
+.mobile-traces-s-two {
+  display: none;
 }
 
 .traces-container-step-two-bottom {
@@ -108,6 +113,12 @@ export default {
     img {
       max-width: 346px;
     }
+  }
+  .mobile-traces-s-two {
+    position: absolute;
+    bottom: 30px;
+    left: 190px;
+
   }
 }
 
