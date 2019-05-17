@@ -63,6 +63,12 @@ export default {
     padding-bottom: 12rem;
   }
 
+  .traces-around-container {
+    position: absolute;
+    left: 375px;
+    top: -80px;
+  }
+
   .trace-around-block-two {
     position: absolute;
     top: 95px;
@@ -106,7 +112,25 @@ export default {
 }
 
 @include media-breakpoint-down(md) {
+  .traces-around-container {
+    left: 190px;
+    top: -80px;
+  }
+  .trace-around-block-six {
+    position: absolute;
+    top: 545px;
+    left: -190px;
+  }
 
+  .trace-around-block-seven {
+    position: absolute;
+    top: 820px;
+    left: 20px;
+  }
+  .traces-container-step-four-bottom {
+    right: 400px;
+    bottom: -150px;
+  }
   .draw-dare {
   padding-top: 8.5rem;
   padding-bottom: 4.5rem;

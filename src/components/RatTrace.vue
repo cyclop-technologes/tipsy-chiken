@@ -19,4 +19,13 @@
   bottom: -285px;
 }
 
+@include media-breakpoint-down(md) {
+.rat-traces-container {
+  right: 325px;
+  bottom: -205px;
+  }
+}
+
+
+
 </style>

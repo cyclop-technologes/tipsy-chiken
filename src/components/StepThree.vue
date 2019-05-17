@@ -69,6 +69,10 @@ export default {
     left: 350px;
     width: 209px;
   }
+  .traces-container-step-three-bottom {
+      left: 325px;
+      bottom: -325px;
+  }
 }
 @include media-breakpoint-down(sm) {
     .third-step{

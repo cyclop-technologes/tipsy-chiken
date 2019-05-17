@@ -91,6 +91,7 @@ export default {
     margin-top: 7.7rem;
   }
   .traces-container-step-one{
+    bottom: -220px;
     right: 365px;
   }
 }
