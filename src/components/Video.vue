@@ -199,6 +199,11 @@ export default {
       height: 1rem;
     }
   }
+  @include media-breakpoint-down(sm) {
+    .cloud {
+      display: none;
+    }
+  }
   @media (pointer: coarse) and (hover: none) {
     .video {
       background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;

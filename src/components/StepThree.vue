@@ -62,7 +62,7 @@ export default {
     left: 12vw;
     top: 60px;
       img {
-          max-width: 420px;
+          max-width: 100%;
       }
   }
   .rooster-acrobat {
@@ -75,6 +75,7 @@ export default {
       min-height: auto;
     }
     .cards-box {
+      max-width: 100%;
       position: relative;
       top: 0;
       left: 0;

@@ -97,7 +97,8 @@ export default {
   }
   .cards {
     img {
-      max-width: 650px;
+      width: 650px;
+      max-width: 100%;
     }
   }
 }
@@ -111,7 +112,8 @@ export default {
   }
   .cards {
     img {
-      max-width: 346px;
+      width: 346px;
+      max-width: 100%;
     }
   }
   .mobile-traces-s-two {

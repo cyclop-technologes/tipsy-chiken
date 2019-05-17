@@ -105,7 +105,8 @@ export default {
   }
 
   .one-wins-banner {
-    max-width: 690px;
+    width: 690px;
+    max-width: 100%;
     padding: 60px 122px 60px 122px;
 
     .first-article {
@@ -144,23 +145,26 @@ export default {
   .step-five-container {
     text-align: center;
     align-items: center;
-    padding-bottom: 125px;
-    margin-bottom: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 25px;
   }
 
   .one-wins-banner {
-    max-width: 350px;
+    width: 350px;
+    max-width: 100%;
     padding: 30px 22px 30px 22px;
     text-align: center;
 
     .first-article {
-      max-width: 302px;
+      max-width: 100%;
+      width: 302px;
       font-size: 24px;
       line-height: 28px;
     }
 
     .second-article {
-      max-width: 260px;
+      max-width: 100%;
+      width: 280px;
       font-size: 20px;
       line-height: 24px;
       padding-top: 20px;
@@ -169,9 +173,10 @@ export default {
 
   .drunk-goose {
     left: 30px;
-    top: 175px;
+    top: 190px;
     img {
-      max-width: 346px;
+      width: 346px;
+      max-width: 100%;
     }
   }
 }

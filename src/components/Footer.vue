@@ -131,7 +131,7 @@
   .farm-img{
     max-width: 430px;
     position: relative;
-    right: 70px;
+    right: 30px;
     margin-top: 5rem;
   }
   .media{

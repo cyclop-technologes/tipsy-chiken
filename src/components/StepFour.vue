@@ -23,7 +23,7 @@
     </div>
     <div class="mobile-trace-s-four-top"><img src="../assets/img/mobile_trace_small.svg"></div>
     <div data-aos="fade-up" class="draw-dare position-relative"><img src="../assets/img/draw_a_goat.svg"></div>
-    <div class="info font-weight-bold text-uppercase text-right ml-sm-auto">
+    <div class="info font-weight-bold text-uppercase ml-sm-auto">
       <p> If you don't complete the
         dare, draw a chicken card
         and take your punishment.
@@ -141,12 +141,15 @@ export default {
   .draw-dare {
     padding-top: 2.5rem;
     img {
-      max-width: 346px;
+      width: 346px;
+      max-width: 100%;
     }
   }
   .rooster_boo-ha-re-koo {
+    margin-bottom: 5rem;
     img {
-      max-width: 346px;
+      width: 346px;
+      max-width: 100%;
     }
   }
 }
