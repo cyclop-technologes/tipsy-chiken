@@ -2,7 +2,7 @@
   <section class="video position-relative">
 
       <div class="overlay"></div>
-      <div class="cloud my-0 py-0">
+      <div class="greben my-0 py-0">
         <div class="hidden-chicken"><img src="../assets/img/chick.svg"></div>
         <img class="d-none d-lg-block" src="../assets/img/cloud.svg">
         <img class="d-sm-block d-lg-none" src="../assets/img/cloud-md.svg" alt="">
@@ -133,7 +133,7 @@ export default {
     z-index: 1;
   }
   #my-modal{}
-  .cloud {
+  .greben {
     position: absolute;
     z-index: 1;
     bottom: -1px;
@@ -200,7 +200,7 @@ export default {
     }
   }
   @include media-breakpoint-down(sm) {
-    .cloud {
+    .greben {
       display: none;
     }
   }
