@@ -11,12 +11,14 @@ app.use(bodyParser.urlencoded({ extended: false }))
 let creds_json = {
   client_email: process.env.client_email,
   private_key: process.env.private_key,
-}
-
+};
+console.log(creds_json);
 doc.useServiceAccountAuth(creds_json, function() {
   doc.getInfo(function(err, info) {
     sheet = info.worksheets[0];
     sheet.setHeaderRow(['cardTitle', 'animal', 'subject', 'points', 'name', 'email']);
+
+    console.log(sheet)
   });
 });
 
