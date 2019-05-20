@@ -203,6 +203,9 @@ export default {
     .greben {
       display: none;
     }
+    .btn.play-btn {
+      margin-bottom: 2.5rem;
+    }
   }
   @media (pointer: coarse) and (hover: none) {
     .video {
