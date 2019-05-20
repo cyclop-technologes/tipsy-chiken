@@ -18,26 +18,22 @@
                 <img class="card-img" :src="`${publicPath}img/card_${animal}.svg`">
                 <form :ref="`form-${index}`" class="card-form px-3 pt-4 pb-5" method="post" action="/newcard">
                   <div class="form-header">
-                    <input class="animal-input" readonly :value="animal" type="text" name="animal" :placeholder="animal">
-                    <input class="ml-auto"
-                    v-model="card.points"
-                    type="number"
-                    name="points"
-                    placeholder="Points">
+                    <v-text-field name="animal" class="animal" dark hide-details single-line required readonly :value="animal"></v-text-field>
+                    <v-text-field name="points" class="points-input" dark hide-details single-line v-model="card.points" required label="Points"></v-text-field>
                     <div class="points">{{card.points}}</div>
                   </div>
                   <div class="">
-                    <input required v-model="card.cardName" type="text" name="title" placeholder="Card Title">
+                    <v-text-field name="title" dark hide-details single-line v-model="card.cardName" required label="Card Title"></v-text-field>
                   </div>
                   <div class="">
-                    <textarea required v-model="card.dare" name="Dare" placeholder="Your Dare" rows="6" cols="80"></textarea>
+                    <v-textarea name="subject" box dark hide-details single-line solo label="Your Dare" v-model="card.dare" ></v-textarea>
                   </div>
-                  <div class="btn-container">
-                    <input class="btn py-2" type="submit" @click='submit(index)' value="SUBMIT">
+                  <div class="btn-container mt-3">
+                    <input class="btn py-2" type="submit" value="SUBMIT">
                   </div>
                   <div class="form-footer">
-                    <input required v-model="card.name" type="text" name="name" placeholder="Your name">
-                    <input required v-model="card.email" type="email" name="email" value="" placeholder="Email">
+                    <v-text-field name="name" color="#C41C24" dark hide-details single-line v-model="card.name" required label="Name" single-line></v-text-field>
+                    <v-text-field name="email" color="#C41C24" dark single-line v-model="card.email" :rules="[rules.required, rules.email]" label="E-mail" single-line></v-text-field>
                   </div>
                 </form>
             </slide>
@@ -62,6 +58,14 @@ export default {
         email: '',
         animal: '',
       },
+      rules: {
+        required: value => !!value || 'Required.',
+        counter: value => value.length <= 20 || 'Max 20 characters',
+        email: value => {
+          const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          return pattern.test(value) || 'Invalid e-mail.'
+        }
+      },
       publicPath: process.env.BASE_URL,
       animals: ['bull', 'fish', 'goose', 'horse', 'owl', 'piggy', 'rat', 'rooster', 'sheeps', 'spider'],
       clickable: false,
@@ -85,33 +89,24 @@ export default {
     window.onresize = function() {
       vm.vw = window.innerWidth;
     };
-
-    let inputs = document.getElementsByTagName('input');
-    for (let index = 0; index < inputs.length; ++index) {
-        inputs[index].onclick = inputs[index].focus();
-    }
   }
 };
 
 </script>
 <style lang="scss">
-  input[type="number"]::-webkit-outer-spin-button,
-  input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  input[type="number"] {
-    -moz-appearance: textfield;
-  }
-
-  .animal-input{
-    text-transform: capitalize;
-  }
   .carousel-3d-slide{
     border: none;
     background: none !important;
     background-color: transparent !important;
+  }
+  .animal{
+    margin-right: 9rem !important;
+    input{
+      text-transform: capitalize;
+    }
+  }
+  .theme--dark.v-text-field > .v-input__control > .v-input__slot:before{
+    border-color: $white
   }
   .carousel {
     margin-top: 3.25rem;
@@ -120,10 +115,7 @@ export default {
   .points{
     width: 42px;
     height: 42px;
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
-    -ms-align-items: center;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -145,6 +137,14 @@ export default {
       width: 60px !important;
     }
   }
+  .form-footer{
+    .theme--dark.v-text-field > .v-input__control > .v-input__slot:before{
+      border-color: $secondary;
+      &:hover{
+        border-color: $secondary;
+      }
+    }
+  }
   .card-form{
     position: relative;
     display: flex;
@@ -156,24 +156,37 @@ export default {
     visibility: hidden;
     transition: 0.3s;
     background: rgba($black, 0.7);
-    textarea{
-      background: transparent url('../assets/img/lines.svg');
-      border: none;
-      display: block;
-      box-sizing: border-box;
-      max-width: 100%;
-      color: $white;
-      line-height: 2;
-      &::placeholder{
-        color: $white;
+    .v-textarea{
+      margin-top: 2rem;
+      .v-label{
+        top: 7px !important;
       }
     }
-    input:not(.btn){
-      background: none;
-      border: none;
-      border-bottom: 2px solid $white;
+    .v-input{
       color: $white;
+      padding: 0;
+      margin: 0;
+    }
+    .v-input__slot{
+      background: none !important;
+      padding: 0 !important;
+      -webkit-box-shadow: none;
+      box-shadow: none !important;
+    }
+    .v-text-field__slot{
+      flex: none !important;
       width: 100%;
+    }
+    textarea{
+      padding: 0 !important;
+      margin: 0 !important;
+      background: transparent url('../assets/img/lines.svg');
+      border: none;
+      display: block !important;
+      box-sizing: border-box !important;
+      width: 100% !important;
+      color: $white;
+      line-height: 2;
       &::placeholder{
         color: $white;
       }
@@ -185,12 +198,6 @@ export default {
       color: $white;
       font-weight: 500;
       width: 185px;
-    }
-  }
-
-  .form-footer{
-    input{
-      border-bottom: 1px solid $secondary !important;
     }
   }
   .btn-container{

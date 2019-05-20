@@ -32,7 +32,7 @@ app.post('/newcard', function(req, res) {
   sheet.addRow({
     cardTitle: card.title,
     animal: card.animal,
-    subject: card.Dare,
+    subject: card.subject,
     points: card.points,
     name: card.name,
     email: card.email,
