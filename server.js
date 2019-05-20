@@ -10,7 +10,7 @@ let sheet;
 app.use(bodyParser.urlencoded({ extended: false }))
 let creds_json = {
   client_email: process.env.client_email,
-  private_key: process.env.private_key
+  private_key: process.env.private_key,
 }
 
 doc.useServiceAccountAuth(creds_json, function() {
