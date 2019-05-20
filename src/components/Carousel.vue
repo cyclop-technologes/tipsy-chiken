@@ -16,9 +16,9 @@
           border="0">
             <slide v-for="(animal, index) in animals" :key="index" :index="index">
                 <img class="card-img" :src="`${publicPath}img/card_${animal}.svg`">
-                <form class="card-form px-3 pt-4 pb-5" action="">
+                <form :ref="`form-${index}`" class="card-form px-3 pt-4 pb-5" method="post" action="/newcard">
                   <div class="form-header">
-                    <input class="animal-input" :disabled="animal !== 'offer'" type="text" name="animal" :placeholder="animal">
+                    <input class="animal-input" readonly :value="animal" type="text" name="animal" :placeholder="animal">
                     <input class="ml-auto"
                     v-model="card.points"
                     type="number"
@@ -27,17 +27,17 @@
                     <div class="points">{{card.points}}</div>
                   </div>
                   <div class="">
-                    <input v-model="card.cardName" type="text" name="title" placeholder="Card Title">
+                    <input required v-model="card.cardName" type="text" name="title" placeholder="Card Title">
                   </div>
                   <div class="">
-                    <textarea v-model="card.dare" name="Dare" placeholder="Your Dare" rows="6" cols="80"></textarea>
+                    <textarea required v-model="card.dare" name="Dare" placeholder="Your Dare" rows="6" cols="80"></textarea>
                   </div>
                   <div class="btn-container">
-                    <input class="btn py-2" type="submit" value="SUBMIT">
+                    <input class="btn py-2" type="submit" @click='submit(index)' value="SUBMIT">
                   </div>
                   <div class="form-footer">
-                    <input v-model="card.name" type="text" name="name" placeholder="Your name">
-                    <input v-model="card.email" type="email" name="email" value="" placeholder="Email">
+                    <input required v-model="card.name" type="text" name="name" placeholder="Your name">
+                    <input required v-model="card.email" type="email" name="email" value="" placeholder="Email">
                   </div>
                 </form>
             </slide>
@@ -60,6 +60,7 @@ export default {
         dare: '',
         name: '',
         email: '',
+        animal: '',
       },
       publicPath: process.env.BASE_URL,
       animals: ['bull', 'fish', 'goose', 'horse', 'owl', 'piggy', 'rat', 'rooster', 'sheeps', 'spider'],
@@ -72,12 +73,23 @@ export default {
       return this.vw > 768;
     }
   },
+  methods : {
+    submit(i){
+
+      this.$refs.form.submit()
+    }
+  },
   created() {
     const vm = this;
     vm.vw = window.innerWidth;
     window.onresize = function() {
       vm.vw = window.innerWidth;
     };
+
+    let inputs = document.getElementsByTagName('input');
+    for (let index = 0; index < inputs.length; ++index) {
+        inputs[index].onclick = inputs[index].focus();
+    }
   }
 };
 
