@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import './plugins/vuetify'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import BootstrapVue from 'bootstrap-vue';
