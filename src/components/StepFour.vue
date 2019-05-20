@@ -155,13 +155,15 @@ export default {
     display: block;
     position: absolute;
     top: 200px;
-    left: 190px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .mobile-trace-s-four-bottom {
     display: block;
     position: absolute;
-    bottom: 200px;
-    left: 190px;
+    bottom: 180px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .draw-dare {

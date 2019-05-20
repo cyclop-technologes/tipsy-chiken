@@ -157,7 +157,8 @@ export default {
   .rat-traces-mobile {
     display: block;
     position: absolute;
-    left: 150px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: -70px;
   }
 
