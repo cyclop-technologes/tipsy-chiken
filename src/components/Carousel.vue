@@ -19,7 +19,7 @@
                 <form :ref="`form-${index}`" class="card-form px-3 pt-4 pb-5" method="post" action="/newcard">
                   <div class="form-header">
                     <v-text-field name="animal" class="animal" dark hide-details single-line required readonly :value="animal"></v-text-field>
-                    <v-text-field name="points" class="points-input" dark hide-details single-line v-model="card.points" required label="Points"></v-text-field>
+                    <v-text-field name="points" class="points-input" dark hide-details single-line v-model="card.points" type="number" required label="Points"></v-text-field>
                     <div class="points">{{card.points}}</div>
                   </div>
                   <div class="">
