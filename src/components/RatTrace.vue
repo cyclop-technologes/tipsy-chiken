@@ -25,4 +25,16 @@
   bottom: -205px;
   }
 }
+
+@include media-breakpoint-down(sm) {
+.rat-traces-container {
+  right: 325px;
+  bottom: -205px;
+  }
+}
+@include media-breakpoint-down(sm) {
+.rat-traces-container {
+  display: none;
+  }
+}
 </style>

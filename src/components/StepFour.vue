@@ -152,11 +152,13 @@ export default {
     margin-bottom: 3rem;
   }
   .mobile-trace-s-four-top {
+    display: block;
     position: absolute;
     top: 200px;
     left: 190px;
   }
   .mobile-trace-s-four-bottom {
+    display: block;
     position: absolute;
     bottom: 200px;
     left: 190px;

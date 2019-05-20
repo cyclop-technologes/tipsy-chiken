@@ -16,6 +16,7 @@
       <div class="rat-traces-container">
         <RatTrace v-for="index in 3" :key="index"></RatTrace>
       </div>
+      <div class="rat-traces-mobile"><img src="../assets/img/mobile-trace-rat.svg"></div>
     </div>
     <div  class="first-one-wins position-relative">
       <div class="one-wins-banner text-center text-uppercase font-weight-bold mx-auto">
@@ -58,6 +59,10 @@ export default {
   text-align: center;
   padding-bottom: 251px;
   margin-bottom: 205px;
+}
+
+.rat-traces-mobile {
+  display: none;
 }
 .drunk-goose{
   position: absolute;
@@ -147,6 +152,13 @@ export default {
     align-items: center;
     padding-bottom: 100px;
     margin-bottom: 25px;
+  }
+
+  .rat-traces-mobile {
+    display: block;
+    position: absolute;
+    left: 150px;
+    bottom: -70px;
   }
 
   .one-wins-banner {
