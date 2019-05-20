@@ -117,6 +117,7 @@ export default {
     }
   }
   .mobile-traces-s-two {
+    display: block;
     position: absolute;
     bottom: 30px;
     left: 190px;
