@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="suggest-card">
     <div class="container d-flex align-items-center flex-column">
       <h1 class="carousel-title h1 text-center font-weight-bold">SUGGEST <span>A CARD</span></h1>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="how-to-play">
     <div class="container
       d-flex
       align-items-center
