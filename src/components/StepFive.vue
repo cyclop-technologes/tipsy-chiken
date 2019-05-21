@@ -8,7 +8,7 @@
     position-relative
     step-five-container
     align-items-sm-center">
-      <div class="step font-weight-bold">5</div>
+      <div class="text-center text-sm-left step font-weight-bold">5</div>
       <div class="info font-weight-bold text-uppercase">
         <p>next player's turn.</p>
       </div>
