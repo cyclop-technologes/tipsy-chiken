@@ -1,6 +1,6 @@
 <template lang="html">
   <section id="banner" class="banner min-vh-100">
-    <div class="container min-vh-100">
+    <div class="container min-vh-100 py-0">
       <div class="row min-vh-100">
         <div data-aos="zoom-out-right"
           class="col-sm-12 col-lg-6 position-relative align-self-center text-sm-center">
