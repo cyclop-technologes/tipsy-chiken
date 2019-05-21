@@ -150,6 +150,7 @@
     .privacy{
       grid-area: a;
       margin-bottom: 3rem;
+      z-index: 999;
     }
     .cpr{
       grid-area: b;
