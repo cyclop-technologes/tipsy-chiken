@@ -21,17 +21,27 @@
           your dare card for points. </p>
       </div>
     </div>
-    <div class="mobile-trace-s-four-top"><img src="../assets/img/mobile_trace_small.svg"></div>
-    <div data-aos="fade-up" class="draw-dare position-relative"><img src="../assets/img/draw_a_goat.svg"></div>
-    <div class="info font-weight-bold text-center text-md-right  text-uppercase ml-sm-auto">
+    <div class="mobile-trace-s-four-top">
+      <img src="../assets/img/mobile_trace_small.svg">
+    </div>
+    <div data-aos="fade-up" class="draw-dare position-relative">
+      <img src="../assets/img/draw_a_goat.svg">
+    </div>
+    <div class="info font-weight-bold text-center text-md-right text-uppercase ml-sm-auto">
       <p> If you don't complete the
         dare, draw a chicken card
         and take your punishment.
         Discard the dare card.</p>
     </div>
     <div class="mobile-trace-s-four-bottom"><img src="../assets/img/mobile_trace_small.svg"></div>
-    <div data-aos="fade-up" class="rooster_boo-ha-re-koo text-center position-relative"><img src="../assets/img/rooster_boo-ha-re-koo.svg"></div>
-    <Traces class="traces-container-step-four-bottom position-absolute" count="5" rotate="-10"></Traces>
+    <div data-aos="fade-up" class="rooster_boo-ha-re-koo text-center position-relative">
+      <img src="../assets/img/rooster_boo-ha-re-koo.svg">
+    </div>
+    <Traces
+      class="traces-container-step-four-bottom position-absolute"
+      count="5"
+      rotate="-10"
+    ></Traces>
   </div>
   <!-- /STEP 4 -->
 </template>
