@@ -15,7 +15,7 @@
      flex-md-row
      justify-content-between">
       <div class="step font-weight-bold">4</div>
-      <div class="info font-weight-bold text-right text-uppercase">
+      <div class="info font-weight-bold text-center text-md-right text-uppercase">
         <p>if you complete the dare,
           draw a GOAT card and keep
           your dare card for points. </p>
