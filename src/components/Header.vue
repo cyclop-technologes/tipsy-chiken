@@ -19,19 +19,16 @@
 export default {
   created() {
     let prevScrollpos = window.pageYOffset;
-    function hideOnScroll() {
+    window.onscroll = function () {
       const currentScrollPos = window.pageYOffset;
-      if (currentScrollPos === 0) document.getElementById('header').style.top = '0';
-      if (prevScrollpos > currentScrollPos) {
+      if (prevScrollpos > currentScrollPos || currentScrollPos <= 0) {
         document.getElementById('header').style.top = '0';
       } else {
         document.getElementById('header').style.top = '-80px';
         document.getElementById('navbarToggler').classList.remove('show');
       }
       prevScrollpos = currentScrollPos;
-    }
-
-    window.onscroll = hideOnScroll();
+    };
   },
 };
 </script>
