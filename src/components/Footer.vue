@@ -30,26 +30,26 @@
             </nav>
           </div>
         </div>
-        <b-nav class="media flex-column flex-md-row align-items-center align-self-sm-end">
+        <b-nav class="media flex-column flex-sm-row align-items-center align-self-sm-end">
           <b-nav-item>
             <font-awesome-icon :icon="['fab', 'amazon']" />
           </b-nav-item>
           <b-nav-item
             target="_blank"
             href="https://instagram.com/tipsychickengame"
-            class="ml-md-3">
+            class="ml-sm-3">
               <font-awesome-icon :icon="['fab', 'instagram']" />
           </b-nav-item>
           <b-nav-item
             target="_blank"
             href="https://www.youtube.com/channel/UCNUEehQ7YLrCXCUriKrrJiQ/featured"
-            class="ml-md-3">
+            class="ml-sm-3">
               <font-awesome-icon :icon="['fab', 'youtube']" />
           </b-nav-item>
-          <b-nav-item target="_blank" href="https://facebook.com/tipsychickengame" class="ml-md-3">
+          <b-nav-item target="_blank" href="https://facebook.com/tipsychickengame" class="ml-sm-3">
               <font-awesome-icon :icon="['fab', 'facebook-f']" />
           </b-nav-item>
-          <b-nav-item target="_blank" href="https://twitter.com/tipsy_chicken" class="ml-md-3">
+          <b-nav-item target="_blank" href="https://twitter.com/tipsy_chicken" class="ml-sm-3">
               <font-awesome-icon :icon="['fab', 'twitter']" />
           </b-nav-item>
         </b-nav>
@@ -129,7 +129,7 @@ export default {
     left: 38px;
   }
 }
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(xs) {
   .logo-footer{
     position: relative;
     left: 0;
