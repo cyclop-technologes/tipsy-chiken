@@ -71,12 +71,15 @@ export default {
 }
 
 .rooster-box {
-  padding-bottom: 12.5rem;
+  padding-bottom: 15rem;
+  margin-bottom: 2.5rem;
 
 }
 #rooster{
   z-index: 2;
 }
+
+
 
 @include media-breakpoint-down(md) {
   #rooster {
