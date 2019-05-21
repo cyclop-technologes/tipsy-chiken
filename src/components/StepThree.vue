@@ -35,7 +35,7 @@ export default {
 <style lang="scss">
 @import '../assets/scss/main.scss';
 .third-step{
-  min-height: 100vh;
+  min-height: 750px;
 }
 .cards-box {
     padding-top: 4rem;

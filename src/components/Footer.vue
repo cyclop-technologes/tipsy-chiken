@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="footer">
-    <div class="container-fluid farm text-center position-relative">
+    <div class="container farm text-center position-relative">
       <img class="logo-footer" src="../assets/img/logo.svg" alt="">
       <img class="farm-img mv-100 d-block" src="../assets/img/farm.svg" alt="">
     </div>
@@ -110,7 +110,7 @@
 .logo-footer {
   position: absolute;
   top: 45px;
-  left: 165px;
+  left: 0;
   width: 250px;
 }
 

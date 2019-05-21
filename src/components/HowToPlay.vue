@@ -10,8 +10,8 @@
       pt-sm-0
       position-relative
       text-center">
-      <h1 class="title how-to-play font-weight-bold">HOW TO PLAY</h1>
-      <h1 class="title five-simple-steps font-weight-bold">5 SIMPLE STEPS</h1>
+      <h1 class="how-to-play font-weight-bold">HOW TO PLAY</h1>
+      <h1 class="five-simple-steps font-weight-bold">5 SIMPLE STEPS</h1>
     </div>
     <StepOne></StepOne>
     <StepTwo></StepTwo>
