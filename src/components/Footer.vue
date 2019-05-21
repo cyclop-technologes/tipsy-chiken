@@ -56,8 +56,8 @@
       </div>
       <div class="footer-bottom py-5 d-sm-flex justify-content-between align-items-center flex-wrap">
         <div class="privacy font-weight-bold flex-grow-4">
-          <a href="../assets/media/TipsyChicken_Privacy_Policy.pdf">Privacy Policy</a> |
-          <a href="../assets/media/TipsyChicken_TermsOfServices.pdf">Terms of Service</a>
+          <a :href="`${publicPath}tipsychicken-privacy-policy.pdf`">Privacy Policy</a> |
+          <a :href="`${publicPath}tipsychicken-termsofservices.pdf`">Terms of Service</a>
         </div>
         <div class="cpr text-white">
           All images, art, and game material are Copyright ©2019 Tipsy Chicken
@@ -72,6 +72,13 @@
   </div>
 </template>
 <script>
+export default {
+  data() {
+    return {
+      publicPath: process.env.BASE_URL,
+    }
+  }
+}
 </script>
 <style lang="scss" scoped>
 @import '../assets/scss/main.scss';
