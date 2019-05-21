@@ -77,12 +77,6 @@ export default {
       return this.vw > 768;
     }
   },
-  methods : {
-    submit(i){
-
-      this.$refs.form.submit()
-    }
-  },
   created() {
     const vm = this;
     vm.vw = window.innerWidth;
