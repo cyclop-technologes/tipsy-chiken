@@ -19,11 +19,11 @@
           <div class="navbar-nav mr-auto">
             <h6 class="text-primary text-uppercase font-weight-bold">CONTACT US</h6>
             <nav class="nav flex-column">
-              <a href="" class="p-0
+              <a href="mailto:info@tipsychickengame.com" class="p-0
               text-white
               font-weight-bolder
               nav-link">info@tipsychickengame.com</a>
-              <a href="" class="p-0
+              <a href="tel:(888)6602938" class="p-0
               text-white
               font-weight-bolder
               nav-link">(888) 660-2938</a>
