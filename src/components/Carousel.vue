@@ -107,6 +107,12 @@ export default {
     background: none !important;
     background-color: transparent !important;
   }
+  .carousel-3d-controls{
+
+    span {
+      color: $secondary;
+    }
+  }
   .animal{
     margin-right: 9rem !important;
     input{
