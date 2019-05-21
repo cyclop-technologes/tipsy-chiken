@@ -14,7 +14,7 @@
      flex-column
      flex-md-row
      justify-content-between">
-      <div class="step font-weight-bold">4</div>
+      <div class="text-center text-sm-left step font-weight-bold">4</div>
       <div class="info font-weight-bold text-right text-uppercase">
         <p>if you complete the dare,
           draw a GOAT card and keep
@@ -57,7 +57,10 @@ export default {
 </script>
 <style lang="scss">
   @import '../assets/scss/main.scss';
-
+  .step{
+    position: relative;
+    z-index: 2;
+  }
   .traces-container-step-four-bottom {
     right: 600px;
     bottom: -20px;
