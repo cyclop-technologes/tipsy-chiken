@@ -32,8 +32,8 @@
                     <input class="btn py-2" type="submit" value="SUBMIT">
                   </div>
                   <div class="form-footer">
-                    <v-text-field name="name" color="#C41C24" dark hide-details single-line v-model="card.name" required label="Name" single-line></v-text-field>
-                    <v-text-field name="email" color="#C41C24" dark single-line v-model="card.email" :rules="[rules.required, rules.email]" label="E-mail" single-line></v-text-field>
+                    <v-text-field name="name" dark hide-details single-line v-model="card.name" required label="Name" single-line></v-text-field>
+                    <v-text-field name="email" dark single-line v-model="card.email" :rules="[rules.required, rules.email]" label="E-mail" single-line></v-text-field>
                   </div>
                 </form>
             </slide>
@@ -94,6 +94,14 @@ export default {
 
 </script>
 <style lang="scss">
+  input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  input[type="number"] {
+      -moz-appearance: textfield;
+  }
   .carousel-3d-slide{
     border: none;
     background: none !important;
@@ -139,7 +147,7 @@ export default {
   }
   .form-footer{
     .theme--dark.v-text-field > .v-input__control > .v-input__slot:before{
-      border-color: $secondary;
+      border-color: $secondary !important;
       &:hover{
         border-color: $secondary;
       }

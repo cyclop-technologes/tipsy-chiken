@@ -19,8 +19,9 @@
 export default {
   created() {
     let prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
+    function hideOnScroll() {
       const currentScrollPos = window.pageYOffset;
+      if (currentScrollPos === 0) document.getElementById('header').style.top = '0';
       if (prevScrollpos > currentScrollPos) {
         document.getElementById('header').style.top = '0';
       } else {
@@ -28,7 +29,9 @@ export default {
         document.getElementById('navbarToggler').classList.remove('show');
       }
       prevScrollpos = currentScrollPos;
-    };
+    }
+
+    window.onscroll = hideOnScroll();
   },
 };
 </script>

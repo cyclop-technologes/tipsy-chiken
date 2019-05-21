@@ -46,10 +46,10 @@ export default {
     };
   },
   mounted() {
-    this.$root.$on('bv::modal::show', (bvEvent, modalId) => {
+    this.$root.$on('bv::modal::show', () => {
       this.videoSrc = 'https://www.youtube.com/embed/sZjGvpb58oM?autoplay=1&amp&;showinfo=0';
     });
-    this.$root.$on('bv::modal::hide', (bvEvent, modalId) => {
+    this.$root.$on('bv::modal::hide', () => {
       this.videoSrc = 'https://www.youtube.com/embed/sZjGvpb58oM';
     });
   },
