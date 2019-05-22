@@ -55,7 +55,7 @@ app.post('/newcard', function(req, res) {
     console.log(row)
     row.save();
 
-    res.sendfile(__dirname + "/dist/index.html");
+    res.sendfile(__dirname + "/dist/newcard.html");
   });
 })
 app.listen(port);
