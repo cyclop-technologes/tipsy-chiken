@@ -1,31 +1,22 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <Banner></Banner>
-    <Video></Video>
     <section class="bg-container">
-      <HowToPlay></HowToPlay>
-      <Carousel></Carousel>
+      <Header></Header>
+      <NewCard></NewCard>
       <Footer></Footer>
     </section>
   </div>
 </template>
 <script>
-import Header from './components/Header.vue';
-import Banner from './components/Banner.vue';
-import Video from './components/Video.vue';
-import HowToPlay from './components/HowToPlay.vue';
-import Carousel from './components/Carousel.vue';
-import Footer from './components/Footer.vue';
+import Header from '../components/Header.vue';
+import NewCard from '../components/Newcard.vue';
+import Footer from '../components/Footer.vue';
 
 export default {
   name: 'app',
   components: {
     Header,
-    Banner,
-    Video,
-    HowToPlay,
-    Carousel,
+    NewCard,
     Footer,
   },
 };
@@ -35,7 +26,7 @@ export default {
 // @import './assets/scss/main.scss';
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
 .bg-container {
-  background: url('assets/img/bg.svg') 0 0 repeat;
+  background: url('../assets/img/bg.svg') 0 0 repeat;
 }
 #app {
   font-family: 'Rubik', Helvetica, Arial, sans-serif;
@@ -46,12 +37,12 @@ export default {
 }
 
 .bg-container {
-  background: url('assets/img/bg.svg') 0 0 repeat;
+  background: url('../assets/img/bg.svg') 0 0 repeat;
 }
 
 @include media-breakpoint-down(sm){
   .bg-container {
-    background: url('assets/img/bg-sm.png') top center repeat;
+    background: url('../assets/img/bg-sm.png') top center repeat;
   }
 }
 
