@@ -11,29 +11,29 @@ let creds_json
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
-// async.series([
-//   (step) => {
-//     creds_json = {
-//       client_email: process.env.client_email,
-//       private_key: process.env.private_key,
-//     };
-//     creds_json.private_key = creds_json.private_key.replace(/&/gi, '\n')
-//     step();
-//   },
-//   (step) => {
-//     console.log(creds_json);
-//     doc.useServiceAccountAuth(creds_json, function() {
-//       doc.getInfo(function(err, info) {
-//         if(!err) {
-//           sheet = info.worksheets[0];
-//           sheet.setHeaderRow(['cardTitle', 'animal', 'subject', 'points', 'name', 'email']);
-//           console.log(sheet)
-//         }
-//       });
-//     });
-//     step();
-//   }
-// ])
+async.series([
+  (step) => {
+    creds_json = {
+      client_email: process.env.client_email,
+      private_key: process.env.private_key,
+    };
+    creds_json.private_key = creds_json.private_key.replace(/&/gi, '\n')
+    step();
+  },
+  (step) => {
+    console.log(creds_json);
+    doc.useServiceAccountAuth(creds_json, function() {
+      doc.getInfo(function(err, info) {
+        if(!err) {
+          sheet = info.worksheets[0];
+          sheet.setHeaderRow(['cardTitle', 'animal', 'subject', 'points', 'name', 'email']);
+          console.log(sheet)
+        }
+      });
+    });
+    step();
+  }
+])
 
 
 app.use(express.static(__dirname + "/dist/"));
@@ -56,7 +56,7 @@ app.post('/newcard', function(req, res) {
     console.log(row)
     row.save();
 
-    res.sendfile(__dirname + "/dist/index.html");
+    res.sendfile(__dirname + "/dist/newcard.html");
   });
 })
 app.listen(port);
