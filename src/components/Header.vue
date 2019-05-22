@@ -9,7 +9,7 @@
           <b-nav-item href="#how-to-play">HOW TO PLAY</b-nav-item>
           <b-nav-item>STORE</b-nav-item>
           <b-nav-item>APP</b-nav-item>
-          <b-nav-item>FAQ</b-nav-item>
+          <b-nav-item href="faq.html">FAQ</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
