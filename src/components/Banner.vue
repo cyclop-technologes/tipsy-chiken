@@ -43,7 +43,7 @@
 <script>
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .banner {
     background: $black;
     position: relative;
