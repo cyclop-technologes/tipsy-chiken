@@ -1,121 +1,63 @@
 {
   "faq": [{
       "title": "Where can I buy Tipsy Chicken?",
-      "conent": "Tipsy chicken is currently available exclusively through Amazon.
-      Check it out here.
-      "
+      "content": "Tipsy chicken is currently available exclusively through Amazon. Check it out here."
     },
-
     {
       "title": "Where did you guys get this idea? ",
-      "conent": "Well, we’re a group of friends that enjoy our fair share of whiskey.
-      When you combine this with a love of seeing each other make fools of ourselves,
-      Tipsy Chicken was born.
-      "
+      "content": "Well, we’re a group of friends that enjoy our fair share of whiskey. When you combine this with a love of seeing each other make fools of ourselves, Tipsy Chicken was born. "
     },
-
     {
       "title": "How do I play Tipsy Chicken? ",
-      "conent": "The basic rules were on the home page page.
-      If you missed them,
-      you can also download this file.
-      "
+      "content": "The basic rules were on the home page page. If you missed them, you can also download this file. "
     },
-
     {
       "title": "How many players do you need to play?",
-      "conent": "If you’re fun enough, just 2 people can be a good time.
-      We advise at least 3 - 4. "
+      "content": "If you’re fun enough, just 2 people can be a good time. We advise at least 3 - 4. "
     },
-
     {
       "title": "How old do I have to be to play? ",
-      "conent": "We don’t support underaged drinking, so to play the original version,
-      you must be of legal drinking age in your state / country of residence.
-      If you play with non - alcoholic drinks,
-      you’ ll be fine
-      if you’ re 17 and up.
-      "
+      "content": "We don’t support underaged drinking, so to play the original version, you must be of legal drinking age in your state / country of residence. If you play with non - alcoholic drinks, you’ ll be fine if you’ re 17 and up. "
     },
-
     {
       "title": "What if there are Dares I don’t feel comfortable doing? ",
-      "conent": "Well, that’s okay.  If you guys notice a category of Dares
-      you don’ t want to work with or simply are not able to complete,
-      you guys can vote to take that Animal type out and play with the remaining cards!"
+      "content": "Well, that’s okay.  If you guys notice a category of Dares you don’ t want to work with or simply are not able to complete, you guys can vote to take that Animal type out and play with the remaining cards!"
     },
-
     {
       "title": "What if the game ends in a tie? ",
-      "conent": "Well, we guess it’s a fight to the death, then!
-      Well,
-      no.We can’ t legally suggest a death battle,
-      here.
-      We’ re a serious game company after all.
-      In these situations,
-      we want to see you and your friends be creative.
-      Feel free to come up with your own tie breaker.
-      We’ d suggest simply going shot
-      for shot until someone gives up OR taking turns trying to shoot a quarter into a shot glass.
-      First person to get it in is the official GOAT!"
+      "content": "Well, we guess it’s a fight to the death, then! Well, no.We can’ t legally suggest a death battle, here. We’ re a serious game company after all. In these situations, we want to see you and your friends be creative. Feel free to come up with your own tie breaker. We’ d suggest simply going shot for shot until someone gives up OR taking turns trying to shoot a quarter into a shot glass. First person to get it in is the official GOAT!"
     },
-
     {
       "title": "Do you have to play for points? ",
-      "conent": "Nope!  If you guys want to just complete Dares for funsies,
-      we’ re totally with it!The idea of points is just
-      for those of you who enjoy a fun competition!
-      If you don’ t play
-      for points,
-      you might want to check out our Spin the Bottle version,
-      which allows
-      for more randomized turn selection and play.
-      "
+      "content": "Nope!  If you guys want to just complete Dares for funsies, we’ re totally with it!The idea of points is just for those of you who enjoy a fun competition! If you don’ t play for points, you might want to check out our Spin the Bottle version, which allows for more randomized turn selection and play. "
     },
-
     {
       "title": "Have you guys created any other games? ",
-      "conent": "Believe it or not, no!  This was our very first time diving into the world of
-      card / tabletop games.We’ re super excited by just how much fun we had so don’ t worry,
-      this is just the beginning.Follow us by signing up to our newsletter here
-      for updates on any upcoming projects.
-      "
+      "content": "Believe it or not, no!  This was our very first time diving into the world of card / tabletop games.We’ re super excited by just how much fun we had so don’ t worry, this is just the beginning.Follow us by signing up to our newsletter here for updates on any upcoming projects. "
     },
-
     {
       "title": "Are there expansions available?",
-      "conent": "Not yet, but we’re working on it! If you have any great ideas,
-      please suggest a card here.
-      "
+      "content": "Not yet, but we’re working on it! If you have any great ideas, please suggest a card here. "
     },
-
     {
       "title": "I have great ideas for cards. How can I be part of the game? ",
-      "conent": "If you have a fun idea for a card and want to suggest it to our content creation team,
-      submit your ideas here.If we decide to use your card,
-      we’ ll send you an email about the expansion pack it’ ll be featured in and even give you a visible credit on the card!"
+      "content": "If you have a fun idea for a card and want to suggest it to our content creation team, submit your ideas here.If we decide to use your card, we’ ll send you an email about the expansion pack it’ ll be featured in and even give you a visible credit on the card!"
     },
-
     {
       "title": "I have a great idea for an alternative version of the game. How do I share it? ",
-      "conent": "If you’ve found a new way to play the game, we want to know...and of course, give it a try ourselves!  Share your version here."
+      "content": "If you’ve found a new way to play the game, we want to know...and of course, give it a try ourselves!  Share your version here."
     },
-
     {
       "title": "Is there a mobile app version of the game?",
-      "conent": "We’re already working on it, stay tuned! SIgn up to our newsletter here for updates on our progress.  "
+      "content": "We’re already working on it, stay tuned! SIgn up to our newsletter here for updates on our progress.  "
     },
-
     {
       "title": "Does the game come in any other languages? ",
-      "conent": "At the moment, we have only created the game in American English.  Do you want to see it translated? If so, please send us a message and let us know what language you’d like to play it in."
+      "content": "At the moment, we have only created the game in American English.  Do you want to see it translated? If so, please send us a message and let us know what language you’d like to play it in."
     },
-
     {
       "title": "Do you have a warranty? ",
-      "conent": "If you were disappointed with the game, or have any questions or concerns, please email us here info@tipsychickengame.com"
+      "content": "If you were disappointed with the game, or have any questions or concerns, please email us here info@tipsychickengame.com"
     }
-
-
   ]
 }
