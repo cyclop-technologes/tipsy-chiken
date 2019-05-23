@@ -1,6 +1,6 @@
 <template lang="html">
     <b-navbar toggleable="sm" id="header" class="header px-4 border-0" fixed="top" type="dark">
-      <b-navbar-brand v-smooth-scroll href="#banner">
+      <b-navbar-brand v-smooth-scroll href="/">
         <img src="../assets/img/logo.svg" alt="">
       </b-navbar-brand>
       <b-navbar-toggle class="border-0" target="navbarToggler"></b-navbar-toggle>
@@ -9,7 +9,7 @@
           <b-nav-item href="#how-to-play">HOW TO PLAY</b-nav-item>
           <b-nav-item>STORE</b-nav-item>
           <b-nav-item>APP</b-nav-item>
-          <b-nav-item href="faq.html">FAQ</b-nav-item>
+          <b-nav-item href="/faq">FAQ</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
