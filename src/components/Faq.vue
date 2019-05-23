@@ -10,7 +10,7 @@
     <div class="row">
       <div class="col-12 col-lg-6">
         <div role="tablist">
-          <b-card v-for="(item, index) in leftColumn" :key="index" no-body class="mb-2">
+          <b-card v-for="(item, index) in leftColumn" :key="index" no-body class="mb-3">
             <b-card-header header-tag="header" class="p-1" role="tab">
               <b-button block href="#" v-b-toggle="'accordion-left-' + index" variant="info">{{item.title}}</b-button>
             </b-card-header>
@@ -24,7 +24,7 @@
       </div>
       <div class="col-12 col-lg-6">
         <div role="tablist">
-          <b-card v-for="(item, index) in items" :key="index" no-body class="mb-2">
+          <b-card v-for="(item, index) in items" :key="index" no-body class="mb-3">
             <b-card-header header-tag="header" class="p-1" role="tab">
               <b-button block href="#" v-b-toggle="'accordion-right-' + index" variant="info">{{item.title}}</b-button>
             </b-card-header>
@@ -88,6 +88,10 @@ export default {
   border: 1px solid #FCCD3F;
   text-transform: uppercase;
   font-size: 18px;
+  height: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover {
     background: #FDC210;
     border: 1px solid #FCCD3F;
