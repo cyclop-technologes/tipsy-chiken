@@ -34,7 +34,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/scss/main.scss';
   .header{
     background: linear-gradient(180deg, #2E2E2E 0%, #232323 100%);
     z-index: 999;
