@@ -12,11 +12,11 @@ import {
   faYoutube,
   faFacebookF,
 } from '@fortawesome/free-brands-svg-icons';
-
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import App from './App.vue';
 
-library.add(faAmazon, faTwitter, faInstagram, faYoutube, faFacebookF);
+library.add(faAmazon, faTwitter, faInstagram, faYoutube, faFacebookF, faAngleDown);
 
 AOS.init();
 Vue.config.productionTip = false;

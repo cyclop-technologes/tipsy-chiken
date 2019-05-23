@@ -6,7 +6,7 @@
       <span class="color-secondary">Questions</span>
     </h1>
   </div>
-  <div class="container faq-container">
+  <div class="container py-5 faq-container">
     <div class="row">
       <div class="col-12 col-lg-6">
         <div role="tablist">
@@ -64,7 +64,10 @@ export default {
 </script>
 <style lang="scss">
 .faq-header {
-    margin-top: 12.5rem;
+    margin-top: 15.3rem;
+    h1{
+      font-size: 4.26rem;
+    }
 }
 .color-primary {
     color: $primary;
