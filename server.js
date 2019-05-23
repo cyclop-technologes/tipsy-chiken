@@ -37,7 +37,7 @@ async.series([
 
 
 app.use(express.static(__dirname + "/dist/"));
-app.get(/.*/, function(req, res) {
+app.get('/', function(req, res) {
   res.sendfile(__dirname + "/dist/index.html");
 });
 app.post('/newcard', function(req, res) {
@@ -59,7 +59,7 @@ app.post('/newcard', function(req, res) {
   });
 })
 app.get('/faq', (req, res) => {
-  res.send(__dirname + "/dist/faq.html")
+  res.sendfile(__dirname + "/dist/faq.html");
 })
 app.listen(port);
 

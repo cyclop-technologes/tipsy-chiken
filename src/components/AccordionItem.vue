@@ -59,6 +59,7 @@ export default {
       word-wrap: break-word;
       font-family: inherit;
       margin-bottom: 0;
+      margin: 0 auto;
       font-size: 1.25rem;
     }
   }
