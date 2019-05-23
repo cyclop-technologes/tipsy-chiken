@@ -10,12 +10,12 @@
     <div class="row">
       <div class="col-12 col-lg-6">
         <div role="tablist">
-          <b-card v-for="(item, index) in leftColumn" :key="index" no-body class="mb-1">
+          <b-card v-for="(item, index) in leftColumn" :key="index" no-body class="mb-2">
             <b-card-header header-tag="header" class="p-1" role="tab">
               <b-button block href="#" v-b-toggle="'accordion-left-' + index" variant="info">{{item.title}}</b-button>
             </b-card-header>
             <b-collapse :id="`accordion-left-${index}`" role="tabpanel">
-              <b-card-body>
+              <b-card-body class="card-body">
                 <b-card-text>{{item.content}}</b-card-text>
               </b-card-body>
             </b-collapse>
@@ -24,7 +24,7 @@
       </div>
       <div class="col-12 col-lg-6">
         <div role="tablist">
-          <b-card v-for="(item, index) in items" :key="index" no-body class="mb-1">
+          <b-card v-for="(item, index) in items" :key="index" no-body class="mb-2">
             <b-card-header header-tag="header" class="p-1" role="tab">
               <b-button block href="#" v-b-toggle="'accordion-right-' + index" variant="info">{{item.title}}</b-button>
             </b-card-header>
@@ -79,5 +79,24 @@ export default {
     @include media-breakpoint-down(md) {
         column-count: 1;
     }
+}
+
+.btn.btn-info {
+  color: $black;
+  font-weight: 500;
+  background: #FCCD3F;
+  border: 1px solid #FCCD3F;
+  text-transform: uppercase;
+  font-size: 18px;
+  &:hover {
+    background: #FDC210;
+    border: 1px solid #FCCD3F;
+  }
+}
+.card-body {
+  background: #FDC210;
+  color: $black;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 </style>
