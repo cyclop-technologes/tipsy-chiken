@@ -33,6 +33,7 @@ export default {
 
 </script>
 <style lang="scss">
+// @import './assets/scss/main.scss';
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
 .bg-container {
   background: url('../assets/img/bg.svg') 0 0 repeat;
