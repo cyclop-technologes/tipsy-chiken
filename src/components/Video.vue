@@ -201,6 +201,9 @@ export default {
     left: 300px;
     width: 100%;
     animation: chicken-hide 12s infinite ease-in-out;
+    @media (min-width: 1441px) {
+      display: none;
+    }
   }
   @include media-breakpoint-down(md) {
     .video{
@@ -213,11 +216,6 @@ export default {
     }
     .btn.play-btn {
       margin-bottom: 2.5rem;
-    }
-  }
-  @include media-breakpoint-down(xl) {
-    .hidden-chicken {
-      display: none;
     }
   }
   @media (pointer: coarse) and (hover: none) {
