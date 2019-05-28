@@ -3,10 +3,11 @@
 
       <div class="overlay"></div>
       <div class="greben my-0 py-0">
+        <div class="cloud-background"></div>
         <div class="hidden-chicken"><img src="../assets/img/chick.svg"></div>
-        <img class="d-none d-xl-block" src="../assets/img/cloud-max.svg">
+        <!-- <img class="d-none d-xl-block" src="../assets/img/cloud-max.svg">
         <img class="d-none d-lg-block d-xl-none" src="../assets/img/cloud.svg">
-        <img class="d-sm-block d-lg-none" src="../assets/img/cloud-md.svg" alt="">
+        <img class="d-sm-block d-lg-none" src="../assets/img/cloud-md.svg" alt=""> -->
       </div>
       <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="../assets/media/Cards-video.mp4" type="video/mp4">
@@ -136,12 +137,19 @@ export default {
   #my-modal{}
   .greben {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     bottom: -1px;
-    img{
-      z-index: 9;
-      position: relative;
-    }
+    width: 100%;
+    height: auto;
+  }
+  .cloud-background {
+    background-image: url('../assets/img/cloud.svg');
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    z-index: 10;
   }
 
   @keyframes chicken-hide {
@@ -189,7 +197,7 @@ export default {
 
   .hidden-chicken {
     position: absolute;
-    z-index: 5;
+    z-index: 1;
     bottom: -160px;
     left: 300px;
     width: 100%;
@@ -206,6 +214,11 @@ export default {
     }
     .btn.play-btn {
       margin-bottom: 2.5rem;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    .hidden-chicken {
+      display: none;
     }
   }
   @media (pointer: coarse) and (hover: none) {
