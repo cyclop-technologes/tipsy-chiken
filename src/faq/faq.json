@@ -1,11 +1,11 @@
 {
   "faq": [{
       "title": "Where can I buy Tipsy Chicken?",
-      "content": "Tipsy chicken is currently available exclusively through Amazon. Check it out <a href=\"/somelink\">here.</a>"
+      "content": "Tipsy chicken is currently available exclusively through Amazon. Check it out <a class=\"accordion-link\" href=\"/somelink\">here.</a>"
     },
     {
       "title": "Where did you guys get this idea? ",
-      "content": "Well, we’re a group of friends that enjoy our fair share of whiskey. When you combine this with a love of seeing each other make fools of ourselves, Tipsy Chicken was born. "
+      "content": "Well, we’re a group of friends that enjoy our fair share of whiskey. When you combine this with a love of seeing each other make fools of ourselves, <b>Tipsy Chicken</b> was born. "
     },
     {
       "title": "How do I play Tipsy Chicken? ",
@@ -25,7 +25,7 @@
     },
     {
       "title": "What if the game ends in a tie? ",
-      "content": "Well, we guess it’s a fight to the death, then! Well, no.We can’ t legally suggest a death battle, here. We’ re a serious game company after all. In these situations, we want to see you and your friends be creative. Feel free to come up with your own tie breaker. We’ d suggest simply going shot for shot until someone gives up OR taking turns trying to shoot a quarter into a shot glass. First person to get it in is the official GOAT!"
+      "content": "Well, we guess it’s a fight to the death, then! Well, no.We can’ t legally suggest a death battle, here. We’ re a serious game company after all. In these situations, we want to see you and your friends be creative. Feel free to come up with your own tie breaker. We’ d suggest simply going shot for shot until someone gives up OR taking turns trying to shoot a quarter into a shot glass. First person to get it in is the official <b>GOAT!</b>"
     },
     {
       "title": "Do you have to play for points? ",
@@ -33,11 +33,11 @@
     },
     {
       "title": "Have you guys created any other games? ",
-      "content": "Believe it or not, no!  This was our very first time diving into the world of card / tabletop games.We’ re super excited by just how much fun we had so don’ t worry, this is just the beginning.Follow us by signing up to our newsletter here for updates on any upcoming projects. "
+      "content": "Believe it or not, no!  This was our very first time diving into the world of card / tabletop games.We’ re super excited by just how much fun we had so don’ t worry, this is just the beginning. Follow us by signing up to our newsletter here for updates on any upcoming projects. "
     },
     {
       "title": "Are there expansions available?",
-      "content": "Not yet, but we’re working on it! If you have any great ideas, please suggest a card here. "
+      "content": "Not yet, but we’re working on it! If you have any great ideas, please suggest a card <a class=\"accordion-link\" target=\"_blank\" href=\"/#suggest-card\">here.</a>"
     },
     {
       "title": "I have great ideas for cards. \nHow can I be part of the game? ",
@@ -57,7 +57,7 @@
     },
     {
       "title": "Do you have a warranty? ",
-      "content": "If you were disappointed with the game, or have any questions or concerns, please email us here info@tipsychickengame.com"
+      "content": "If you were disappointed with the game, or have any questions or concerns, please email us here <a class=\"accordion-link\" href=\"mailto:info@tipsychickengame.com\">info@tipsychickengame.com</a>"
     }
   ]
 }

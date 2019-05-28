@@ -69,5 +69,11 @@ export default {
     line-height: 1.5rem;
 
   }
+  .accordion-link {
+    color: $black;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: underline;
+  }
 }
 </style>
