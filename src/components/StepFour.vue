@@ -13,7 +13,8 @@
     <div class="d-flex
      flex-column
      flex-md-row
-     justify-content-between">
+     justify-content-between
+     align-items-center">
       <div class="text-center text-sm-left step font-weight-bold">4</div>
       <div class="info font-weight-bold text-center text-md-right text-uppercase">
         <p>if you complete the dare,
