@@ -14,7 +14,7 @@
     </b-card-header>
     <b-collapse :id="`accordion-${side}-${index}`" role="tabpanel">
       <b-card-body class="p-4">
-        <b-card-text class="text-center">{{content}}</b-card-text>
+        <b-card-text class="text-center" v-html='content'></b-card-text>
       </b-card-body>
     </b-collapse>
   </b-card>
@@ -35,6 +35,10 @@ export default {
     font-size: 1.4rem;
     transition: 0.3s;
     transform: rotate(180deg);
+    @include media-breakpoint-down(sm){
+      left: 20px;
+      top: calc(50% - 10px);
+    }
   }
   .collapsed{
     .angle{
@@ -46,14 +50,8 @@ export default {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    height: 82px;
+    min-height: 82px;
     border: none;
-    .arr{
-      font-style: normal;
-      position: absolute;
-      left: 20px;
-      top: 20px;
-    }
     pre {
       white-space: pre-wrap;
       word-wrap: break-word;
@@ -66,7 +64,6 @@ export default {
   .card-body {
     background: #FDC210;
     color: $black;
-    text-transform: uppercase;
     font-size: 18px;
     text-align: center;
     line-height: 1.5rem;

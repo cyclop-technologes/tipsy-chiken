@@ -1,6 +1,5 @@
 <template lang="html">
   <section class="video position-relative">
-
       <div class="overlay"></div>
       <div class="greben my-0 py-0">
         <div class="hidden-chicken"><img src="../assets/img/chick.svg"></div>
