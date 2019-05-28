@@ -1,7 +1,7 @@
 {
   "faq": [{
       "title": "Where can I buy Tipsy Chicken?",
-      "content": "Tipsy chicken is currently available exclusively through Amazon. Check it out <a href=\"\">here.</a>"
+      "content": "Tipsy chicken is currently available exclusively through Amazon. Check it out <a href=\"/somelink\">here.</a>"
     },
     {
       "title": "Where did you guys get this idea? ",
