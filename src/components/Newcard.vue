@@ -60,6 +60,12 @@ export default {
   max-height: 100vw;
   left: 80vw;
 }
+@include media-breakpoint-down(xl) {
+  .chiken-robot {
+    left: 82vw;
+  }
+
+}
 @include media-breakpoint-down(xs) {
   .newcard-title span{
     font-size: 3rem;
