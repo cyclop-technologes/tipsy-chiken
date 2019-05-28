@@ -64,9 +64,13 @@ export default {
 </script>
 <style lang="scss">
 .faq-header {
-    margin-top: 15.3rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
     h1{
       font-size: 4.26rem;
+      @include media-breakpoint-down(sm){
+        font-size: 3rem;
+      }
     }
 }
 .color-primary {
