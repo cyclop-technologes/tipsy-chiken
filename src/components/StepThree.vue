@@ -12,7 +12,7 @@
       justify-content-md-between
       step-margin">
   <div class="step font-weight-bold">3</div>
-  <div class="info font-weight-bold text-right text-uppercase mt-md-4 mt-lg-0">complete the dare.</div>
+  <div class="info font-weight-bold text-right text-uppercase mt-md-4 mt-lg-0">Complete the Dare or refuse.</div>
   <div class="cards-box">
     <img class="cards-box-img" data-aos="fade-up" src="../assets/img/complete_dare.svg">
     <img data-aos="fade-left"

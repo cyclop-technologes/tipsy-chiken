@@ -21,7 +21,7 @@
     <div  class="first-one-wins position-relative">
       <div class="one-wins-banner text-center text-uppercase font-weight-bold mx-auto">
         <p class="first-article">first one to
-          <span>7 points</span> wins... or play until you get the drunchies!</p>
+          <span>13 points</span> wins... or play until you get the drunchies!</p>
         <p class="second-article">(At which point, stop...<br>
           and immediately order<br>
           take-out! <span>YUM!</span>)</p>
@@ -92,6 +92,12 @@ export default {
 
   span {
     color: $secondary;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .rat-card {
+    left: 90px;
   }
 }
 

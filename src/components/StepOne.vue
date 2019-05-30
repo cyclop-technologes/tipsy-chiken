@@ -27,7 +27,7 @@
       <img data-aos="fade-up" id="img-team" class="mx-sm-auto" src="../assets/img/team.svg">
       <div class="info-bottom">
         <p>Gather 3-9 players.</p>
-        <p>Play for 30-90 minutes.</p>
+        <p>Playtime approximately 30-90 minutes.</p>
       </div>
     </div>
       <Traces class="traces-container-step-one" count="3"></Traces>

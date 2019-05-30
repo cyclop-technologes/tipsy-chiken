@@ -28,7 +28,7 @@
     <div data-aos="fade-up" class="draw-dare position-relative">
       <img src="../assets/img/draw_a_goat.svg">
     </div>
-    <div class="info font-weight-bold text-center text-md-right text-uppercase mx-auto ml-sm-auto">
+    <div class="info font-weight-bold text-center text-md-right text-uppercase mx-auto mr-sm-0 ml-sm-auto">
       <p> If you don't complete the
         dare, draw a chicken card
         and take your punishment.

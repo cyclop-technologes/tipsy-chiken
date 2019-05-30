@@ -32,7 +32,7 @@
                 </span>
                 <span class="text-shadow">"What did I do last night?"</span>
               </p>
-              <p class="my-4">party game</p>
+              <p class="party-game">party game</p>
             </div>
         </div>
       </div>
@@ -97,6 +97,9 @@
 .main-container{
   height: 100vh;
 }
+.party-game {
+  margin: 2.5rem 0rem;
+}
 .banner-logo{
   margin-top: 10rem;
 }
@@ -135,6 +138,9 @@
       width: 230px;
     }
   }
+  .party-game {
+    margin: 1.5rem 0rem;
+  }
   .chiken-block{
     padding-bottom: 4rem;
   }
@@ -160,6 +166,9 @@
       width: 290px;
       transform: rotateY(180deg);
     }
+  }
+  .party-game {
+    margin: 1rem 0rem;
   }
   .top-block{
     margin-top: 1rem;

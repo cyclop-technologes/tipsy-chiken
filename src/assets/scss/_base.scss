@@ -19,6 +19,8 @@
   font-size: 30px;
   line-height: 36px;
   max-width: 458px;
+  position: relative;
+  z-index: 20;
 }
 
 .traces-container {
