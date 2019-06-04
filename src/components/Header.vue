@@ -8,7 +8,7 @@
         <b-navbar-nav class="header-item ml-auto font-weight-semibold">
           <b-nav-item href="#how-to-play">HOW TO PLAY</b-nav-item>
           <b-nav-item>STORE</b-nav-item>
-          <b-nav-item>APP</b-nav-item>
+          <!-- <b-nav-item>APP</b-nav-item> -->
           <b-nav-item href="/faq">FAQ</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
