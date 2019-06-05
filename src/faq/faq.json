@@ -9,7 +9,7 @@
     },
     {
       "title": "How do I play Tipsy Chicken?",
-      "content": "The basic rules were on the home page page. If you missed them, you can also download <a href=\"/rules.pdf\">this file.</a>"
+      "content": "The basic rules were on the home page page. If you missed them, you can also download <a class=\"accordion-link\" href=\"/rules.pdf\">this file.</a>"
     },
     {
       "title": "How many players do you need to play?",
