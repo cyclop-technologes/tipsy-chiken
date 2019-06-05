@@ -4,8 +4,6 @@
       <span class="text-primary">Subscribe to our </span><span class="text-secondary"> newsletter</span>
     </h1>
     <div><p class="text-white">If you’d like us to email you when we release something new, enter your address here.</p></div>
-    <!-- Begin Constant Contact Active Forms -->
-    <!-- End Constant Contact Active Forms -->
     <!-- Begin Constant Contact Inline Form Code -->
     <div class="ctct-inline-form" data-form-id="33f5a54a-8530-4140-964b-32615446331a"></div>
     <!-- End Constant Contact Inline Form Code -->
@@ -47,9 +45,6 @@ export default {
       email: '',
     }
   },
-  created() {
-    var _ctct_m = "5bf99b1bbabe36aa2c53c23b3f065d1b";
-  }
 }
 </script>
 
@@ -70,7 +65,7 @@ export default {
   font-size: 2.9rem;
 }
 .subscribe-form {
-  max-width: 450px;
+  max-width: 350px;
   }
 }
 
