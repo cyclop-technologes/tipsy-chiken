@@ -10,10 +10,10 @@
           <div class="navbar-nav mb-3 mr-5">
             <h6 class="text-primary text-uppercase font-weight-bold ">Navigation</h6>
             <nav class="nav flex-column">
-              <a href="#banner" class="p-0 text-white font-weight-bolder nav-link">Home</a>
-              <a href="#how-to-play" class="p-0 text-white font-weight-bold nav-link">How to Play</a>
+              <a href="/#banner" class="p-0 text-white font-weight-bolder nav-link">Home</a>
+              <a href="/#how-to-play" class="p-0 text-white font-weight-bold nav-link">How to Play</a>
               <a href="" class="p-0 text-white font-weight-bolder nav-link">Buy Now</a>
-              <a href="#suggest-card" class="p-0 text-white font-weight-bolder nav-link">Suggest a Сard</a>
+              <a href="/#suggest-card" class="p-0 text-white font-weight-bolder nav-link">Suggest a Сard</a>
             </nav>
           </div>
           <div class="navbar-nav mr-auto">
