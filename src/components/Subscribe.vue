@@ -1,7 +1,7 @@
 <template lang="html">
-  <div class="container text-center mb-5">
+  <div class="container text-center mb-5" id="subscribe">
     <h1 class="text-uppercase font-weight-bold mb-3">
-      <span class="text-primary">Subscribe our</span> <span class="text-secondary"> newsletter</span>
+      <span class="text-primary">Subscribe to our </span><span class="text-secondary"> newsletter</span>
     </h1>
     <form class="subscribe-form mx-auto">
       <v-text-field
@@ -25,7 +25,7 @@
       @blur="$v.email.$touch()"
     ></v-text-field>
 
-    <b-button class="px-5 py-3 mt-2 text-shadow" variant="warning">SUBSCRIBE</b-button>
+    <b-button class="px-5 py-3 mt-3 mb-5 text-shadow" variant="warning">SUBSCRIBE</b-button>
     </form>
   </div>
 </template>
