@@ -7,6 +7,7 @@
       <!-- <Newcard></Newcard> -->
       <HowToPlay></HowToPlay>
       <Carousel></Carousel>
+      <Subscribe></Subscribe>
       <Footer></Footer>
     </section>
   </div>
@@ -17,6 +18,7 @@ import Banner from '../components/Banner.vue';
 import Video from '../components/Video.vue';
 import HowToPlay from '../components/HowToPlay.vue';
 import Carousel from '../components/Carousel.vue';
+import Subscribe from '../components/Subscribe.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
@@ -27,6 +29,7 @@ export default {
     Video,
     HowToPlay,
     Carousel,
+    Subscribe,
     Footer,
   },
 };
