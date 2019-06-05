@@ -44,6 +44,11 @@ const { faq } = require('../faq/faq.json');
 export default {
   data() {
     return {
+      publicPath: process.env.BASE_URL,
+    }
+  },
+  data() {
+    return {
       items: faq,
     };
   },
