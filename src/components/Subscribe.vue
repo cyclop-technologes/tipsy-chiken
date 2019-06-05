@@ -70,7 +70,7 @@ export default {
   font-size: 2.9rem;
 }
 .subscribe-form {
-  max-width: 350px;
+  max-width: 450px;
   }
 }
 
