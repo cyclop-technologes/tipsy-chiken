@@ -60,14 +60,16 @@ export default {
 
 @include media-breakpoint-down(md){
   .title{
-    font-size: 2.8rem;
-    line-height: 2.8rem;
+    font-size: 2.9rem;
+    line-height: 2.9rem;
+    font-weight: bold;
   }
 }
 @include media-breakpoint-down(sm){
   .title{
-    font-size: 1.9rem;
-    line-height: 1.9rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
   }
 };
 
