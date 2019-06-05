@@ -175,7 +175,7 @@ export default {
   .mobile-trace-s-four-bottom {
     display: block;
     position: absolute;
-    bottom: 180px;
+    bottom: 260px;
     left: 50%;
     transform: translateX(-50%);
   }
