@@ -12,11 +12,8 @@
       <v-text-field
         v-model="name"
         label="Name"
-        :counter="10"
-        :rules="nameRules"
         color='#FCCD3F'
         name='FNAME'
-        required
         dark
       ></v-text-field>
       <v-text-field
@@ -51,10 +48,6 @@ export default {
         v => !!v || 'E-mail is required',
         v => /.+@.+/.test(v) || 'E-mail must be valid'
       ],
-      nameRules: [
-         v => !!v || 'Name is required',
-         v => (v && v.length <= 10) || 'Name must be less than 10 characters'
-       ],
        valid: true,
        modalShow: false
     }
@@ -65,6 +58,8 @@ export default {
         axios.post('/subscribe', { name: this.name, email: this.email } ).then(res => {
           console.log(res);
           this.modalShow = true;
+          this.name = '';
+          this.email = '';
         })
     }
   }
