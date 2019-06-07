@@ -12,7 +12,7 @@
             <nav class="nav flex-column">
               <a href="/#banner" class="p-0 text-white font-weight-bolder nav-link">Home</a>
               <a href="/#how-to-play" class="p-0 text-white font-weight-bold nav-link">How to Play</a>
-              <a href="https://amazon.com" class="p-0 text-white font-weight-bolder nav-link">Buy Now</a>
+              <a href="https://amazon.com" target="_blank" class="p-0 text-white font-weight-bolder nav-link">Buy Now</a>
               <a href="/#suggest-card" class="p-0 text-white font-weight-bolder nav-link">Suggest a Сard</a>
             </nav>
           </div>

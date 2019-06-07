@@ -20,7 +20,7 @@
               <img src="../assets/img/logo-inline.svg" alt="">
             </div>
             <div class="mt-sm-0 mt-md-4 mt-lg-5">
-              <b-button class="px-5 py-3 text-shadow" variant="warning">BUY ON AMAZON</b-button>
+              <b-button href="https://amazon.com" target="_blank" class="px-5 py-3 text-shadow" variant="warning">BUY ON AMAZON</b-button>
             </div>
           </div>
           <div data-aos="fade-up" class="chiken-block font-weight-bold text-white">
