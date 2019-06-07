@@ -34,6 +34,9 @@
         found at the bottom of every email.</p>
       <b-button type="submit" class="px-5 py-3 mt-3 mb-5 text-shadow" variant="warning">SUBSCRIBE</b-button>
     </v-form>
+    <b-modal v-model='modalShow' hide-header centered ok-only footer-class='border-top-0'>
+      <h3 class="text-primary my-5">Thank you for subscribe</h3>
+    </b-modal>
   </div>
 </template>
 
@@ -53,6 +56,7 @@ export default {
          v => (v && v.length <= 10) || 'Name must be less than 10 characters'
        ],
        valid: true,
+       modalShow: false
     }
   },
   methods: {
@@ -60,6 +64,7 @@ export default {
       if(this.$refs.form.validate())
         axios.post('/subscribe', { name: this.name, email: this.email } ).then(res => {
           console.log(res);
+          this.modalShow = true;
         })
     }
   }
