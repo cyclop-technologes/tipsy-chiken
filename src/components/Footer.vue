@@ -31,7 +31,7 @@
           </div>
         </div>
         <b-nav class="media flex-column flex-sm-row align-items-center align-self-sm-end">
-          <b-nav-item>
+          <b-nav-item href="https://amazon.com" target="_blank">
             <font-awesome-icon :icon="['fab', 'amazon']" />
           </b-nav-item>
           <b-nav-item
