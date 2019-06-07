@@ -4,44 +4,68 @@
       <span class="text-primary">Subscribe to our </span><span class="text-secondary"> newsletter</span>
     </h1>
     <div><p class="text-white">If you’d like us to email you when we release something new, enter your address here.</p></div>
-    <form action="https://tipsychickengame.us20.list-manage.com/subscribe/post?u=82f9a822bcdf0c2ce9c5846d1&amp;id=6990e00fdc" method="post" target="_blank" class="subscribe-form mx-auto">
+    <v-form ref="form"
+    v-model="valid"
+    lazy-validation
+    @submit.prevent='submit'
+    class="subscribe-form mx-auto">
       <v-text-field
         v-model="name"
-        :error-messages="nameErrors"
         label="Name"
+        :counter="10"
+        :rules="nameRules"
         color='#FCCD3F'
         name='FNAME'
         required
         dark
-        @input="$v.name.$touch()"
-        @blur="$v.name.$touch()"
       ></v-text-field>
       <v-text-field
         v-model="email"
-        :error-messages="emailErrors"
+        :rules="emailRules"
         label="E-mail"
-        color='#FCCD3F'
         name='EMAIL'
         required
         dark
-        @input="$v.email.$touch()"
-        @blur="$v.email.$touch()"
+        color='#FCCD3F'
       ></v-text-field>
-      <p class="text-white form-legacy">By submitting this form, you are consenting to receive emails from:
+      <p class="text-white form-legacy mt-2">By submitting this form, you are consenting to receive emails from:
         Tipsy Chicken, 5620 1st Ave Suite 4, Brooklyn , NY, 11220, US.
         You can revoke your consent to receive emails at any time by using the Unsubscribe button,
         found at the bottom of every email.</p>
       <b-button type="submit" class="px-5 py-3 mt-3 mb-5 text-shadow" variant="warning">SUBSCRIBE</b-button>
-    </form>
+    </v-form>
+    <b-modal v-model='modalShow' hide-header centered ok-only footer-class='border-top-0'>
+      <h3 class="text-primary my-5">Thank you for subscribe</h3>
+    </b-modal>
   </div>
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   data() {
     return {
       name: '',
       email: '',
+      emailRules: [
+        v => !!v || 'E-mail is required',
+        v => /.+@.+/.test(v) || 'E-mail must be valid'
+      ],
+      nameRules: [
+         v => !!v || 'Name is required',
+         v => (v && v.length <= 10) || 'Name must be less than 10 characters'
+       ],
+       valid: true,
+       modalShow: false
+    }
+  },
+  methods: {
+    submit() {
+      if(this.$refs.form.validate())
+        axios.post('/subscribe', { name: this.name, email: this.email } ).then(res => {
+          console.log(res);
+          this.modalShow = true;
+        })
     }
   }
 }
