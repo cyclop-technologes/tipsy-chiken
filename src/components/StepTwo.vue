@@ -78,14 +78,10 @@ export default {
 #rooster{
   z-index: 2;
 }
-
-
-
 @include media-breakpoint-down(md) {
   #rooster {
     max-width: 480px;
     left: 85px;
-
   }
   .second-step{
     padding-bottom: 0;

@@ -50,7 +50,7 @@ export default {
       ],
        valid: true,
        modalShow: false
-    }
+    };
   },
   methods: {
     submit() {
@@ -60,10 +60,10 @@ export default {
           this.modalShow = true;
           this.name = '';
           this.email = '';
-        })
-    }
-  }
-}
+        });
+    },
+  },
+};
 </script>
 
 <style lang="scss">
@@ -86,7 +86,6 @@ export default {
   max-width: 350px;
   }
 }
-
 @include media-breakpoint-down(sm) {
   .subscribe-title {
     font-size: 1.9rem;
