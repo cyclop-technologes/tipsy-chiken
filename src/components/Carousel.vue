@@ -16,7 +16,7 @@
           border="0">
             <slide v-for="(animal, index) in animals" :key="index" :index="index">
                 <img class="card-img" :src="`${publicPath}img/card_${animal}.svg`">
-                <form :ref="`form-${index}`" class="card-form px-3 pt-4 pb-5" method="post" action="/newcard">
+                <form :ref="`form-${index}`" class="card-form px-3 pt-4 pb-5" method="post" data-netlify="true" name="card">
                   <div class="form-header">
                     <v-text-field name="animal" class="animal" dark hide-details single-line required readonly :value="animal"></v-text-field>
                     <v-text-field name="points" class="points-input" dark hide-details single-line v-model="card.points" type="number" required label="Points"></v-text-field>
