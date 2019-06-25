@@ -217,7 +217,8 @@ export default {
   }
   @media (pointer: coarse) and (hover: none) {
     .video {
-      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+      background: url('../assets/img/sm-video-bg.jpg') black no-repeat center center scroll;
+      background-size: cover;
     }
     .video video {
       display: none;
