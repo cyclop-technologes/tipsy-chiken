@@ -6,7 +6,7 @@
       <div class="chicken-content">
         <p class="text font-weight-bold">Psssst... Hey, you!<br>Ready to play?</p>
         <b-button
-          href="https://amazon.com"
+          href="http://bit.ly/tipsychicken"
           target="_blank"
           class="shadow buy-button px-5 py-3 text-shadow"
           variant="warning">BUY ON AMAZON</b-button>
