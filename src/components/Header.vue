@@ -7,7 +7,7 @@
       <b-collapse is-nav class="collapse navbar-collapse" id="navbarToggler">
         <b-navbar-nav class="header-item ml-auto font-weight-semibold">
           <b-nav-item href="#how-to-play">HOW TO PLAY</b-nav-item>
-          <b-nav-item href="http://bit.ly/tipsychicken" target="_blank">STORE</b-nav-item>
+          <b-nav-item href="https://amzn.to/2zG10Fb" target="_blank">STORE</b-nav-item>
           <!-- <b-nav-item>APP</b-nav-item> -->
           <b-nav-item href="/faq">FAQ</b-nav-item>
         </b-navbar-nav>

@@ -12,7 +12,7 @@
             <nav class="nav flex-column">
               <a href="/#banner" class="p-0 text-white font-weight-bolder nav-link">Home</a>
               <a href="/#how-to-play" class="p-0 text-white font-weight-bold nav-link">How to Play</a>
-              <a href="http://bit.ly/tipsychicken" target="_blank" class="p-0 text-white font-weight-bolder nav-link">Buy Now</a>
+              <a href="https://amzn.to/2zG10Fb" target="_blank" class="p-0 text-white font-weight-bolder nav-link">Buy Now</a>
               <a href="/#suggest-card" class="p-0 text-white font-weight-bolder nav-link">Suggest a Сard</a>
             </nav>
           </div>
@@ -31,7 +31,7 @@
           </div>
         </div>
         <b-nav class="media flex-column flex-sm-row align-items-center align-self-sm-end">
-          <b-nav-item href="http://bit.ly/tipsychicken" target="_blank">
+          <b-nav-item href="https://amzn.to/2zG10Fb" target="_blank">
             <font-awesome-icon :icon="['fab', 'amazon']" />
           </b-nav-item>
           <b-nav-item
